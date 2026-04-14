@@ -25,7 +25,7 @@ This is the master Standard Operating Procedure for agricultural operations. It 
 | 2 | [Aquaponics](#2-aquaponics) | **Deep** | Production-ready |
 | 3 | [Protected Cropping (Greenhouse/Tunnel)](#3-protected-cropping-greenhouse--tunnel) | **Deep** | Production-ready |
 | 4 | [Open-Field Crop Production](#4-open-field-crop-production) | **Deep** | Production-ready |
-| 5 | [Crop Rotation & Soil Health](#5-crop-rotation--soil-health) | Stub | Framework only |
+| 5 | [Crop Rotation & Soil Health](#5-crop-rotation--soil-health) | **Deep** | Production-ready |
 | 6 | [Irrigation & Water Management](#6-irrigation--water-management) | Stub | Framework only |
 | 7 | [Pest & Disease Management (IPM)](#7-pest--disease-management-ipm) | Stub | Framework only |
 | 8 | [Livestock & Poultry](#8-livestock--poultry) | Stub | Framework only |
@@ -1597,26 +1597,379 @@ Heavy K feeder (150-200 kg K/ha). Avoid fresh manure (causes forking). 3-5 kg B 
 
 # 5. CROP ROTATION & SOIL HEALTH
 
-*Section to be expanded.*
+## 5.1 Why Rotate — Quantified Benefits
 
-## 5.1 Rotation Principles
-- [ ] Nutrient cycling between crop families
-- [ ] Disease break cycles
-- [ ] Nitrogen fixation through legume rotation
-- [ ] Cover cropping
+| Metric | Rotation vs Monoculture |
+|---|---|
+| Total yield increase | 14-27% |
+| Yield after legume pre-crop | +23% average |
+| Maize in 2-year rotation vs continuous | +29% |
+| Maize in 4-year rotation with legume cover | +48% |
+| Disease reduction (host-specific pathogens) | 40-60% |
+| N fertilizer savings after soybean | 30-60 kg N/ha |
+| Revenue increase | ~20% |
 
-## 5.2 Rotation Planning
-- [ ] 3-year, 4-year, and 5-year rotation models
-- [ ] Companion planting strategies
-- [ ] Intercropping patterns
-- [ ] Fallow period management
+**The cost of monocropping:**
+- Continuous wheat: Fusarium crown rot reaches 60-80% by year 3-4 (rotation reduces to 15-25%)
+- Continuous maize: requires 30-50 kg/ha more N annually for equivalent yield
+- SA-confirmed glyphosate-resistant ryegrass (WC) and ALS-resistant weeds (Highveld) — accelerated by monoculture herbicide programs
+- "Rotation effect": continuous corn yields 10-20% less even with identical fertilizer
 
-## 5.3 Soil Health Management
-- [ ] Organic matter building
-- [ ] Soil biology (mycorrhizae, beneficial bacteria)
-- [ ] Composting programs
-- [ ] Green manure crops
-- [ ] Soil testing schedules and interpretation
+### Rotation Mechanisms
+1. **Nutrient cycling** — Different crops have different demands and rooting depths. Legumes fix N (40-100 kg/ha). Heavy feeders deplete; light feeders restore
+2. **Disease/pest break** — 3-4 year gap starves host-specific pathogens. Root-lesion nematodes reduced 40-60% by one non-host season
+3. **Weed spectrum management** — Alternating warm/cool season crops and broadleaf/grass crops disrupts weed life cycles
+4. **Soil structure** — Grass crops build aggregates (fibrous roots). Taproot crops break compaction. Alternating improves overall physical condition
+
+---
+
+## 5.2 Crop Family Groups
+
+| Family | Crops | Key Shared Diseases/Pests | Min Gap |
+|---|---|---|---|
+| **Gramineae** (Grasses) | Maize, wheat, sorghum, oats, rye, barley | Fusarium, stem borers, take-all, nematodes | 1-2 years |
+| **Leguminosae** | Soybean, beans, peas, lupins, cowpea, vetch | Sclerotinia, Rhizoctonia, bean fly | 2-3 years |
+| **Solanaceae** | Tomato, potato, pepper, eggplant | Bacterial wilt, blight, root-knot nematode | **3-4 years** |
+| **Cucurbitaceae** | Pumpkin, cucumber, melon, watermelon | Fusarium wilt, powdery mildew, fruit fly | 3 years |
+| **Brassicaceae** | Cabbage, broccoli, canola, radish | Clubroot (spores survive 7-20yr!), black rot, DBM | **4-7 years** |
+| **Alliaceae** | Onion, garlic, leek | White rot (sclerotia survive 15-20yr) | **5-8 years** |
+| **Apiaceae** | Carrot, parsley, celery, coriander | Alternaria, Sclerotinia | 2-3 years |
+| **Chenopodiaceae** | Beetroot, spinach, Swiss chard | Cercospora, damping off | 2 years |
+| **Asteraceae** | Sunflower, lettuce | Sclerotinia, rust | 2-3 years |
+
+### Critical Rules
+- **Brassicas suppress mycorrhizae** by 40-60%. Always follow brassicas with a grass crop to rebuild AMF
+- **Allium white rot** is the most persistent pathogen in horticulture. Once present: avoid alliums for 8+ years
+- **Never follow Solanaceae with Cucurbitaceae** — shared nematode species bridge between families
+- **Sunflower → Legumes:** Sclerotinia cross-infects. Allow 2-3 year gap
+
+---
+
+## 5.3 Rotation Models
+
+### 2-Year: Maize-Soybean (Highveld Standard)
+
+| Year | Crop | N Applied | N in Grain | N Fixed | Net |
+|---|---|---|---|---|---|
+| 1 | Maize (6 t/ha) | 120 kg/ha | ~100 | 0 | +20 |
+| 2 | Soybean (2.5 t/ha) | 0 | ~150 | 80-120 | -50 |
+| **Cycle** | | **120** | **~250** | **~100** | **~-30** |
+
+Rotation credit: maize after soybean needs 30-60 kg N/ha less than continuous maize. **Limitation:** Only 2 families. Limited disease break. No winter cover.
+
+### 3-Year: Maize-Soybean-Sunflower
+
+| Year | Crop | Family | N Input | Key Benefit |
+|---|---|---|---|---|
+| 1 | Maize | Grass | 100-120 | Fibrous root structure |
+| 2 | Soybean | Legume | 0 | N fixation |
+| 3 | Sunflower | Composite | 40-60 | Deep taproot breaks compaction |
+
+### 3-Year: Maize-Soybean-Wheat
+
+| Year | Crop | Season | Advantage |
+|---|---|---|---|
+| 1 | Maize | Summer | Biomass, structure |
+| 2 | Soybean | Summer | N fixation |
+| 3 | Wheat | Winter | **Season shift** breaks summer pest/weed cycles |
+
+### 4-Year: Western Cape — Wheat-Canola-Wheat-Lupins
+
+| Year | Crop | Family | N Applied | Notes |
+|---|---|---|---|---|
+| 1 | Wheat | Grass | 80-100 | Primary cash crop |
+| 2 | Canola | Brassica | 60-80 | Breaks wheat diseases (take-all, Fusarium) |
+| 3 | Wheat | Grass | 60-80 (reduced) | Benefits from canola disease break |
+| 4 | Lupins | Legume | 0 | Fixes 80-150 kg N/ha, sheep grazing value |
+
+Langgewens research: wheat yields increase 15-25% when rotated with canola + lupins vs continuous wheat.
+
+### 4-Year: Highveld — Maize-Soybean-Sunflower-Wheat/Cover
+
+| Year | Crop | Season | N Input |
+|---|---|---|---|
+| 1 | Maize | Summer | 100-120 |
+| 2 | Soybean | Summer | 0 |
+| 3 | Sunflower | Summer | 40-60 |
+| 4 | Wheat (winter) + summer cover | Both | 80 + 0 |
+
+### Vegetable Rotation: 5-Year Plan
+
+| Year | Plot A | Plot B | Plot C | Plot D | Plot E |
+|---|---|---|---|---|---|
+| 1 | Solanaceae | Legumes | Brassicas | Cucurbits | Alliums+Roots |
+| 2 | Legumes | Brassicas | Cucurbits | Alliums+Roots | Solanaceae |
+| 3 | Brassicas | Cucurbits | Alliums+Roots | Solanaceae | Legumes |
+| 4 | Cucurbits | Alliums+Roots | Solanaceae | Legumes | Brassicas |
+| 5 | Alliums+Roots | Solanaceae | Legumes | Brassicas | Cucurbits |
+
+**Rules:** Legumes always precede heavy feeders (Solanaceae, Brassicas). Never follow Solanaceae with Cucurbits. Green manure between summer/winter plantings wherever possible.
+
+---
+
+## 5.4 Cover Crops
+
+### Summer Cover Crops (planted Oct-Dec)
+
+| Species | Seeding Rate (kg/ha) | N Fixed (kg/ha) | Key Benefit | Cost (ZAR/ha) |
+|---|---|---|---|---|
+| Sunhemp | 20-30 | 80-120 | Fast biomass, nematode suppression | 400-600 |
+| Lab-lab | 25-40 | 60-100 | Drought tolerant, fodder value | 350-550 |
+| Cowpea | 20-30 | 50-80 | Heat/drought tolerant, quick cover | 300-500 |
+| Tillage radish | 8-12 | 0 (scavenger) | Compaction relief, N scavenging | 200-400 |
+| Pearl millet (Babala) | 8-12 | 0 | Massive root biomass, drought tolerant | 150-300 |
+
+### Winter Cover Crops (planted Mar-May)
+
+| Species | Seeding Rate (kg/ha) | N Fixed (kg/ha) | Key Benefit |
+|---|---|---|---|
+| Oats | 40-60 | 0 | Excellent biomass, weed suppression |
+| Rye | 40-60 | 0 | Allelopathic weed suppression, cold hardy |
+| Grazing vetch | 25-35 | 80-120 | Highest N fixation of winter legumes |
+| Crimson clover | 15-20 | 50-80 | Pollinator support |
+
+### Popular Mixes
+- **Winter N-builder:** Oats 25 + vetch 20 kg/ha (~ZAR 600-800/ha)
+- **Summer biomass:** Sunhemp 15 + cowpea 15 + babala 5 kg/ha (~ZAR 500-700/ha)
+- **Compaction buster:** Tillage radish 6 + oats 30 + vetch 15 kg/ha
+
+### Benefits Quantified
+- **N fixation:** 50-120 kg N/ha from legume covers
+- **Organic matter:** 4-6 t/ha biomass adds ~0.1-0.2% OM/year
+- **Water infiltration:** 2-6x higher than bare fallow
+- **Weed suppression:** Rye can suppress emergence by 60-90%
+- **Erosion reduction:** 70-90% less soil loss vs bare fields
+
+### Termination Methods
+
+| Method | Timing | Pros | Cons |
+|---|---|---|---|
+| Roller-crimper | At flowering (critical timing) | No herbicide, creates mulch mat | Requires specific growth stage |
+| Herbicide | 2-4 weeks before cash crop | Reliable kill, flexible timing | Chemical cost, resistance risk |
+| Incorporation | 2-4 weeks before planting | Fast decomposition | Destroys soil structure |
+| Frost kill | Natural | Free | Climate-dependent |
+| Grazing | Leave 30% residue min | Dual income, nutrient cycling | Over-grazing/compaction risk |
+
+**Rule:** Terminate 2-3 weeks before planting to avoid allelopathy and N tie-up. In water-scarce areas: terminate 3-4 weeks early to conserve moisture.
+
+---
+
+## 5.5 Companion Planting & Intercropping
+
+### Three Sisters (Maize-Beans-Squash)
+- **LER (Land Equivalent Ratio):** Up to 1.30 (30% more productive than monocultures per unit land)
+- Maize provides structure for climbing beans (eliminates staking cost)
+- Bean N fixation: 15-30 kg N/ha contribution
+- Squash canopy shades soil (conserves moisture, suppresses weeds)
+- Recent research: maize in Three Sisters suffers less herbivore damage, attracts more natural enemies
+
+**SA smallholder spacing:**
+- Maize: 90cm rows, 30cm in-row (37,000/ha)
+- Beans: 2 seeds per maize station, planted 2 weeks after maize emergence
+- Squash: 1 plant every 3-4m along every second maize row
+
+### Strip Cropping
+- Alternating 6-12 row strips of different crops
+- Maize-soybean strips: edge rows of maize yield 10-15% more (border effect)
+
+### Relay Cropping
+- Plant second crop into standing first crop before harvest
+- Wheat-soybean relay: soybean into standing wheat 4-6 weeks before wheat harvest (subtropical KZN)
+
+### Alley Cropping
+- Leucaena hedgerows 4-6m apart with maize between. Prunings contribute 40-80 kg N/ha/year
+- Young fruit orchards (macadamia, avocado) with vegetables between rows during 3-5 year establishment
+
+---
+
+## 5.6 Soil Health Management
+
+### Five Soil Health Principles
+1. **Minimize disturbance** — Every tillage pass oxidizes 0.5-1.0 t/ha soil organic carbon
+2. **Maximize soil cover** — Maintain >80% ground cover year-round. Bare soil reaches 60-70°C in SA summers
+3. **Maximize biodiversity** — 6+ crop species in rotation. Diverse mixes (3-5 species) outperform monoculture covers
+4. **Keep living roots year-round** — Living roots support 2-3x more microbial biomass than bare fallow
+5. **Integrate livestock** — Managed grazing adds biological cycling. Short duration, high intensity, long recovery
+
+### Organic Matter Building
+
+**Timeline for 1% OM increase:**
+- Best management (no-till + covers + compost + rotation): **5-10 years**
+- Cover crops alone: **10-20+ years**
+- SA conditions (high decomposition): longer end of range
+- 1% OM in top 30cm of 1 ha = ~24,000 kg organic matter
+
+**What 1% OM delivers:**
+- +80,000-100,000 L/ha water-holding capacity
+- +1-2 cmol/kg CEC
+- Better aggregate stability
+- Increased microbial activity
+
+### Soil Biology
+
+**Mycorrhizal Fungi (AMF):**
+- Symbiotic with >80% of crop species
+- Extend root nutrient access 10-100x via hyphal networks
+- Produce glomalin (soil aggregate glue)
+- **Suppressed by:** tillage, high P (>50 mg/kg), brassicas, long bare fallow
+- **Enhanced by:** no-till, living roots, moderate P, mycorrhizal hosts in rotation
+- AMF colonization 60% higher in wheat after chickpea vs after canola
+
+**Earthworms (indicator species):**
+- Healthy soil: 100-300/m² (10-30 per spadeful in top 20cm)
+- Degraded/tilled: <25/m²
+- Casts: 5-7x richer in P, 7-11x richer in K than surrounding soil
+- Recovery after switching to no-till: 3-7 years
+
+### Composting
+
+**Ideal starting C:N ratio: 25-30:1**
+
+| Material | C:N |
+|---|---|
+| Fresh grass | 15-20:1 |
+| Poultry manure | 8-12:1 |
+| Cattle manure | 20-25:1 |
+| Straw | 60-80:1 |
+| Wood chips | 200-500:1 |
+
+**Temperature phases:**
+1. Mesophilic (20-40°C): Days 1-5
+2. Thermophilic (45-65°C): Days 5 to weeks 4-8. Pathogen kill >55°C for 3+ days
+3. Curing (ambient): Weeks 8-16+. Do NOT apply before this phase
+
+**Maturity indicators:** Temp stable 2+ weeks, C:N <20:1, dark brown-black, earthy smell, pH 6.5-8.0, >80% cress seed germination in extract.
+
+**Application rates:**
+- Field crops: 5-10 t/ha/year (maintenance), 15-25 t/ha (building)
+- Vegetables: 10-20 t/ha per season
+- Orchards: 5-15 t/ha, banded under canopy
+
+### Green Manure Crops
+
+| Crop | Biomass (t/ha DM) | N Contributed (kg/ha) | Weeks to Incorporation |
+|---|---|---|---|
+| Sunhemp | 6-10 | 80-150 | 8-10 (at flowering) |
+| Cowpea | 3-5 | 50-80 | 8-12 |
+| Lab-lab | 4-8 | 60-120 | 10-14 |
+| Oats + vetch mix | 5-8 | 60-100 | 12-16 |
+| Lupins (blue) | 4-6 | 100-150 | 12-16 |
+
+---
+
+## 5.7 Soil Testing
+
+### Schedule
+- **Frequency:** Every 2-3 years (stable management). Annually during transition
+- **Timing:** Same time each year. SA standard: Jul-Aug for summer crops. 6-8 weeks after last fertilizer. 4+ weeks after lime
+- **Protocol:** Zigzag, 20+ cores per zone (max 10 ha), 0-15cm + 15-30cm. Deliver to lab within 48hr
+
+### Test Tiers
+
+| Tier | Cost (ZAR) | Includes |
+|---|---|---|
+| Standard | 200-400 | pH, P, K, Ca, Mg, Na, CEC, OC, texture, acid saturation |
+| Comprehensive | 400-800 | Standard + S, Zn, Mn, Cu, B, Fe, Mo, total N, buffer pH |
+| Specialized | 500-1,500+ | Nematode analysis, microbial biomass, PLFA profile, heavy metals |
+
+### SA Labs
+Bemlab, SGS, NviroTek, FAS (Pretoria), AGQ Labs (Stellenbosch), Elsenburg (WC Govt), ARC-ISCW, Labserve
+
+### Interpretation — Key Sufficiency Levels (SA soils)
+
+| Nutrient | Low | Medium | High |
+|---|---|---|---|
+| P (Bray-1, mg/kg) | <15 | 15-30 | >50 |
+| K (mg/kg) | <80 | 80-160 | >250 |
+| Organic C (%) | <0.5 (degraded) | 0.5-1.5 | >3.0 (excellent) |
+| Acid saturation | >20% = toxic, lime required | | |
+
+### Soil Health Tests Beyond Chemistry
+
+| Test | Method | Target |
+|---|---|---|
+| Aggregate stability | Wet sieve / slake | >60% water-stable |
+| Infiltration rate | Single-ring, 15 min | >25 mm/hr (cropland) |
+| Earthworm count | 30×30×20cm block | >10 per spadeful |
+| Soil respiration | Solvita / jar+NaOH | >30 mg CO2/kg/day |
+| Visual structure | VESS score | 1-2 on 1-5 scale |
+
+---
+
+## 5.8 SA Regional Recommendations
+
+### Highveld (FS, MP, GP, NW)
+- Climate: Summer rainfall 450-750mm, cold dry winters, frost
+- Challenge: Acid soils (pH KCl 4.0-4.5 common), aluminum toxicity
+- Rotation: Maize-soybean (2yr) or maize-soybean-sunflower (3yr)
+- Lime to pH(KCl) >5.0 (2-4 t/ha every 3-4 years). Acid-tolerant cultivars essential
+- Winter covers possible only with >500mm rainfall or irrigation
+
+### Western Cape (Swartland, Southern Cape)
+- Climate: Mediterranean, winter rainfall 300-600mm
+- Rotation: Wheat-canola-wheat-lupins (4yr) or wheat-medic ley
+- CA highly suited — stubble retention critical for summer moisture conservation
+- No-till adoption reduces fuel 30-40% vs conventional. 51% adoption rate (highest in SA)
+
+### KZN (Subtropical)
+- Climate: Summer rainfall 700-1200mm, mild winters, high humidity
+- Rotation: Maize-soybean, sugarcane-soybean break, vegetable rotations
+- Cover crops grow vigorously — excellent for CA. Subtropical legumes (lab-lab, cowpea, sunhemp) as summer covers
+- Sugarcane benefits from 1-2yr soybean break every 6-8 plant-ratoon cycles
+
+### Limpopo (Semi-Arid)
+- Climate: Hot, 300-500mm, highly variable
+- Rotation: Sorghum-cowpea, millet-groundnut, maize-cowpea with possible fallow
+- Drought-tolerant crops essential. Fallow may be necessary in <350mm areas
+- Traditional intercropping (sorghum/cowpea) highly appropriate for smallholders
+
+---
+
+## 5.9 Fallow Management
+
+### Types
+
+| Type | Description | Water Savings | Erosion Risk | Verdict |
+|---|---|---|---|---|
+| **Clean fallow** | Bare soil, weeds controlled | Stores 25-35% of rainfall | Maximum | **Avoid** — outdated |
+| **Green fallow** | Short cover then terminated mulch | 30-60mm less than clean | Low | **Recommended** |
+| **Stubble mulch** | Previous crop residue left standing | +10-30mm vs bare | 70-90% reduction | **Best for dryland** |
+| **Pasture ley** | 2-4yr perennial pasture in rotation | N/A | Very low | Best for soil building |
+
+### SA Dryland Context
+FS and NW semi-arid (400-550mm): traditional crop-fallow persists. Fallow stores ~80-120mm of 250-300mm rainfall. Progressive farmers replacing bare fallow with short-season cover crops or stubble retention.
+
+---
+
+## 5.10 Monitoring & Record Keeping
+
+### Crop History Records (per field per season)
+- Field number, crop, cultivar, planting/harvest date
+- Previous crop (and the one before that)
+- Fertilizer, lime, chemicals applied (type, rate, date)
+- Yield achieved
+- Cover crop (species, rate, termination, date)
+- Rainfall, soil test results
+- Disease/weed/pest observations
+
+### Soil Health Scorecard (annual, 1-5 scale per field)
+
+| Indicator | Method | Poor (1) | Moderate (3) | Excellent (5) |
+|---|---|---|---|---|
+| Surface cover | Visual % | <30% | 50-70% | >90% |
+| Earthworm count | Spade test | 0-2 | 5-10 | >15 |
+| Soil smell | Nose | Sour | Neutral | Rich earthy |
+| Aggregate stability | Water test | Dissolves | Partially holds | Holds 5+ min |
+| Root depth | Dig/probe | <15cm | 15-30cm | >30cm |
+| Infiltration | Pour 1L | Ponds >5min | 1-3 min | <30 sec |
+| Crop residue breakdown | Check | Intact 6 months | Partial | Mostly decomposed |
+
+### Long-Term Trends to Track
+- **Soil carbon %** over years (best single indicator — expect 0.05-0.1%/year increase)
+- **Yield per mm rainfall** (water-use efficiency should improve with soil health)
+- **Fertilizer per tonne grain** (should decline as soil biology improves)
+- **pH and acid saturation** trend (critical on Highveld)
+- **Weed spectrum shift** (documents rotation success/failure)
 
 ---
 

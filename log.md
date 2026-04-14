@@ -13,6 +13,22 @@ Chronological record of all wiki operations. Newest first.
 
 ---
 
+## [2026-04-15] update | Agriculture SOP — Section 5: Crop Rotation & Soil Health (Deep)
+
+- Expanded Section 5 from stub to production-ready (10 subsections)
+- Quantified rotation benefits (14-27% yield increase, 40-60% disease reduction, 30-60 kg N/ha savings)
+- Crop family groups: 9 families with shared diseases, minimum gap years, critical "do not follow" rules
+- Rotation models: 2-year (Highveld maize-soy), 3-year, 4-year (WC wheat-canola-lupin), 5-year vegetable
+- Cover crops: 11 species with SA seeding rates, N fixation, costs. Popular mixes. Termination methods
+- Companion planting: Three Sisters with scientific evidence + SA smallholder spacing
+- Soil health: 5 principles, OM building timeline (5-10yr for 1%), mycorrhizae, earthworm indicators
+- Composting: C:N ratios, temperature phases, maturity indicators, application rates
+- Soil testing: schedule, tiers, SA labs, interpretation framework, health tests beyond chemistry
+- SA regional recommendations: Highveld, Western Cape, KZN, Limpopo
+- Fallow management types and SA dryland context
+- Monitoring: crop history records, soil health scorecard, long-term trend tracking
+- Pages touched: agriculture-sop, log
+
 ## [2026-04-14] update | Agriculture SOP — Section 4: Open-Field Crop Production (Deep)
 
 - Expanded Section 4 from stub to production-ready (9 subsections)
