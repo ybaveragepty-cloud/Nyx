@@ -86,5 +86,7 @@ _No analyses yet._
 
 - [[nyx]] — Nyx executive assistant profile: personality, communication style, decision authority, operating model
 - [[project-template]] — Standard spoke project template: folder structure, CLAUDE.md, .gitignore, decision log
+- [[agent-skill-map]] — Maps which skills each of the 33 agents should load for focused, low-token execution
+- [[status-report-template]] — Standard format for sub-agent status reports
 - [[overview]] — Who is Richard, the three businesses, infrastructure, legal structure, key decisions, wiki stats
 - [[timeline]] — Chronological reconstruction of all events from 2026-02-25 to 2026-04-13, plus what's not done yet

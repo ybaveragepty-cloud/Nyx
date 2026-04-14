@@ -13,6 +13,16 @@ Chronological record of all wiki operations. Newest first.
 
 ---
 
+## [2026-04-14] create | Agent Roster + Skills Arsenal + Skill Map
+
+- Installed **33 specialist agents** from aitmpl.com into `.claude/agents/` (Tiers 1-4)
+- Installed **102 skills** into `.claude/skills/` covering business, design, dev, database, AI research, docs, productivity, security, workflow automation, web dev, comms, media
+- Created: `wiki/meta/agent-skill-map.md` — maps which skills each agent loads
+- Created: `wiki/meta/status-report-template.md` — standard sub-agent report format
+- Created: `wiki/meta/project-template.md` — spoke project template
+- 386 remaining agents + hundreds of remaining skills cataloged in memory for on-demand install
+- GitHub backup: pushed to ybaveragepty-cloud/Nyx
+
 ## [2026-04-14] create | Nyx — Executive Assistant Profile
 
 - Created: `wiki/meta/nyx.md` — full personality, communication style, decision authority, operating model

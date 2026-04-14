@@ -28,7 +28,17 @@
       "Bash(npx claude-code-templates@latest --agent development-team/frontend-developer,development-team/backend-architect,api-graphql/api-architect,business-marketing/seo-specialist,business-marketing/content-marketer,deep-research-team/research-analyst,business-marketing/sales-engineer,ai-specialists/prompt-engineer -y)",
       "Bash(npx claude-code-templates@latest --agent database/database-architect,devops-infrastructure/devops-engineer,programming-languages/typescript-pro,programming-languages/python-pro,development-tools/test-engineer,security/security-engineer,business-marketing/product-manager,documentation/technical-writer,devops-infrastructure/deployment-engineer,devops-infrastructure/kubernetes-specialist -y)",
       "Bash(npx claude-code-templates@latest --agent business-marketing/payment-integration,data-ai/data-analyst,business-marketing/business-analyst,development-team/ui-ux-designer,security/compliance-auditor,programming-languages/nextjs-developer,web-tools/wordpress-master,ffmpeg-clip-team/social-media-clip-creator,web-tools/seo-analyzer -y)",
-      "Bash(npx claude-code-templates@latest --agent obsidian-ops-team/vault-optimizer,obsidian-ops-team/connection-agent,obsidian-ops-team/tag-agent,obsidian-ops-team/metadata-agent,obsidian-ops-team/moc-agent -y)"
+      "Bash(npx claude-code-templates@latest --agent obsidian-ops-team/vault-optimizer,obsidian-ops-team/connection-agent,obsidian-ops-team/tag-agent,obsidian-ops-team/metadata-agent,obsidian-ops-team/moc-agent -y)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(npx claude-code-templates@latest --skill list)",
+      "Bash(npx claude-code-templates@latest --skill creative-design/list)",
+      "Bash(npx claude-code-templates@latest --skill creative-design/xxxxx -y)",
+      "Bash(gh api:*)",
+      "Bash(npx claude-code-templates@latest --skill business-marketing/seo-audit,business-marketing/seo-fundamentals,business-marketing/seo-optimizer,business-marketing/content-creator,business-marketing/content-research-writer,business-marketing/copywriting,business-marketing/marketing-strategy-pmm,business-marketing/pricing-strategy,business-marketing/micro-saas-launcher,business-marketing/launch-strategy,business-marketing/social-content,business-marketing/email-sequence,business-marketing/programmatic-seo,business-marketing/lead-research-assistant,business-marketing/competitive-ads-extractor,business-marketing/competitor-alternatives -y)",
+      "Bash(npx claude-code-templates@latest --skill creative-design/frontend-design,creative-design/tailwind-patterns,creative-design/ui-design-system,creative-design/web-design-guidelines,creative-design/ui-ux-pro-max,creative-design/mermaid-diagrams,creative-design/figma-implement-design,creative-design/canvas-design -y)",
+      "Bash(npx claude-code-templates@latest --skill development/nextjs-best-practices,development/typescript-pro,development/python-pro,development/react-best-practices,development/api-design-principles,development/api-patterns,development/clean-code,development/docker-expert,development/git-commit-helper,development/testing-patterns,development/tdd-workflow,development/playwright,development/stripe-integration,development/fastapi-pro,development/nodejs-best-practices,development/cloudflare-deploy,development/vercel-deploy -y)",
+      "Bash(npx claude-code-templates@latest --skill development/stripe-integration,development/cloudflare-deploy,development/vercel-deploy,development/fastapi-pro -y)",
+      "Bash(gh repo:* we will wait a hour and then fix the failed downloads skills and finish the work for the night what other work are you able to continue now or would it be better to rather finnish all  th e skills and agents first)"
     ]
   }
 }
