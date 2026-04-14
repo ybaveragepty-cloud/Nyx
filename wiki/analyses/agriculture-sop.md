@@ -24,7 +24,7 @@ This is the master Standard Operating Procedure for agricultural operations. It 
 | 1 | [Recirculating Aquaculture Systems (RAS)](#1-recirculating-aquaculture-systems-ras) | **Deep** | Production-ready |
 | 2 | [Aquaponics](#2-aquaponics) | **Deep** | Production-ready |
 | 3 | [Protected Cropping (Greenhouse/Tunnel)](#3-protected-cropping-greenhouse--tunnel) | **Deep** | Production-ready |
-| 4 | [Open-Field Crop Production](#4-open-field-crop-production) | Stub | Framework only |
+| 4 | [Open-Field Crop Production](#4-open-field-crop-production) | **Deep** | Production-ready |
 | 5 | [Crop Rotation & Soil Health](#5-crop-rotation--soil-health) | Stub | Framework only |
 | 6 | [Irrigation & Water Management](#6-irrigation--water-management) | Stub | Framework only |
 | 7 | [Pest & Disease Management (IPM)](#7-pest--disease-management-ipm) | Stub | Framework only |
@@ -1020,34 +1020,578 @@ At ZAR 1.50-2.50/kWh, only justified for:
 
 # 4. OPEN-FIELD CROP PRODUCTION
 
-*Section to be expanded. Covers broadacre and smallholder field crop production.*
-
 ## 4.1 Site Assessment
-- [ ] Soil analysis (texture, pH, nutrient profile, drainage)
-- [ ] Climate/microclimate evaluation
-- [ ] Water availability assessment
-- [ ] Topography and slope analysis
+
+### 4.1.1 Soil Analysis
+
+**Sampling Protocol:** Collect at 0-15cm (topsoil) and 15-30cm (subsoil). Take 20-30 cores per uniform area (max 10 ha per composite). W or zigzag pattern. Avoid headlands, kraal sites, compost heaps. SA accredited labs: Bemlab, SGS, NviroTek, Soil Health Solutions. Cost: ZAR 400-900/sample.
+
+#### Soil Texture
+
+| Texture Class | Sand % | Clay % | Field Capacity (mm/m) | Plant Available Water (mm/m) | Workability |
+|---|---|---|---|---|---|
+| Sand | 85-100 | 0-10 | 60-100 | 40-70 | Easy, drought risk |
+| Sandy loam | 43-85 | 0-20 | 100-150 | 70-110 | Good |
+| Loam | 23-52 | 7-27 | 150-200 | 110-150 | Ideal |
+| Clay loam | 20-45 | 27-40 | 200-250 | 130-170 | Moderate |
+| Clay | 0-45 | 40-100 | 250-350 | 140-200 | Difficult wet/dry |
+
+#### pH Targets by Crop Group (pH(KCl))
+- Most field crops: 5.5-6.5
+- Potatoes: 4.8-5.5 (higher pH promotes scab)
+- Legumes: 5.8-6.5 (critical for nodulation)
+- Brassicas: 6.0-7.0 (clubroot risk below 6.0)
+- Wheat: 5.5-7.0
+
+#### Cation Exchange Capacity (CEC)
+
+| CEC (cmol+/kg) | Classification | Implication |
+|---|---|---|
+| <5 | Very low | Frequent small fertilizer applications, rapid leaching |
+| 5-15 | Low-medium | Moderate retention (typical sandy loams) |
+| 15-25 | Medium-high | Good loam/clay loam, holds nutrients well |
+| 25-40 | High | Clay soils, may fix potassium |
+| >40 | Very high | Heavy clay, slow nutrient release |
+
+**Ideal base saturation:** Ca 60-70%, Mg 10-20%, K 2-5%, Na <5%, H 10-15%
+
+#### Organic Matter (SA soils typically low)
+- Highveld sandy loams: 1.5-3.5%
+- KZN coastal: 2-4%
+- Western Cape wheat lands: 1-2.5%
+- Karoo clay: 0.5-1.5%
+- **Target minimum:** 2%. Each 1% OM increase adds ~15-20mm plant-available water/m depth and ~20-30 kg N/ha/year through mineralization
+
+#### Nutrient Thresholds (mg/kg unless stated)
+
+| Nutrient | Deficient | Adequate | High |
+|---|---|---|---|
+| P (Bray I) | <15 | 20-40 | >60 |
+| K | <80 | 120-250 | >350 |
+| Ca (cmol/kg) | <2 | 5-20 | >30 |
+| Mg (cmol/kg) | <0.5 | 1.5-5 | >8 |
+| Zn | <2 | 4-10 | >20 |
+| B | <0.5 | 1-3 | >5 (toxic) |
+| S | <6 | 10-30 | >50 |
+
+#### Drainage Assessment
+
+| Class | Mottling | Percolation | Suitability |
+|---|---|---|---|
+| Well-drained | None in top 100cm | 50-150 mm/hr | Ideal |
+| Moderately drained | Below 60cm | 15-50 mm/hr | Acceptable, monitor |
+| Somewhat poor | At 30-60cm | 5-15 mm/hr | Raised beds needed |
+| Poorly drained | Top 30cm, gleying | <5 mm/hr | Drainage infrastructure required |
+
+### 4.1.2 Climate Evaluation (SA Context)
+
+#### Rainfall Regimes
+- **Summer rainfall** (Oct-Mar): Highveld, Lowveld, KZN interior, Limpopo, NW, Free State. 400-800mm grain areas; 700-1200mm KZN
+- **Winter rainfall** (May-Aug): Western Cape, Northern Cape. 250-600mm. Wheat, canola, deciduous fruit
+- **Year-round:** Southern Cape, EC coast. 600-1000mm
+
+**Planning rule:** Use 80% probability rainfall (exceeded 8 of 10 years) ≈ 70-75% of long-term average.
+
+#### Frost Dates
+
+| Region | First Frost | Last Frost | Frost-Free Days |
+|---|---|---|---|
+| Highveld (GP, FS) | Late Apr-Mid May | Mid Sep-Early Oct | 180-210 |
+| KZN Midlands | Late May | Mid Sep | 200-220 |
+| Limpopo Lowveld | Frost-free/rare | Frost-free/rare | 300-365 |
+| Western Cape (inland) | Late May | Mid Aug | 230-260 |
+| Eastern Cape coast | Rare | Rare | 300-350 |
+
+#### Growing Degree Days (GDD)
+
+GDD = ((Tmax + Tmin) / 2) - Tbase
+
+| Crop | Tbase (°C) | GDD to Maturity |
+|---|---|---|
+| Maize | 10 | 1200-1600 |
+| Wheat | 4.4 | 1200-1500 |
+| Potatoes | 7 | 1100-1400 |
+| Dry beans | 10 | 900-1200 |
+
+### 4.1.3 Water Availability
+
+**Borehole requirements:**
+- 1 ha drip vegetables: 3-5 m³/hr sustained
+- 1 ha overhead sprinkler: 5-8 m³/hr sustained
+- 10 ha centre pivot: 40-60 m³/hr sustained
+
+**Water quality targets:** EC <0.75 mS/cm preferred (<2 mS/cm tolerable). SAR <6 sprinkler, <9 drip. Cl <140 mg/L, B <0.7 mg/L for sensitive crops.
+
+**Borehole cost (SA):** ZAR 800-1,500/m depth. Typical Highveld: 40-80m. Equipping: ZAR 80k-250k.
+
+**Dam storage rule:** 1 ha irrigated summer crops = 5,000-8,000 m³/season. Plan storage at 120% of demand. Evaporation in SA: 4-8 mm/day summer.
+
+### 4.1.4 Topography
+
+| Slope % | Mechanization | Erosion Risk | Action |
+|---|---|---|---|
+| 0-2 | All equipment | Low (ponding risk) | Ensure drainage |
+| 2-5 | All equipment | Low-moderate | Contour farming recommended |
+| 5-8 | Most equipment | Moderate | Contour banks required |
+| 8-12 | Specialized only | High | Grassed waterways + contour banks |
+| 12-20 | No row crops | Very high | Permanent cover/pasture only |
+| >20 | None | Extreme | Natural vegetation only |
+
+**Contour bank spacing:** VI = 0.3 × slope% + 0.6 (metres). On 5% slope: VI = 2.1m, horizontal spacing ≈42m.
+
+### SA Soil Types by Region
+- **Highveld red soils** (Hutton, Bainsvlei): Deep, well-drained, sandy loam to clay loam, pH(KCl) 4.5-5.5. Low P (strong fixation). Excellent for maize, soybeans, sunflower
+- **Coastal sandy soils** (Fernwood, Clovelly): Low CEC (2-6), rapid leaching. Good for potatoes/vegetables with irrigation
+- **Free State black turf** (Arcadia, Rensburg): Heavy clay (>40%), high CEC, self-mulching. Best dryland wheat/sunflower soils. Difficult to work when wet
+- **Karoo soils** (Swartland, Oakleaf): Variable. Often calcareous (high pH), moderate clay. Suited to drought-tolerant crops
+
+---
 
 ## 4.2 Land Preparation
-- [ ] Tillage systems (conventional, minimum, no-till)
-- [ ] Bed preparation
-- [ ] Drainage installation
-- [ ] Windbreak establishment
+
+### Tillage Systems
+
+| System | Description | Pros | Cons | Cost (ZAR/ha) |
+|---|---|---|---|---|
+| **Conventional** (moldboard/disc) | Full inversion of top 20-30cm | Clean seedbed, buries weeds/residue | Erosion risk, soil structure damage, fuel cost | 1,800-3,500 |
+| **Minimum till** (chisel/disc) | Partial disturbance, residue on surface | Less erosion, lower fuel, faster | Some weed carryover | 1,000-2,000 |
+| **No-till** | Direct planting into previous crop residue | Best for soil health, lowest cost | Requires specialist planter, herbicide-dependent, 2-3yr transition | 500-1,200 |
+| **Strip-till** | Narrow strip tilled, inter-row undisturbed | Compromise: clean seedbed + soil cover | Specialist equipment | 800-1,500 |
+
+**Conservation Agriculture principle:** No-till + crop rotation + permanent soil cover. Grain SA actively promotes this. Delivers 15-25% cost savings over 5+ years.
+
+### Lime Application
+- **Rate:** Based on soil analysis buffer capacity. Typical: 1-4 t/ha calcitic or dolomitic lime
+- **Timing:** Apply 6+ weeks before planting (lime reacts slowly)
+- **Dolomitic vs calcitic:** Use dolomitic when Mg is low (<0.5 cmol/kg)
+- **Application:** Broadcast and incorporate (conventional) or surface-apply (no-till — slower reaction)
+
+### Gypsum (for sodic soils)
+- Apply when Na saturation >5%. Rate: 2-8 t/ha. Does NOT change pH — replaces Na with Ca
+
+---
 
 ## 4.3 Planting
-- [ ] Seed selection and sourcing
-- [ ] Planting density and spacing
-- [ ] Direct seeding vs transplanting
-- [ ] Seasonal planting calendar
+
+### Spacing and Population — Key Crops
+
+| Crop | Row (cm) | In-Row (cm) | Population (plants/ha) | Depth (cm) |
+|---|---|---|---|---|
+| Maize (dryland) | 90-100 | 25-33 | 30,000-40,000 | 5-7 |
+| Maize (irrigated) | 76-90 | 18-22 | 60,000-80,000 | 5-7 |
+| Wheat | 17-25 (drill) | — | 2.5-3.5M seeds/ha | 2-4 |
+| Potatoes | 75-90 | 25-35 | 35,000-55,000 | 10-15 |
+| Onions | 30-40 (bed) | 8-12 | 250,000-400,000 | 1-2 |
+| Cabbage | 60-90 | 40-60 | 25,000-40,000 | transplant |
+| Dry beans | 75-90 | 7-10 | 150,000-250,000 | 4-6 |
+| Soybeans | 45-76 | 5-8 | 250,000-400,000 | 3-5 |
+| Carrots | 30-40 (bed) | 3-5 | 600,000-1,000,000 | 0.5-1 |
+| Butternut | 200-300 | 60-100 | 5,000-10,000 | 3-5 |
+| Spinach/Chard | 30-45 | 10-20 | 100,000-200,000 | 1-2 |
+
+### Planting Equipment
+
+| Type | Application | Rows | Price (ZAR) | Accuracy |
+|---|---|---|---|---|
+| Jab planter (hand) | Small-scale, beans, maize | 1 | 300-800 | Low |
+| Push-wheel seeder | Small-scale vegetables | 1 | 1,500-5,000 | Moderate |
+| Tractor plate planter | Maize, beans to 20 ha | 2-4 | 40,000-180,000 | Good |
+| Vacuum precision | Large-scale row crops | 4-12 | 250,000-2,500,000 | Excellent (<3% skip) |
+| Air seeder | Wheat, canola broadcast | Full width | 400,000-3,000,000 | Good |
+
+### SA Seasonal Calendar
+
+**Summer Crops (planted Oct-Dec):**
+- Maize: mid-Oct to mid-Dec (optimal: mid-Nov on Highveld)
+- Soybeans: mid-Nov to mid-Dec
+- Dry beans: mid-Nov to early Dec
+- Sunflower: mid-Nov to mid-Dec
+- Potatoes (summer): Aug-Oct (Highveld), Feb-Apr (Limpopo winter crop)
+- Cucurbits: Oct-Nov (after last frost)
+- Sweet potatoes: Oct-Nov (slips)
+
+**Winter Crops (planted Mar-May):**
+- Wheat: mid-May to end Jun (WC dryland), Apr-May (irrigation)
+- Onions (long-day): transplant Mar-May
+- Brassicas: transplant Mar-Jun (winter), Jul-Aug (spring)
+- Peas: Apr-Jun
+- Carrots: Mar-Jun (winter), Aug-Sep (spring)
+- Spinach/Chard: year-round, primary Mar-Apr and Aug-Sep
+
+---
 
 ## 4.4 Crop Management
-- [ ] Fertilization programs (organic, conventional, integrated)
-- [ ] Weed management
-- [ ] Growth monitoring
-- [ ] Harvest timing indicators
 
-## 4.5 Open-Field Checklists
-- [ ] Daily, weekly, monthly operational checklists
+### 4.4.1 Fertilization Programs
+
+#### General Recommendations by Crop
+
+| Crop | N (kg/ha) | P (kg/ha) | K (kg/ha) | Strategy |
+|---|---|---|---|---|
+| Maize (8 t/ha) | 150-200 | 20-30 | 20-40 | 30% N at plant, 70% topdress V6-V8 |
+| Wheat (5 t/ha) | 100-140 | 15-25 | 10-20 | 50% N at plant, 50% topdress at tillering |
+| Potatoes (40 t/ha) | 150-200 | 30-50 | 150-250 | Split: plant + hilling + foliar |
+| Onions | 120-180 | 20-40 | 80-150 | 30% plant, 3-4 topdress intervals |
+| Cabbage | 200-300 | 30-50 | 100-200 | 30% plant, weekly fertigation or 3 topdress |
+| Dry beans | 20-40 | 15-25 | 20-40 | All at plant (N-fixing) |
+| Soybeans | 0-20 | 15-30 | 20-40 | Minimal N if inoculated |
+| Carrots | 80-120 | 20-40 | 150-200 | Split: plant + 2 topdress |
+| Butternut | 80-120 | 15-25 | 60-100 | Plant + 2 side-dress |
+
+**Split application rationale:** Reduces leaching, matches N to crop demand. Critical period for maize N: V6-VT. Apply 60-70% as topdress at V6-V8.
+
+**SA NPK notation:** 2:3:4(30) = ratio 2:3:4, concentration 30%. Contains 6.67% N, 10% P, 13.33% K. SA uses P and K (not P₂O₅ and K₂O) in ratio notation.
+
+#### Organic Fertilizer Options
+
+| Source | N% | P% | K% | Rate (t/ha) | Cost/t (ZAR) |
+|---|---|---|---|---|---|
+| Kraal manure (cattle) | 0.5-1.5 | 0.2-0.5 | 0.8-1.5 | 10-20 | 150-400 |
+| Chicken litter | 2.5-3.5 | 2.0-3.0 | 1.5-2.5 | 3-8 | 400-900 |
+| Compost (mature) | 1.0-2.0 | 0.5-1.0 | 0.5-1.5 | 10-20 | 300-800 |
+| Vermicompost | 1.5-2.5 | 1.0-2.0 | 1.0-2.0 | 2-5 | 1,500-3,500 |
+
+Apply organic 3-6 weeks before planting. Assume 30-50% of organic N available in first season.
+
+### 4.4.2 Weed Management
+
+#### Pre-Emergent Herbicides
+
+| Active Ingredient | Crop | Target | Cost/ha (ZAR) |
+|---|---|---|---|
+| Atrazine | Maize | Broadleaf + some grass | 150-300 |
+| S-metolachlor | Maize, soybeans | Annual grasses + broadleaf | 200-400 |
+| Metribuzin | Potatoes, soybeans | Broadleaf + grasses | 300-600 |
+| Pendimethalin | Onions, carrots, brassicas | Grasses + broadleaf | 200-450 |
+
+#### Post-Emergent Herbicides
+
+| Active Ingredient | Crop | Target | Cost/ha (ZAR) |
+|---|---|---|---|
+| Glyphosate (burndown) | Pre-plant all crops | All vegetation | 80-200 |
+| Nicosulfuron | Maize | Grasses | 200-400 |
+| 2,4-D amine | Maize, wheat | Broadleaf | 60-150 |
+| Bentazone | Beans, soybeans | Broadleaf | 300-500 |
+| Fluazifop-P-butyl | Broadleaf crops | Grass weeds | 250-500 |
+
+#### Mechanical Weed Control
+- Inter-row cultivation: ZAR 300-600/ha per pass (2-3 passes at 2-4 week intervals)
+- Hand hoeing: 15-25 person-days/ha at ZAR 150-250/day = ZAR 2,250-6,250/ha per weeding
+- Black plastic mulch: ZAR 2,000-4,000 per 1000m roll (high-value vegetables)
+
+### 4.4.3 Crop Scouting
+
+| Frequency | Activity |
+|---|---|
+| Daily | Walk field edges, check irrigation, obvious problems |
+| 2× per week | Scout 5 points per field (W pattern): pests, disease, weeds, deficiency |
+| Weekly | Full growth stage assessment vs calendar |
+| Bi-weekly | Soil moisture check at 15 and 30cm |
+| Monthly | Tissue analysis if warranted |
+
+**Growth Stage Keys:**
+- **Maize:** V-stages (vegetative, counted by leaf collars), R-stages (reproductive). Key decisions: V6 (topdress N), V12 (final stand count), VT/R1 (pollination — do NOT spray), R3 (irrigation cutoff)
+- **Wheat:** Zadoks scale. Z21-25 (tillering — topdress N), Z31 (stem elongation — fungicide), Z61-69 (flowering — FHB risk)
+
+---
+
+## 4.5 Key Field Crops — Full Specifications
+
+### 4.5.1 Maize (Zea mays)
+
+| Parameter | Value |
+|---|---|
+| Soil | Well-drained loam to clay loam |
+| pH(KCl) | 5.5-6.5 |
+| Temperature | 18-33°C optimum, base 10°C. Frost kills at -1°C |
+| Water | 450-650mm seasonal; 500mm minimum for 6 t/ha dryland |
+| GDD | 1200-1600 (base 10°C) |
+| Growth duration | 110-150 days |
+
+**Yield:** Dryland SA average 4-6 t/ha. Irrigated 10-14 t/ha. SA national avg ~5 t/ha.
+
+**Fertilizer (irrigated 10-12 t/ha target):**
+- At plant: 40 kg N + 25 kg P + 20 kg K
+- V6 topdress: 80 kg N
+- V10-V12 topdress: 60 kg N
+- Foliar Zn at V4-V6
+
+**Key pests:** Stalk borer (threshold 10% infested), Fall armyworm (threshold 20% damaged), Maize streak virus (resistant cultivars)
+**Key diseases:** Grey leaf spot, Northern corn leaf blight, Diplodia ear rot
+**Harvest:** Grain moisture 12.5-14%. Black layer formed. Cobs dry, husks papery.
+
+### 4.5.2 Wheat (Triticum aestivum)
+
+| Parameter | Value |
+|---|---|
+| Soil | Well-drained loam to clay |
+| pH(KCl) | 5.5-7.0 |
+| Temperature | 12-24°C optimum. Tolerates -10°C vegetative, -2°C damages flowering |
+| Water | 350-500mm seasonal |
+| GDD | 1200-1500 (base 4.4°C) |
+| Growth duration | 120-160 days (winter), 90-120 (spring) |
+
+**Yield:** Dryland WC 2-4 t/ha. Irrigated FS/NC 6-9 t/ha. SA avg ~3.5 t/ha.
+
+**Key pests:** Russian wheat aphid (threshold 10% tillers infested — use resistant cultivars)
+**Key diseases:** Stem rust (resistant cultivars + fungicide), Septoria (major in WC), Take-all (rotation — never wheat after wheat)
+**Harvest:** Grain moisture <14%. Kernel hard. Straw golden.
+
+### 4.5.3 Potatoes (Solanum tuberosum)
+
+| Parameter | Value |
+|---|---|
+| Soil | Sandy loam, loose, well-drained |
+| pH(KCl) | 4.8-5.5 (low pH suppresses scab) |
+| Temperature | 15-22°C for tuber initiation. >30°C stops growth. Frost kills at -1°C |
+| Water | 500-700mm, very sensitive to moisture stress |
+| Growth duration | 90-130 days |
+
+**Yield:** SA commercial avg 35-45 t/ha. Top growers 55-70 t/ha. Farm gate ZAR 3,500-6,000/t.
+
+**Fertilizer (45-55 t/ha target):** 150-200 kg N, 30-50 P, 150-250 K (heavy K feeder). Split: plant + hilling + foliar Ca.
+
+**Key pests:** Potato tuber moth (maintain soil cover), Aphids (virus vectors), Red spider mite
+**Key diseases:** Late blight (preventive fungicide 8-14 sprays/season), Early blight, Common scab (low pH), Bacterial wilt (no chemical cure — certified seed + 5yr rotation)
+**Harvest:** Vine senescence. Skin set (rub test). DM 18-22%.
+
+### 4.5.4 Onions (Allium cepa)
+
+| Parameter | Value |
+|---|---|
+| Soil | Sandy loam, well-drained, no stones |
+| pH(KCl) | 6.0-6.8 |
+| Temperature | 13-25°C. Bulbing triggered by >12hr daylength |
+| Water | 350-550mm. Shallow roots — frequent light irrigation |
+| Growth duration | 120-180 days from transplant |
+
+**Yield:** Commercial 40-70 t/ha. Top growers 80-100 t/ha. Farm gate ZAR 2,000-5,000/t (volatile).
+
+**Fertilizer (50-70 t/ha):** 120-180 kg N (stop at bulb initiation), 20-40 P, 80-150 K, 30 S.
+**Key pests:** Thrips (threshold 15-20/plant — weekly sprays often needed)
+**Key diseases:** Downy mildew, Purple blotch, Fusarium basal rot (4+ yr rotation)
+**Harvest:** 50-80% tops fallen. Cure 7-14 days field or forced-air (30-35°C, 48-72hr).
+
+### 4.5.5 Brassicas (Cabbage, Broccoli, Cauliflower)
+
+| Parameter | Cabbage | Broccoli | Cauliflower |
+|---|---|---|---|
+| pH(KCl) | 6.0-7.0 | 6.0-7.0 | 6.0-7.0 |
+| Temperature | 15-22°C | 15-18°C (heads) | 14-20°C (strict) |
+| Population | 25-40k/ha | 30-50k/ha | 25-35k/ha |
+| Duration | 70-120 days | 60-90 days | 70-100 days |
+| Yield | 50-90 t/ha | 10-15 t/ha | 15-25 t/ha |
+
+**Critical:** pH must be >6.0 — clubroot risk below this. Lime heavily if needed.
+**Fertilizer (cabbage 60-90 t/ha):** 200-300 kg N (very heavy feeder), 30-50 P, 100-200 K, 5 B.
+**Key pest:** Diamondback moth — THE global brassica pest. Resistant to most pyrethroids. Use Bt, spinosad, emamectin benzoate. Threshold: 5 larvae/plant.
+**Key disease:** Clubroot (soil-borne, devastating — maintain pH >7.0, 7+ yr rotation), Black rot (certified seed, hot water treatment)
+
+### 4.5.6 Legumes
+
+#### Dry Beans
+
+| Parameter | Value |
+|---|---|
+| pH(KCl) | 5.5-6.5 |
+| Temperature | 18-28°C. Very frost sensitive |
+| Water | 300-450mm |
+| Duration | 85-110 days |
+| Yield | 1.5-3.0 t/ha |
+
+Fertilizer: 20-40 kg N (starter only — beans fix 40-80 kg N/ha). Inoculate with *Rhizobium phaseoli*. Over-fertilizing N reduces nodulation.
+
+#### Soybeans
+
+| Parameter | Value |
+|---|---|
+| pH(KCl) | 5.5-6.5 |
+| Temperature | 20-30°C |
+| Water | 400-600mm |
+| Duration | 110-150 days |
+| Yield | Dryland 1.5-2.5 t/ha, irrigated 3-4 t/ha |
+
+**Critical:** *Bradyrhizobium japonicum* inoculant essential every season (not native to SA soils). Key disease: Soybean rust — spray triazole + strobilurin at R1-R3.
+
+### 4.5.7 Root Vegetables
+
+#### Carrots
+
+| Parameter | Value |
+|---|---|
+| Soil | Deep sandy loam, stone-free (forking in heavy/stony soils) |
+| pH(KCl) | 6.0-6.8 |
+| Temperature | 15-22°C |
+| Depth | 0.5-1.0cm (very shallow — keep surface moist) |
+| Duration | 90-130 days |
+| Yield | 40-70 t/ha commercial. Top: 80+ t/ha |
+
+Heavy K feeder (150-200 kg K/ha). Avoid fresh manure (causes forking). 3-5 kg B prevents cracking.
+
+#### Sweet Potatoes
+
+| Parameter | Value |
+|---|---|
+| Soil | Sandy loam, well-drained |
+| Temperature | 21-30°C, soil >18°C for planting |
+| Material | Vine cuttings (slips), 25-30cm, 3-4 nodes |
+| Duration | 110-150 days |
+| Yield | 20-40 t/ha |
+
+**Key pest:** Sweet potato weevil — most destructive, no effective field chemical control. Use clean material, rotate, destroy residues. Cure at 28-32°C, 85-95% RH for 5-7 days.
+
+### 4.5.8 Cucurbits (Pumpkin, Butternut, Watermelon)
+
+**Butternut/Pumpkin:**
+- Spacing: 200-300cm × 60-100cm (5,000-10,000/ha)
+- Duration: 90-130 days. Harvest when skin hard, stem drying
+- Yield: Butternut 15-30 t/ha, Pumpkin 20-50 t/ha
+- Cure 10-14 days at 25-30°C
+
+**Watermelon:**
+- Soil temp >20°C for planting. 3,000-5,000/ha
+- Duration: 80-110 days. Harvest: tendril dries, ground spot cream-yellow, hollow sound
+- Yield: 30-60 t/ha. SA production: Limpopo, NW
+
+### 4.5.9 Leafy Field Crops
+
+**Swiss Chard (SA "spinach"):**
+- Temperature: 15-30°C (tolerant range), survives light frost
+- Duration: 50-70 days to first harvest, then 3-4 week cut cycles
+- Yield: 25-50 t/ha cumulative (3-6 cuts from one planting)
+- Fertilizer: 100-150 kg N/ha total. Apply 30 kg N after each harvest
+
+**True Spinach:**
+- Cool season only — bolts >22°C. Plant Mar-Aug in SA
+- Duration: 35-50 days. Yield: 10-20 t/ha per planting
+- Highly perishable — market within 24hr or cool to 2°C
+
+---
+
+## 4.6 Mechanization
+
+### Scale-Based Equipment Guide
+
+| Scale | Equipment | Price Range (ZAR) |
+|---|---|---|
+| **<5 ha** | Walk-behind tractor 8-15hp, rotavator, jab planter, knapsack sprayer | 50k-150k total |
+| **5-50 ha** | 40-75hp 4WD tractor, disc harrow, row planter, boom sprayer, trailer | 500k-1.5M total |
+| **50+ ha** | 100-180hp GPS tractor, no-till planter, self-propelled sprayer, combine | 3M-15M+ total |
+
+### Contract Rates (SA 2024-2026)
+
+| Service | ZAR/ha |
+|---|---|
+| Ploughing | 1,200-2,000 |
+| Discing | 600-1,000 |
+| Planting (maize) | 500-900 |
+| Boom spraying | 200-500 |
+| Combine harvesting | 2,500-5,000 |
+
+### Mechanization Breakeven Rules
+- <3 ha: Hand tools, possibly walk-behind tractor
+- 3-10 ha: Shared compact tractor (cooperative model)
+- 10-30 ha: Own 40-60hp tractor + basic implements
+- 30-100 ha: Own 60-80hp, contract harvest and spraying
+- 100-500 ha: Own 80-120hp, own planter/sprayer, contract combine
+- 500+ ha: Full mechanization, precision agriculture, multiple tractors
+
+---
+
+## 4.7 Production Economics (SA Indicative 2024-2026)
+
+### Farm Gate Prices
+
+| Crop | Price (ZAR/t) | Notes |
+|---|---|---|
+| Yellow maize | 3,000-5,500 | SAFEX-linked, volatile |
+| White maize | 3,200-6,000 | Food maize premium |
+| Wheat | 5,000-7,500 | Import parity linked |
+| Soybeans | 6,500-9,500 | Oilseed crush demand |
+| Dry beans | 12,000-22,000 | Small market, variable |
+| Potatoes | 3,000-6,500 | Seasonal |
+| Onions | 2,000-5,000 | Oversupply crashes price |
+| Cabbage | 1,500-4,000 | Low-value, high-volume |
+| Carrots | 3,000-6,000 | Stable |
+| Butternut | 3,000-7,000 | Winter peaks |
+| Sweet potatoes | 3,500-7,000 | Growing demand |
+
+### Production Cost Examples
+
+**Dryland Maize (5 t/ha Highveld):** Total direct ZAR 11,300-19,500/ha. Cost/t: ZAR 2,260-3,900. Breakeven ~ZAR 3,000-4,000/t.
+
+**Irrigated Potatoes (45 t/ha):** Total direct ZAR 81,000-142,000/ha. Cost/t: ZAR 1,800-3,155. High-capital, high-return. Breakeven ~ZAR 2,500-3,500/t.
+
+**Irrigated Cabbage (70 t/ha):** Total direct ZAR 44,000-81,000/ha. Cost/t: ZAR 630-1,160. Low cost/t but also low price/t — margin is thin, volume is key.
+
+---
+
+## 4.8 Open-Field Checklists
+
+### Daily Checklist
+1. Walk field perimeter — fences, irrigation infrastructure, animal damage
+2. Check irrigation operation (pressures, flows, leaks, blockages)
+3. Monitor weather forecast — next 48 hours
+4. Scout active fields: minimum 5-point W-pattern inspection
+5. Record pest/disease/weed observations in field log
+6. Check traps and record counts
+7. Verify previous day's operations completed correctly
+8. Inspect chemical/fertilizer store (security, leaks, temperature)
+9. Check fuel and consumable levels
+10. Labour allocation for following day
+
+### Weekly Checklist
+- Full growth stage assessment across all fields
+- Soil moisture check at 15cm and 30cm — adjust irrigation
+- Weed pressure evaluation — decide intervention
+- Review weather data: rainfall, temp, ET
+- Calculate cumulative GDD per crop vs expected
+- Equipment maintenance: grease, tyres, hydraulics, belts
+- Spray equipment calibration (replace nozzles if >10% deviation)
+- Review chemical inventory — order for next 2-3 weeks
+- Update financial records
+- Communicate with market/packhouse on harvest volumes
+
+### Monthly Checklist
+- Soil moisture and nutrient status assessment
+- Financial reconciliation: actual vs budget per field/crop
+- Yield estimate update based on condition and weather
+- Update seasonal production plan
+- Deep equipment service (oil/filter, hydraulics, PTO)
+- Irrigation audit (filter cleaning, pressure uniformity)
+- Chemical store audit (expiry dates, empty disposal per AVCASA)
+- Labour performance review
+- Insurance and compliance review
+- Market analysis: current and projected prices
+- Photo documentation of all fields
+
+### Seasonal Pre-Season Checklist (Summer Crops — Aug-Sep)
+- Soil sampling (allow 3-4 weeks for results)
+- Lime application (6+ weeks before planting)
+- Order seed — confirm cultivar, quantity, treatment, delivery
+- Order fertilizer — lock price, arrange delivery
+- Service and calibrate planter
+- Test all irrigation systems
+- Procure chemicals (pre-emergent herbicides, seed treatments)
+- Weed burndown (glyphosate 2-4 weeks pre-plant)
+- Land preparation (if conventional tillage)
+- Arrange contract services
+- Review crop insurance options
+
+---
+
+## 4.9 Critical Success Factors
+
+1. **Know your soil** — full analysis before anything. Never plant without data <2 years old
+2. **Match crop to site** — climate, soil, water, frost window must align
+3. **Planting window is everything** — late planting in summer rainfall costs 50-100 kg/ha/day yield penalty for maize
+4. **Manage nitrogen strategically** — split applications, match to growth stage
+5. **Scout religiously** — 80% of damage happens before farmers notice. 2× weekly minimum
+6. **Rotation is non-negotiable** — monocropping builds pest pressure, depletes nutrients. Minimum 2-crop rotation
+7. **Conservation agriculture pays** — no-till transition uncomfortable for 2-3 years but delivers 15-25% cost savings over 5+
+8. **Water is the limiting factor** — in SA, water is more limiting than land. Every drop counts
+9. **Market before you plant** — production without a market is charity
+10. **Record everything** — without records, cannot analyse, improve, or claim insurance
 
 ---
 

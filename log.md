@@ -13,6 +13,23 @@ Chronological record of all wiki operations. Newest first.
 
 ---
 
+## [2026-04-14] update | Agriculture SOP — Section 4: Open-Field Crop Production (Deep)
+
+- Expanded Section 4 from stub to production-ready (9 subsections)
+- Site assessment: soil analysis (texture, CEC, OM, nutrients, drainage), SA climate zones, frost dates, GDD, water availability, topography/erosion
+- SA soil types by region (Highveld red, coastal sandy, FS black turf, Karoo)
+- Land preparation: tillage systems with costs, lime/gypsum rates
+- Planting: spacing for 11 crops, planter equipment, SA seasonal calendar
+- Fertilization: NPK by crop, split application strategy, organic options with pricing
+- Weed management: pre/post-emergent herbicides, mechanical control, mulching
+- 9 crop specifications: maize, wheat, potatoes, onions, brassicas, legumes, root veg, cucurbits, leafy crops
+- Each crop: soil/pH/temp/water/yield/fertilizer/pests/diseases/harvest indicators
+- Mechanization: 3-tier equipment suites with ZAR pricing, contract rates, breakeven analysis
+- Production economics: farm gate prices and cost-per-hectare for key SA crops
+- Full daily/weekly/monthly/seasonal checklists
+- 10 critical success factors
+- Pages touched: agriculture-sop, log
+
 ## [2026-04-14] update | Agriculture SOP — Section 3: Protected Cropping (Deep)
 
 - Expanded Section 3 from stub to production-ready (9 subsections)
