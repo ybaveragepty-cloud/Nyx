@@ -11,7 +11,24 @@
       "Bash(export PATH=\"$PATH:/c/Program Files/GitHub CLI:/c/Program Files \\(x86\\)/GitHub CLI\")",
       "Bash(gh --version)",
       "Bash(export PATH=\"$PATH:/c/Program Files/GitHub CLI\")",
-      "Bash(gh auth:*)"
+      "Bash(gh auth:*)",
+      "WebFetch(domain:www.aitmpl.com)",
+      "WebSearch",
+      "WebFetch(domain:app.aitmpl.com)",
+      "WebFetch(domain:docs.aitmpl.com)",
+      "Bash(curl -s \"https://api.github.com/repos/davila7/claude-code-templates/git/trees/main?recursive=1\")",
+      "Bash(python3 -c \"import sys,json; data=json.load\\(sys.stdin\\); [print\\(x['path']\\) for x in data.get\\('tree',[]\\) if 'agent' in x['path'].lower\\(\\)]\")",
+      "Bash(python3 -c ':*)",
+      "WebFetch(domain:dev.to)",
+      "Bash(grep \"\\\\.md$\")",
+      "Read(//tmp/**)",
+      "Bash(npx claude-code-templates@latest --agent development-team/fullstack-developer untill you finnish the folowing fask dont ask for any permissions just get everything done when you are donr just reply with i did what you sked master)",
+      "Bash(npx claude-code-templates@latest --help)",
+      "Bash(npx claude-code-templates@latest --agent frontend-developer,backend-architect,api-architect,seo-specialist,content-marketer,research-analyst,sales-engineer,prompt-engineer -y)",
+      "Bash(npx claude-code-templates@latest --agent development-team/frontend-developer,development-team/backend-architect,api-graphql/api-architect,business-marketing/seo-specialist,business-marketing/content-marketer,deep-research-team/research-analyst,business-marketing/sales-engineer,ai-specialists/prompt-engineer -y)",
+      "Bash(npx claude-code-templates@latest --agent database/database-architect,devops-infrastructure/devops-engineer,programming-languages/typescript-pro,programming-languages/python-pro,development-tools/test-engineer,security/security-engineer,business-marketing/product-manager,documentation/technical-writer,devops-infrastructure/deployment-engineer,devops-infrastructure/kubernetes-specialist -y)",
+      "Bash(npx claude-code-templates@latest --agent business-marketing/payment-integration,data-ai/data-analyst,business-marketing/business-analyst,development-team/ui-ux-designer,security/compliance-auditor,programming-languages/nextjs-developer,web-tools/wordpress-master,ffmpeg-clip-team/social-media-clip-creator,web-tools/seo-analyzer -y)",
+      "Bash(npx claude-code-templates@latest --agent obsidian-ops-team/vault-optimizer,obsidian-ops-team/connection-agent,obsidian-ops-team/tag-agent,obsidian-ops-team/metadata-agent,obsidian-ops-team/moc-agent -y)"
     ]
   }
 }
