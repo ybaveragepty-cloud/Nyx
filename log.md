@@ -13,6 +13,32 @@ Chronological record of all wiki operations. Newest first.
 
 ---
 
+## [2026-04-14] lint | Wiki Health Check + Obsidian Optimization
+
+- Fixed 22 orphan pages → 0 orphans (wired into entity/concept/meta pages)
+- Optimized Obsidian config: graph color-coded by category, arrows enabled, auto-routing for new files/attachments
+- Enabled slash commands + workspaces in core plugins
+- Verified: 100% frontmatter consistency, 0 broken links, 207+ wikilinks
+- Pages touched: 8 entity/meta pages edited with new inbound links, index.md, .obsidian configs
+
+## [2026-04-14] create | MCP Server Configuration
+
+- Created `.mcp.json` with 8 MCP servers: Playwright (browser automation), Memory (persistent context), Mermaid (diagram rendering), Context7 (live docs), GitHub (API integration), Filesystem (structured file access), n8n (workflow automation), arXiv (academic research)
+- Added `.mcp.json` to `.gitignore` (contains token references)
+- GitHub token referenced as env var `${GITHUB_TOKEN}` — not hardcoded
+- Pages touched: .mcp.json, .gitignore, log
+
+## [2026-04-14] create | Framework Expansion — davila7/claude-code-templates
+
+- Source: `davila7/claude-code-templates` GitHub repo (7,024 files, cli-tool/components/)
+- Installed **191 commands** across 18 categories (orchestration, project-management, testing, deployment, simulation, team, security, utilities, etc.)
+- Installed **118 new agents** — roster went from 33 → 151 (deep-research-team, AI specialists, expert-advisors, OCR extraction, MCP dev, podcast, business, modernization, UI analysis)
+- Installed **47 hooks** across 11 categories (quality-gates, security, git, automation, pre/post-tool, testing, monitoring, performance)
+- Installed **245 new skills** across 17 categories — total went from 102 → 347 (ai-maestro, ai-research, productivity, enterprise-communication, workflow-automation, document-processing, creative-design, security, utilities, media, video, etc.)
+- Updated: `wiki/meta/agent-skill-map.md` — expanded from skills-only to full skill+command+hook map across 13 tiers
+- Skipped: scientific (136 bioinformatics skills), game-dev, gmod, sports, sentry, pocketbase, railway, blockchain-web3, google-workspace (too specialized)
+- Pages touched: agent-skill-map, index, log
+
 ## [2026-04-14] create | Agent Roster + Skills Arsenal + Skill Map
 
 - Installed **33 specialist agents** from aitmpl.com into `.claude/agents/` (Tiers 1-4)

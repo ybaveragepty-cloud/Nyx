@@ -56,6 +56,13 @@ Brand architecture: **Branded House** — all products under the YBA master bran
 | [[yba-realty]] | Property, land, assets | Coming soon |
 | [[yba-med]] | Health systems | Coming soon |
 
+## Sources
+
+- [[la-buschagne-organogram]] — Full legal/corporate structure, holding group under family trust
+- [[yba-business-name-ideas]] — Origin of the YBA brand naming system, domain strategy, visual identity
+- [[grant-application-yba]] — Grant proposal for commercial aquaponics + SA funding landscape
+- [[long-term-goals-log]] — Richard's R50M wealth target, financial position, 10-year wealth plan
+
 ## Related
 
 - [[ybaflow]] — Core SaaS platform

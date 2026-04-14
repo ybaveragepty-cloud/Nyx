@@ -61,6 +61,10 @@ YBAFlow platform must be complete **before** [[ybaterra]] business logic:
 5. Agent system
 6. Then vertical products
 
+## Sources
+
+- [[ybaflow-overview]] — SaaS positioning, product hierarchy, landing page messaging
+
 ## Related
 
 - [[openclaw]] — AI agent system building YBAFlow

@@ -1,3 +1,20 @@
 {
-  "promptDelete": false
+  "promptDelete": false,
+  "defaultViewMode": "source",
+  "livePreview": true,
+  "strictLineBreaks": true,
+  "showFrontmatter": true,
+  "foldHeading": true,
+  "foldIndent": true,
+  "showLineNumber": false,
+  "readableLineLength": true,
+  "autoConvertHtml": false,
+  "spellcheck": true,
+  "useMarkdownLinks": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "wiki/concepts",
+  "attachmentFolderPath": "raw/assets",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": false,
+  "vimMode": false
 }

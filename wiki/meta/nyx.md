@@ -85,6 +85,13 @@ Richard (Captain)
 - New projects pull context from Richards Brain, feed learnings back
 - Nyx coordinates across all projects from the brain
 
+## Operational Resources
+
+- [[agent-skill-map]] — Full agent roster with skill/command/hook loadouts (Nyx uses this to equip agents)
+- [[mcp-plugin-registry]] — MCP servers and plugins available to the agent framework
+- [[project-template]] — Standard spoke project folder structure
+- [[status-report-template]] — Format sub-agents use for reporting back to Nyx
+
 ## Frameworks Available
 
 - [[wat-framework]] — Workflows, Agents, Tools separation

@@ -71,6 +71,15 @@ Currently everything in one (Pty) Ltd — restructuring planned (R30-80K investm
 6. **Land in 30-36 months** — not before structural rebuild is complete
 7. **Email never on VPS** — Google Workspace
 
+## Meta Pages
+
+- [[nyx]] — Executive assistant profile and operating model
+- [[agent-skill-map]] — Full roster of 151 specialist agents with skill/command/hook loadouts
+- [[mcp-plugin-registry]] — MCP servers, plugins, and integration infrastructure
+- [[project-template]] — Standard spoke project folder structure and CLAUDE.md template
+- [[status-report-template]] — Format for sub-agent status reports
+- [[timeline]] — Chronological reconstruction of all events from 2026-02-25 onward
+
 ## Wiki Stats
 
 - **30 raw source files** ingested from 5 ChatGPT projects

@@ -27,3 +27,5 @@ The planned training and certification arm of the La Buschagne Group. Will train
 - [[la-foods]] — Richard's current operational business
 - [[commercial-aquaponics-sources]] — Franchise operations manual source
 - [[aquaponics-course-creation]] — Course design source
+- [[commercial-aquaponics-discussion]] — Technical accreditation content (Ichthys, water chemistry)
+- [[eastern-cape-aquaponics]] — Eastern Cape consulting project with SOP creation and infrastructure design

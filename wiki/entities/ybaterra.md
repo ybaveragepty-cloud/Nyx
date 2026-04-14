@@ -25,7 +25,7 @@ A **universal agricultural operating system** — the first vertical product bui
 
 ## Location Hierarchy — The Backbone
 
-Uses a **recursive tree structure** (`location_node` with `parent_id`) to support any farm type:
+Uses a **[[recursive-location-hierarchy|recursive tree structure]]** (`location_node` with `parent_id`) to support any farm type:
 
 | Industry | Example Hierarchy |
 |----------|------------------|
@@ -121,6 +121,13 @@ Support multi-organization SaaS deployments. Scale target: **1000+ farms and ent
 4. Ignoring batch-level tracking
 5. Not linking records across domains
 6. Overbuilding V1
+
+## Sources
+
+- [[openclaw-deployment-planning]] — 100-task agent build plan and Terra master data model v1 (72+ entities)
+- [[eastern-cape-aquaponics]] — Consulting project: Eastern Cape tilapia/pangasius facility assessment and rebuild
+- [[commercial-aquaponics-discussion]] — Technical accreditation discussion (water chemistry, risk philosophy, Ichthys)
+- [[la-buschagne-aquaponic-empire]] — Early strategic thinking on farm operations and AI agents (pre-OpenClaw)
 
 ## Related
 

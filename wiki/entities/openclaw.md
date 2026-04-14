@@ -86,8 +86,17 @@ OpenClaw also runs locally on [[lenovo-y740]] with Ollama models and ChatGPT OAu
 - **Config:** Tag-based routing (`default`, `fallback#N`), not a single `model` key
 - **IDE:** VS Code (chosen over [[cursor]] for better OpenClaw integration)
 
+## Sources
+
+- [[openclaw-deployment-planning]] — 100-task build plan and Terra master data model/schema
+- [[openclaw-whatsapp-discord-setup]] — WhatsApp and Discord messaging integration architecture
+- [[local-claw-clarification]] — ChatGPT memory limitations and Project Money scope clarification
+- [[affiliate-marketing-openclaw]] — Using OpenClaw for affiliate marketing automation
+- [[automated-trading-prop-firms]] — OpenClaw as automated trading decision engine for prop firms
+
 ## Related
 
 - [[ybaflow]] — The platform being built
+- [[openclaw-workspace-control]] — AGENTS.md, SOUL.md, TOOLS.md governance files that constrain agent behavior
 - [[coolify]] — Deployment platform
 - [[multi-model-ai-strategy]] — How AI models are assigned to agents

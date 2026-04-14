@@ -38,7 +38,7 @@
       "Bash(npx claude-code-templates@latest --skill creative-design/frontend-design,creative-design/tailwind-patterns,creative-design/ui-design-system,creative-design/web-design-guidelines,creative-design/ui-ux-pro-max,creative-design/mermaid-diagrams,creative-design/figma-implement-design,creative-design/canvas-design -y)",
       "Bash(npx claude-code-templates@latest --skill development/nextjs-best-practices,development/typescript-pro,development/python-pro,development/react-best-practices,development/api-design-principles,development/api-patterns,development/clean-code,development/docker-expert,development/git-commit-helper,development/testing-patterns,development/tdd-workflow,development/playwright,development/stripe-integration,development/fastapi-pro,development/nodejs-best-practices,development/cloudflare-deploy,development/vercel-deploy -y)",
       "Bash(npx claude-code-templates@latest --skill development/stripe-integration,development/cloudflare-deploy,development/vercel-deploy,development/fastapi-pro -y)",
-      "Bash(gh repo:* we will wait a hour and then fix the failed downloads skills and finish the work for the night what other work are you able to continue now or would it be better to rather finnish all  th e skills and agents first)"
+      "Bash(grep -E '\\\\.md$')"
     ]
   }
 }
