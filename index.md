@@ -72,15 +72,30 @@ A catalog of everything in the wiki. Claude updates this on every operation. For
 
 ## Concepts
 
-- [[multi-model-ai-strategy]] — Tiered AI model assignment: Claude Sonnet for critical decisions, GPT-4.1 for coding, cheap models for utilities
+- [[200-percent-engineering-doctrine]] — All critical systems engineered to double capacity. Operational biomass at 50%. La Buschagne institutional law
+- [[agent-orchestration]] — Captain → Nyx → department agents → status reports. Hierarchical delegation with focused context
 - [[ai-driven-development]] — Methodology for building software with AI agents under strict architectural constraints
-- [[recursive-location-hierarchy]] — Backbone data structure for YBATerra: recursive location_node tree supporting any farm type
-- [[openclaw-workspace-control]] — AGENTS.md, SOUL.md, TOOLS.md — governance files that constrain agent behavior
+- [[aquaponics-integration]] — Fish waste feeds plants, plants filter water. Symbiotic production system
+- [[branded-house-model]] — YBA as parent brand, Flow = public green, Systems = hidden silver
 - [[claude-code-ea-framework]] — Pattern for building Claude Code into a personal executive assistant with skills, sub-agents, and compounding context
+- [[compounding-knowledge-system]] — Every interaction leaves the wiki richer. Don't re-derive what's synthesized
+- [[docker-containerization]] — Container deployment pattern for YBAFlow, OpenClaw, Coolify stack
+- [[franchise-operations-model]] — Train managers, franchise full farms, exclusive packhouse distribution, three IP tiers
+- [[hub-and-spoke-architecture]] — Central hub (Richards Brain) + lean spoke projects pattern
+- [[ip-tiering-strategy]] — Three-tier IP: public knowledge → franchise NDA → HQ-only engineering standards
+- [[multi-model-ai-strategy]] — Tiered AI model assignment: Claude Sonnet for critical decisions, GPT-4.1 for coding, cheap models for utilities
+- [[openclaw-workspace-control]] — AGENTS.md, SOUL.md, TOOLS.md — governance files that constrain agent behavior
+- [[recirculating-aquaculture-systems]] — Closed-loop fish production with mechanical filtration, biofiltration, aeration, heating
+- [[recursive-location-hierarchy]] — Backbone data structure for YBATerra: recursive location_node tree supporting any farm type
+- [[saas-automation-platform]] — YBAFlow as modular API-first multi-tenant SaaS with vertical products
+- [[seed-to-fork-pipeline]] — Complete agricultural value chain from genetics/breeding to consumer
+- [[staggered-cohort-production]] — 10-11 simultaneous fish cohorts at different growth stages for continuous monthly harvest
+- [[vps-infrastructure-stack]] — Self-hosted: Hostinger VPS, Coolify, Docker, n8n, custom domains
+- [[water-quality-management]] — DO, pH, ammonia, nitrite thresholds, monitoring frequency, alarm response hierarchy
 
 ## Analyses
 
-_No analyses yet._
+- [[agriculture-sop]] — Master Agriculture SOP (seed to fork). RAS + Aquaponics deep, 14 other sections stubbed. Terra AI knowledge base.
 
 ## Meta
 

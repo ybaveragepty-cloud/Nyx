@@ -3,7 +3,7 @@ title: n8n
 type: entity
 created: 2026-04-13
 updated: 2026-04-13
-tags: [tool, automation, workflow, infrastructure]
+tags: [tools, automation, workflow, infrastructure]
 sources: [ybaflow-openclaw-deployment-plan.md, ybaflow-progress-recap.md]
 ---
 

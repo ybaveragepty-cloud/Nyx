@@ -3,7 +3,7 @@ title: "Commercial Aquaponics Discussion"
 type: source
 created: 2026-03-01
 updated: 2026-04-13
-tags: [aquaponics, technical, accreditation, ichthys, water-chemistry]
+tags: [aquaponics, aquaculture, technical, accreditation, ichthys, water-chemistry]
 sources: [La Buschagne Aquaponic Farming Empire  - Commercial Aquaponics Discussion.md]
 ---
 

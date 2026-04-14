@@ -3,7 +3,7 @@ title: Project Template
 type: meta
 created: 2026-04-14
 updated: 2026-04-14
-tags: [template, project, nyx, operations]
+tags: [meta, template, project, nyx, operations]
 sources: []
 ---
 

@@ -3,7 +3,7 @@ title: Agent-Skill-Command Map
 type: meta
 created: 2026-04-14
 updated: 2026-04-14
-tags: [nyx, agents, skills, commands, hooks, operations, roster]
+tags: [meta, nyx, agents, skills, commands, hooks, operations, roster]
 sources: []
 ---
 

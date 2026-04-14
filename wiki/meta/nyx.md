@@ -3,7 +3,7 @@ title: Nyx — Executive Assistant Profile
 type: meta
 created: 2026-04-14
 updated: 2026-04-14
-tags: [nyx, executive-assistant, personality, operations]
+tags: [meta, nyx, executive-assistant, personality, operations]
 sources: [Turn Claude Code Into Your Executive Assistant in 27 Mins.md]
 ---
 

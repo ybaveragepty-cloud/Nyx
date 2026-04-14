@@ -3,7 +3,7 @@ title: "La Buschagne Aquaponic Farming Empire"
 type: source
 created: 2026-02-28
 updated: 2026-04-13
-tags: [personal, strategy, farming, aquaponics, tools, agents]
+tags: [personal, strategy, farming, aquaponics, aquaculture, tools, agents]
 sources: [La Buschagne Aquaponic Farming Empire.md]
 ---
 

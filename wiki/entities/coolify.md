@@ -3,7 +3,7 @@ title: Coolify
 type: entity
 created: 2026-04-13
 updated: 2026-04-13
-tags: [tool, infrastructure, deployment, self-hosted]
+tags: [tools, infrastructure, deployment, self-hosted]
 sources: [ybaflow-openclaw-deployment-plan.md, coolify-gateway-setup.md, resource-establishment-overview.md]
 ---
 

@@ -3,7 +3,7 @@ title: OpenClaw
 type: entity
 created: 2026-04-13
 updated: 2026-04-13
-tags: [tool, ai-agents, infrastructure, deployment]
+tags: [tools, product, openclaw, ai-agents, infrastructure, deployment]
 sources: [ybaflow-openclaw-deployment-plan.md, ybaflow-progress-recap.md, openclaw-container-setup.md, coolify-gateway-setup.md, connecting-openclaw-to-chatgpt.md]
 ---
 

@@ -3,7 +3,7 @@ title: "Aquaponics Course Creation"
 type: source
 created: 2026-02-25
 updated: 2026-04-13
-tags: [aquaponics, course, consulting, franchise, strategy]
+tags: [aquaponics, aquaculture, course, consulting, franchise, strategy]
 sources: [La Buschagne Aquaponic Farming Empire  - Aquaponics Course Creation.md]
 ---
 

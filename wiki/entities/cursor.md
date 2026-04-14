@@ -3,7 +3,7 @@ title: Cursor
 type: entity
 created: 2026-04-13
 updated: 2026-04-13
-tags: [tool, editor, development, ai]
+tags: [tools, editor, development, ai]
 sources: [resource-establishment-overview.md, connecting-openclaw-to-chatgpt.md]
 ---
 

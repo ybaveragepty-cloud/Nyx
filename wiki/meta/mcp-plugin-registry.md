@@ -3,7 +3,7 @@ title: MCP & Plugin Registry
 type: meta
 created: 2026-04-14
 updated: 2026-04-14
-tags: [nyx, infrastructure, mcp, plugins, tools]
+tags: [meta, nyx, infrastructure, mcp, plugins, tools]
 sources: []
 ---
 

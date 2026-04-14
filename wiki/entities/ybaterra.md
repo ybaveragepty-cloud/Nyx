@@ -122,11 +122,16 @@ Support multi-organization SaaS deployments. Scale target: **1000+ farms and ent
 5. Not linking records across domains
 6. Overbuilding V1
 
+## Terra AI Knowledge Base
+
+The [[agriculture-sop]] serves as Terra AI's primary knowledge base — a living SOP covering the full seed-to-fork agricultural value chain. RAS and Aquaponics sections are production-ready. All other agricultural domains are stubbed for incremental expansion.
+
 ## Sources
 
 - [[openclaw-deployment-planning]] — 100-task agent build plan and Terra master data model v1 (72+ entities)
 - [[eastern-cape-aquaponics]] — Consulting project: Eastern Cape tilapia/pangasius facility assessment and rebuild
 - [[commercial-aquaponics-discussion]] — Technical accreditation discussion (water chemistry, risk philosophy, Ichthys)
+- [[agriculture-sop]] — Master Agriculture SOP (seed to fork) for Terra AI decision support
 - [[la-buschagne-aquaponic-empire]] — Early strategic thinking on farm operations and AI agents (pre-OpenClaw)
 
 ## Related

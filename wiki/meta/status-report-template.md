@@ -3,7 +3,7 @@ title: Status Report Template
 type: meta
 created: 2026-04-14
 updated: 2026-04-14
-tags: [template, status, agents, operations]
+tags: [meta, template, status, agents, operations]
 sources: []
 ---
 

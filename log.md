@@ -13,6 +13,40 @@ Chronological record of all wiki operations. Newest first.
 
 ---
 
+## [2026-04-14] create | Bulk Concept Expansion (5 → 20 concepts)
+
+- Created 15 new concept pages: 200-percent-engineering-doctrine, agent-orchestration, aquaponics-integration, branded-house-model, compounding-knowledge-system, docker-containerization, franchise-operations-model, hub-and-spoke-architecture, ip-tiering-strategy, recirculating-aquaculture-systems, saas-automation-platform, seed-to-fork-pipeline, staggered-cohort-production, vps-infrastructure-stack, water-quality-management
+- All pages have proper frontmatter, 3-5 paragraphs, wikilinks to sources/entities, Related sections
+- Knowledge graph significantly thickened — concepts now bridge between sources and entities
+- Updated index.md with all 20 concepts (alphabetized)
+- Pages touched: 15 new + index + log
+
+## [2026-04-14] lint | Tag Normalization
+
+- Consolidated `tool` → `tools` across 5 entity pages
+- Added `product` + `openclaw` tags to openclaw entity
+- Added `aquaculture` tag to 5 aquaponics source pages
+- Added `meta` tag to 5 meta pages missing it
+- Verified `ai` vs `ai-automation` usage is correct (no changes needed)
+- Total pages touched: 15
+
+## [2026-04-14] create | Agriculture SOP — Seed to Fork
+
+- Created: `wiki/analyses/agriculture-sop.md` — master Agriculture SOP for Terra AI
+- **Deep sections (production-ready):** RAS (tilapia), Aquaponics
+  - Full biological parameters, growth tables, survival rates, stocking densities
+  - Broodstock management, hatchery, nursery, grow-out SOPs
+  - Production model with egg-to-harvest math (3,500 eggs → 1,029 kg/month)
+  - Water quality standards, heating systems, infrastructure sizing
+  - Daily/weekly/monthly checklists per system stage
+  - Emergency response matrix (14 incident types)
+  - Record keeping templates (tank log, egg production, monthly review)
+  - Terra AI integration notes
+- **Stubbed sections (16 total):** Protected cropping, open-field crops, crop rotation, irrigation, IPM, livestock, post-harvest, processing, cold chain, marketing, compliance, farm business, record keeping, emergency procedures
+- Sources: eastern-cape-aquaponics, commercial-aquaponics-sources, commercial-aquaponics-discussion
+- First analysis page in the wiki — analyses folder no longer empty
+- Pages touched: agriculture-sop, index, log
+
 ## [2026-04-14] lint | Wiki Health Check + Obsidian Optimization
 
 - Fixed 22 orphan pages → 0 orphans (wired into entity/concept/meta pages)

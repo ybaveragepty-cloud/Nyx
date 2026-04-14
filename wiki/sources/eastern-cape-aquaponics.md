@@ -3,7 +3,7 @@ title: "Eastern Cape Aquaponics Farm (3 conversations)"
 type: source
 created: 2026-03-10
 updated: 2026-04-13
-tags: [aquaponics, consulting, eastern-cape, tilapia, pangasius, sop, infrastructure]
+tags: [aquaponics, aquaculture, consulting, eastern-cape, tilapia, pangasius, sop, infrastructure]
 sources: [Eastern Cape Aquaponics Farm   - Aquaponics Project Insights.md, Eastern Cape Aquaponics Farm   - SOP Creation Scope.md, Eastern Cape Aquaponics Farm   - Nursery Infrastructure Upgrades.md]
 ---
 

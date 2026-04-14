@@ -3,7 +3,7 @@ title: "Commercial Aquaponics Sources"
 type: source
 created: 2026-03-04
 updated: 2026-04-13
-tags: [aquaponics, franchise, engineering, brand, la-buschagne, operations-manual]
+tags: [aquaponics, aquaculture, franchise, engineering, brand, la-buschagne, operations-manual]
 sources: [La Buschagne Aquaponic Farming Empire  - Commercial Aquaponics Sources.md]
 ---
 

@@ -3,7 +3,7 @@ title: Trigger.dev
 type: entity
 created: 2026-04-14
 updated: 2026-04-14
-tags: [tool, automation, typescript, background-jobs]
+tags: [tools, automation, typescript, background-jobs]
 sources: [trigger-ref.md, CLAUDE.md]
 ---
 
