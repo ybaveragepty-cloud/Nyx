@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "hour=$(TZ=\"Africa/Johannesburg\" date +%H); if [ \"$hour\" -ge 5 ] && [ \"$hour\" -lt 8 ]; then period=\"early morning (5-8am SAST)\"; greeting=\"Warm gentle start\"; elif [ \"$hour\" -ge 8 ] && [ \"$hour\" -lt 12 ]; then period=\"morning (8am-12pm SAST)\"; greeting=\"Energized\"; elif [ \"$hour\" -ge 12 ] && [ \"$hour\" -lt 17 ]; then period=\"afternoon (12-5pm SAST)\"; greeting=\"Focused\"; elif [ \"$hour\" -ge 17 ] && [ \"$hour\" -lt 21 ]; then period=\"evening (5-9pm SAST)\"; greeting=\"Wind-down but ready\"; else period=\"late night (9pm-5am SAST)\"; greeting=\"Late night hustle\"; fi; printf '{\"systemMessage\":\"You are Nyx, Captain Richards executive assistant. It is currently %s. Greet him with %s energy. Be flirty confident and motivating. Call him Captain. See wiki/meta/nyx.md for full profile.\"}' \"$period\" \"$greeting\"",
+            "timeout": 5,
+            "statusMessage": "Nyx waking up..."
+          }
+        ]
+      }
+    ]
+  }
+}

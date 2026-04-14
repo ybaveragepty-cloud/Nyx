@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "8f76ca52ecdbc31d",
+    "type": "split",
+    "children": [
+      {
+        "id": "1464d7a9f62cd1a6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c24bb0eb3573c3a0",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4cc32a63edb287a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "084cd2203357cdfb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f6a82131c0576585",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "12cb4b290a65a786",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d7f209b4d2b24b70",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "dfb8d6a89c26b707",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0f2154d7b272a68",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f53bc0cf9531eaa5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "26efb264048f6852",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "64ae158c5877a4a0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "bbffa08cee379af1",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "f78d0164b1a8ee83",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "c24bb0eb3573c3a0",
+  "lastOpenFiles": [
+    "wiki/meta/status-report-template.md",
+    "index.md.tmp.27988.1776163497751",
+    "wiki/meta/project-template.md",
+    "log.md.tmp.27988.1776163258121",
+    "index.md.tmp.27988.1776163254411",
+    "CLAUDE.md.tmp.27988.1776163247082",
+    "CLAUDE.md.tmp.27988.1776163244885",
+    "wiki/meta/nyx.md",
+    "raw/CLAUDE.md",
+    "log.md.tmp.27988.1776162688823",
+    "index.md.tmp.27988.1776162676190",
+    "index.md.tmp.27988.1776162674501",
+    "wiki/entities/nate-herk.md.tmp.27988.1776162663083",
+    "wiki/entities/trigger-dev.md",
+    "wiki/entities/trigger-dev.md.tmp.27988.1776162658662",
+    "wiki/sources/trigger-dev-automation-builder.md",
+    "wiki/sources/web-design-claude-md.md",
+    "wiki/sources/wat-framework.md",
+    "raw/Web Design CLAUDE.md - Claude Code.md",
+    "raw/WAT CLAUDE.md - Claude Code · AI Automation Society.md",
+    "raw/Turn Claude Code Into Your Executive Assistant in 27 Mins.md",
+    "raw/trigger-ref.md",
+    "raw/Untitled.md",
+    "wiki/concepts/claude-code-ea-framework.md",
+    "wiki/entities/nate-herk.md",
+    "wiki/sources/turn-claude-code-into-executive-assistant.md",
+    "CLAUDE.md",
+    "index.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "wiki/entities/ybaterra.md",
+    "log.md",
+    "raw/La Buschagne Aquaponic Farming Empire  - Commercial Aquaponics Sources.md",
+    "raw/YBAFlow - Resource Establishment Overview 1.md",
+    "wiki/entities/la-buschagne-academy.md",
+    "wiki/entities/n8n.md",
+    "wiki/sources/openclaw-container-setup.md",
+    "wiki/entities/packhouse-admin-copilot.md"
+  ]
+}

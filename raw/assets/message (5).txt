@@ -1,0 +1,6532 @@
+
+
+
+Create the OpenClaw Agent Task Plan (about 80–120 build tasks) so the agents can start constructing Terra systematically instead of randomly generating code. 
+
+Yes. Below is a structured OpenClaw Agent Task Plan for YBATerra, designed so agents build in order, with dependencies, instead of free-form generating pages and code.
+
+This is not a feature wishlist. It is a construction sequence.
+
+OpenClaw Agent Task Plan for Terra
+Goal
+Build Terra as a stable, modular, multi-tenant farm operations platform with:
+
+customizable dashboards
+
+customizable workflows
+
+strict role/permission control
+
+simple worker UI
+
+crop and livestock domain depth
+
+auditability
+
+future AI/automation readiness
+
+Delivery rule for all agents
+Every task must produce:
+
+code
+
+tests
+
+migration or schema changes if relevant
+
+seed/example data if relevant
+
+short implementation note
+
+update to task status
+
+No agent may skip to UI polish before the relevant data model, API contract, permissions, and tests exist.
+
+Phase 1 — Foundation and build rules
+1–10
+1. Create the Terra monorepo structure
+Set up apps, packages, shared types, UI library, backend services, workflow engine area, and docs folders.
+
+2. Define coding standards and contribution rules
+Create linting, formatting, commit rules, branch naming, PR template, and agent operating constraints.
+
+3. Define the canonical product architecture document
+Document frontend, backend, database, workflow engine, auth, notifications, and AI integration boundaries.
+
+4. Create environment configuration system
+Centralize env validation for dev, staging, and production.
+
+5. Create logging and error handling standards
+Standardize log levels, request IDs, structured logs, exception handling, and audit-friendly error output.
+
+6. Set up automated testing pipeline
+Configure unit, integration, API, and end-to-end test execution.
+
+7. Set up CI pipeline
+Run install, lint, typecheck, tests, migration checks, and build on each commit.
+
+8. Set up CD/release pipeline skeleton
+Create deployment workflow for staging and production.
+
+9. Create shared design tokens and UI primitives
+Set typography, spacing, colors, states, form components, tables, cards, dialogs, badges.
+
+10. Create system-wide feature flag framework
+Allow phased rollout of incomplete modules without breaking the platform.
+
+Phase 2 — Core tenancy and identity
+11–20
+11. Design the multi-tenant data model
+Support platform → organization → site → production area hierarchy.
+
+12. Create organization onboarding model
+Allow new organizations with defaults, timezone, currency, language, and branding basics.
+
+13. Build authentication service integration
+Implement login, logout, session handling, password reset, and secure token flow.
+
+14. Create user profile model
+Store user identity, organization membership, role assignments, status, and preferences.
+
+15. Create role model
+Support admin, manager, supervisor, worker, viewer, and future custom roles.
+
+16. Create permission matrix engine
+Support action-level permissions, not just page-level access.
+
+17. Build organization membership management APIs
+Invite users, assign roles, disable accounts, transfer org ownership rules.
+
+18. Build admin-only permission assignment UI
+Only admins can grant or revoke permissions as requested.
+
+19. Add tenant isolation tests
+Prove one organization cannot access another organization’s data.
+
+20. Create audit log for auth and role changes
+Track sign-ins, failed attempts, invites, role edits, permission edits, suspensions.
+
+Phase 3 — Master entity model
+21–30
+21. Build the master location hierarchy model
+Farm → site → block → zone → bay → row → station → asset position where relevant.
+
+22. Build production system taxonomy
+Hydroponics, aquaponics, soil, mushroom, fish, poultry, packhouse, nursery, procurement, processing.
+
+23. Create asset model
+Pumps, tanks, filters, sensors, dosing systems, cold rooms, vehicles, tools, generators, solar assets.
+
+24. Create crop master model
+Leafy greens, herbs, fruiting crops, rhizomes, seedlings, microgreens, mushrooms.
+
+25. Create aquaculture species master model
+Trout, tilapia, bass/basa if intended, prawns, and future species extensions.
+
+26. Create livestock species master model
+Poultry, goats, cattle, egg operations, and future extension points.
+
+27. Create batch/lot model
+For crops, seedlings, harvested products, fish cohorts, feed lots, egg batches, and processed stock.
+
+28. Create unit-of-measure framework
+Mass, count, length, trays, boards, buckets, tanks, crates, cartons, bunches, punnets.
+
+29. Create status/state framework
+Draft, active, quarantined, archived, failed, harvested, dispatched, cleaned, serviced.
+
+30. Seed master data
+Populate realistic default entities for Terra so agents have structured reference data.
+
+Phase 4 — Workflow engine and configurability
+31–40
+31. Design the workflow engine schema
+Support custom workflows per organization, farm type, season, and production system.
+
+32. Create workflow builder backend
+Model stages, tasks, conditions, dependencies, transitions, triggers, and required approvals.
+
+33. Create workflow builder UI
+Admins/managers can define workflows without code.
+
+34. Add task template system
+Reusable templates for planting, transplanting, feeding, harvest, washdown, QA, dispatch, maintenance.
+
+35. Add dependency management for tasks
+Prevent downstream work starting before prerequisite tasks are complete.
+
+36. Add recurrence/scheduling rules
+Daily, weekly, crop-stage, age-based, sensor-triggered, and event-based scheduling.
+
+37. Add workflow versioning
+Organizations can update workflows without corrupting historical records.
+
+38. Add workflow permission controls
+Who can create, edit, publish, approve, and execute workflows.
+
+39. Add workflow simulation/test mode
+Allow admins to validate workflow logic before activating it.
+
+40. Add workflow execution audit trail
+Track who started, changed, skipped, approved, or failed each workflow step.
+
+Phase 5 — Worker operations layer
+41–50
+41. Design the worker-focused UI shell
+Simple, mobile-first, low-friction, task-first interface.
+
+42. Build “My Tasks” screen
+Workers see assigned tasks, due time, priority, location, and required inputs.
+
+43. Build location-guided task instructions
+Example: Farm A → Tunnel 2 → DWC Zone B → Board Row 3.
+
+44. Build task completion flow
+Start, pause, complete, fail, add note, add quantity, add photo if enabled.
+
+45. Build supervisor reassignment flow
+Managers/supervisors can reassign workers or rebalance workload.
+
+46. Build offline-capable task cache plan
+Support weak connectivity environments common on farms.
+
+47. Build KPI snippets for workers
+Workers can see limited KPIs relevant to their work, as requested.
+
+48. Add shift/day workboard
+Supervisors can see task progress by team, area, and completion state.
+
+49. Add exception reporting flow
+Workers can flag disease, dead fish, leaks, pump failure, quality issues, missing stock.
+
+50. Add acknowledgment and checklist controls
+Require checklist confirmation where SOP compliance matters.
+
+Phase 6 — Dashboard and analytics framework
+51–60
+51. Design dashboard widget framework
+Widgets must be modular, removable, and organization-specific.
+
+52. Create customizable dashboard layout engine
+Allow add/remove/reorder/resize per role or user profile.
+
+53. Build admin dashboard base widgets
+Production, labor, compliance, inventory, sales, incidents, system health.
+
+54. Build worker dashboard base widgets
+My tasks, today’s target, completed work, alerts, assigned zones, personal KPIs.
+
+55. Build supervisor dashboard base widgets
+Team completion, overdue tasks, incidents, throughput, attendance if enabled.
+
+56. Build operations dashboard base widgets
+Harvest forecast, packhouse load, order backlog, dispatch readiness.
+
+57. Build environment dashboard widgets
+pH, EC, temperature, DO, humidity, flow, pressure, alarms.
+
+58. Build dashboard permissions layer
+Control which widgets exist, who sees them, and who can customize them.
+
+59. Add saved dashboard presets
+Different layouts for hydroponics, aquaculture, packhouse, procurement, management.
+
+60. Add dashboard performance optimization
+Lazy loading, aggregation strategy, cached queries, efficient chart APIs.
+
+Phase 7 — Hydroponics and nursery domain
+61–70
+61. Build nursery production model
+Seed lots, sowing plans, trays, germination, hardening, transplant readiness.
+
+62. Build crop cycle model for hydroponics
+Plan crop from seed to harvest with stages and expected timing.
+
+63. Build area-specific hydroponic structures
+NFT channels, DWC boards, drip lines, vertical towers, substrate bays, fruiting tunnels.
+
+64. Build planting and transplant recording flows
+Capture tray source, cultivar, date, area, quantity, operator.
+
+65. Build nutrient and dosing event model
+Record chemical additions, target EC/pH, reservoir, operator, time.
+
+66. Build irrigation and water management event model
+Flushes, top-ups, reservoir changes, filtration events.
+
+67. Build crop observation model
+Germination %, vigor, pest pressure, disease symptoms, deficiency notes.
+
+68. Build harvest event flow
+Harvest by row, board, bucket, bay, or batch depending on system type.
+
+69. Build crop loss and waste recording
+Cull reasons, disease loss, heat stress, bolting, transplant failure.
+
+70. Build hydroponic KPI calculations
+Yield per area, days to harvest, losses, labor per kg, transplant success, water use.
+
+Phase 8 — Aquaculture domain
+71–80
+71. Build aquaculture facility model
+RAS loops, tanks, raceways, filters, biofilters, oxygen systems, pumps.
+
+72. Build fish/prawn cohort model
+Species, strain, stocking date, origin, initial weight, count, life stage.
+
+73. Build stocking and transfer flows
+Record movement between tanks or systems with mortality and stress notes.
+
+74. Build feed schedule and feed event model
+Feed type, ration, operator, observed appetite, feeding outcome.
+
+75. Build mortality and culling event flow
+Track dead, culled, cause category, suspected disease, biomass impact.
+
+76. Build water quality logging model
+DO, ammonia, nitrite, nitrate, pH, temperature, salinity if relevant.
+
+77. Build growth sampling model
+Average weight, sampled count, biomass estimate, FCR calculation inputs.
+
+78. Build treatment/quarantine model
+Isolation, restricted movement, diagnosis placeholder, treatment records.
+
+79. Build harvest and processing handoff flow
+From live tank to processing, chilling, freezing, lot creation.
+
+80. Build aquaculture KPI calculations
+Survival %, FCR, biomass by tank, growth rate, water quality compliance, harvest yield.
+
+Phase 9 — Packhouse, inventory, procurement, commerce
+81–90
+81. Build packhouse intake model
+Receive product from internal production or external suppliers.
+
+82. Build grading, washing, packing workflow model
+Support multiple packing lines and configurable QC checkpoints.
+
+83. Build finished goods inventory model
+Batch-coded stock with expiry, cold-room location, status, and availability.
+
+84. Build raw materials inventory model
+Seeds, substrate, feed, fertilizer, chemicals, packaging, cleaning materials.
+
+85. Build procurement request and purchase order flow
+From stock threshold or manual request to approval and receipt.
+
+86. Build supplier master model
+Supplier categories, compliance docs, lead times, products, pricing references.
+
+87. Build customer master model
+Walk-in, wholesale, retail, franchise, market, institutional buyers.
+
+88. Build sales order model
+Capture order lines, allocation, pack status, dispatch status, invoicing integration placeholder.
+
+89. Build dispatch and delivery flow
+Pick list, route, vehicle, cold-chain checks, proof of dispatch.
+
+90. Build inventory and commerce KPIs
+Stock turns, waste %, order fill rate, on-time dispatch, margin by product.
+
+Phase 10 — SOP, compliance, alerts, integrations, readiness
+91–100
+91. Build SOP and knowledge base model
+Versioned procedures linked to tasks, assets, areas, and roles.
+
+92. Build training assignment model
+Require reading or signoff before users can perform sensitive tasks.
+
+93. Build compliance record model
+Cleaning logs, temperature logs, traceability events, corrective actions.
+
+94. Build alert and incident engine
+Threshold breaches, missed tasks, mortality spikes, stockouts, QA failures, asset failures.
+
+95. Build notification routing framework
+In-app first, then email/WhatsApp/SMS integration points later.
+
+96. Build integration contract layer
+Define APIs/webhooks for sensors, ERP/accounting, ecommerce, CRM, automation tools.
+
+97. Build reporting/export layer
+CSV, PDF, scheduled reports, regulatory traceability reports, management summaries.
+
+98. Build platform observability layer
+Health checks, queue monitoring, job retries, performance metrics, audit review.
+
+99. Build staging seed environment
+Create demo organizations for hydroponics, aquaculture, mixed farm, and packhouse.
+
+100. Run final platform hardening pass
+Security review, permission review, migration review, data integrity review, UX review, release checklist.
+
+Recommended execution order for agents
+Track A — Platform core
+Tasks 1–30
+
+Track B — Workflow and worker engine
+Tasks 31–50
+
+Track C — Dashboards and analytics
+Tasks 51–60
+
+Track D — Production domains
+Tasks 61–80
+
+Track E — Commercial and compliance
+Tasks 81–100
+
+Critical dependency rules
+These are non-negotiable:
+
+Do not build feature screens before the entity model exists.
+
+Do not build task execution before permissions exist.
+
+Do not build dashboards before KPI definitions exist.
+
+Do not build configurable workflows before workflow versioning exists.
+
+Do not build production modules without batch/lot traceability.
+
+Do not build alerts without an incident audit trail.
+
+Do not connect AI/agents directly to production write actions without permission gates and logs.
+
+Minimum agent operating brief
+Give OpenClaw agents these rules:
+
+Build only from the active numbered task list.
+
+Complete lower dependencies before higher layers.
+
+Every task must output code, tests, migrations, and notes.
+
+No invented pages or tables outside the approved model.
+
+Reuse shared entities and UI primitives.
+
+All write actions must be permission-checked.
+
+All critical actions must be audit-logged.
+
+Prefer modular, replaceable architecture over shortcuts.
+
+Mark blockers explicitly rather than guessing.
+
+Update task state: not started, in progress, blocked, done.
+
+Suggested first 12 tasks to start immediately
+If you want the cleanest start, tell the agents to begin with these first:
+
+1 Monorepo structure
+
+2 Coding standards
+
+3 Product architecture doc
+
+4 Env configuration
+
+5 Logging/error standards
+
+6 Testing pipeline
+
+11 Multi-tenant model
+
+14 User profile model
+
+15 Role model
+
+16 Permission matrix
+
+21 Master location hierarchy
+
+31 Workflow engine schema
+
+That gives you the backbone first, which is what stops random code generation.
+
+I can turn this next into a proper agent-ready build sheet with columns for Task ID, title, description, dependencies, owner agent, output, status, and priority.
+
+
+lets do that lets make this project ready then tell me what the next steps are 
+
+
+Thought for 20m 34s
+Done. I built the project-ready agent sheet here:
+
+OpenClaw_Terra_Agent_Build_Sheet.xlsx
+
+
+It includes:
+
+Overview
+
+100-task register
+
+Dependency map
+
+8-week launch queue
+
+Next steps:
+
+Lock the stack and repo structure.
+
+Assign owner agents for the first 12 startup tasks.
+
+Start Week 1 tasks: 1, 2, 3, 4, 6.
+
+Do not open UI-heavy work until 11, 14, 15, 16, 21, and 31 are underway.
+
+Run a daily status pass using only four states: Not Started, In Progress, Blocked, Done.
+
+Require every task to ship with code, tests, notes, and status updates.
+
+Use the Launch Queue sheet as the execution order for the first 8 weeks.
+
+Best immediate start set:
+
+1 Monorepo
+
+2 Standards
+
+3 Architecture
+
+4 Env config
+
+5 Logging/error handling
+
+6 Test pipeline
+
+11 Multi-tenant model
+
+14 User profiles
+
+15 Roles
+
+16 Permissions
+
+21 Location hierarchy
+
+31 Workflow schema
+
+If you want, I can do the next layer now: turn this into a named agent roster + sprint assignment plan so each OpenClaw agent has a specific lane.
+
+
+yes lets do that 
+
+Good. The next step is to remove ambiguity for the agents. Each agent must own a clear lane. If multiple agents touch the same layer without boundaries, you will get unstable architecture.
+
+Below is the OpenClaw Agent Roster + Construction Lanes for Terra.
+
+OpenClaw Agent Roster for Terra
+You should run 8 core build agents.
+
+Each agent owns a layer of the platform.
+
+Agent 1 — Architecture Guardian
+Purpose: Prevent architectural drift.
+
+Responsibilities:
+
+Maintain master architecture document
+
+Validate database schema proposals
+
+Validate service boundaries
+
+Enforce modularity
+
+Approve migrations
+
+Tasks owned:
+3
+11
+21
+22
+23
+24
+25
+26
+27
+28
+29
+
+Rules:
+
+No schema merges without this agent approval.
+
+Reject duplicate entities.
+
+Agent 2 — Infrastructure Agent
+Purpose: Keep the platform deployable and stable.
+
+Responsibilities:
+
+Dev environments
+
+CI/CD
+
+Logging
+
+deployment automation
+
+environment configuration
+
+Tasks owned:
+
+1
+2
+4
+5
+6
+7
+8
+9
+10
+98
+100
+
+Agent 3 — Identity & Security Agent
+Purpose: Secure multi-tenant operation.
+
+Responsibilities:
+
+Authentication
+roles
+permissions
+tenant isolation
+audit logs
+
+Tasks owned:
+
+12
+13
+14
+15
+16
+17
+18
+19
+20
+
+Critical rule:
+
+No feature module may ship without permission gates.
+
+Agent 4 — Workflow Engine Agent
+Purpose: Build Terra's core operating engine.
+
+This is the heart of the platform.
+
+Responsibilities:
+
+workflow schema
+task engine
+dependencies
+task scheduling
+workflow versioning
+workflow simulation
+
+Tasks owned:
+
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+
+Agent 5 — Worker Operations Agent
+Purpose: Build the actual farm operating interface.
+
+Responsibilities:
+
+worker UI
+task execution
+supervisor board
+shift management
+incident reporting
+
+Tasks owned:
+
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+
+Agent 6 — Dashboard & Analytics Agent
+Purpose: Decision intelligence layer.
+
+Responsibilities:
+
+dashboard framework
+widgets
+analytics
+KPI engines
+
+Tasks owned:
+
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+
+Agent 7 — Production Systems Agent
+Purpose: Domain modeling for farming systems.
+
+Responsibilities:
+
+hydroponics
+nursery
+aquaculture
+livestock
+crop cycles
+
+Tasks owned:
+
+61–80
+
+This is your deep agriculture intelligence layer.
+
+Agent 8 — Commerce & Compliance Agent
+Purpose: Packhouse, traceability, supply chain.
+
+Responsibilities:
+
+inventory
+procurement
+packhouse
+sales
+dispatch
+SOP
+compliance
+
+Tasks owned:
+
+81–97
+
+Execution Order
+Agents must run in layers.
+
+Layer 1 (Platform Foundation)
+Infrastructure
+Architecture
+Security
+
+Tasks:
+
+1–20
+
+Estimated time:
+2 weeks
+
+Layer 2 (Core Engine)
+Workflow Engine
+
+Tasks:
+
+31–40
+
+Estimated time:
+1 week
+
+Layer 3 (Operations Interface)
+Worker system
+
+Tasks:
+
+41–50
+
+Estimated time:
+1 week
+
+Layer 4 (Dashboards)
+Tasks:
+
+51–60
+
+Estimated time:
+1 week
+
+Layer 5 (Production Domains)
+Tasks:
+
+61–80
+
+Estimated time:
+2 weeks
+
+Layer 6 (Commerce + Compliance)
+Tasks:
+
+81–100
+
+Estimated time:
+2 weeks
+
+Realistic Timeline
+If OpenClaw runs continuously:
+
+First usable Terra prototype
+
+6–8 weeks
+
+Production grade
+
+4–6 months
+
+The First 72 Hours
+Tell OpenClaw to execute:
+
+Day 1
+Agent 2
+Tasks:
+
+1
+2
+4
+5
+6
+
+Agent 1
+Tasks:
+
+3
+11
+21
+
+Agent 3
+Tasks:
+
+12
+13
+14
+
+Day 2
+Agent 3:
+
+15
+16
+17
+18
+19
+
+Agent 1:
+
+22
+23
+24
+
+Day 3
+Agent 4 begins:
+
+31
+32
+33
+
+Critical Rule for Agents
+They must NOT generate random UI pages.
+
+Everything must attach to:
+
+entity
+
+workflow
+
+task
+
+asset
+
+batch
+
+location
+
+Otherwise the system becomes unmanageable.
+
+What Terra Will Become (Important)
+If this is executed correctly, Terra will become a Farm Operating System, not a farm management app.
+
+Equivalent category:
+
+ERP for agriculture
+
+production OS
+
+traceability engine
+
+automation platform
+
+There are almost no good systems like this globally.
+
+The Next Thing We Should Do
+Before the agents start writing real code, we should design one extremely important piece:
+
+The Terra Master Data Model
+This is the single source of truth schema.
+
+It defines:
+
+farm hierarchy
+
+crops
+
+fish
+
+assets
+
+workflows
+
+batches
+
+tasks
+
+inventory
+
+If this model is wrong, the whole platform becomes messy.
+
+If you want, I will now build the Terra Master Data Model (the blueprint of the entire platform database).
+
+This is the most important document of the entire project.
+
+
+ok lets do it 
+
+Good. This is the Terra Master Data Model at blueprint level.
+
+This is not the final SQL schema yet.
+This is the system truth model the agents must follow before writing deeper code.
+
+If this model stays disciplined, Terra stays clean. If this model drifts, the platform turns into a pile of disconnected features.
+
+Terra Master Data Model
+Purpose
+Terra needs one shared structure that supports:
+
+hydroponics
+
+aquaponics
+
+aquaculture
+
+nursery
+
+packhouse
+
+procurement
+
+inventory
+
+dispatch
+
+SOP and training
+
+compliance
+
+customizable workflows
+
+customizable dashboards
+
+multi-tenant permissions
+
+The design principle is:
+
+Everything important must connect back to organization, location, batch, workflow, task, asset, user, or transaction.
+
+1. Top-Level Architecture Domains
+The full master model is split into 12 domains:
+
+Tenant and Identity
+
+Location and Physical Structure
+
+Production Taxonomy
+
+Biological Entities
+
+Operational Work
+
+Assets and Infrastructure
+
+Environment and Measurements
+
+Inventory and Materials
+
+Packhouse and Commerce
+
+SOP, Training, and Compliance
+
+Alerts, Incidents, and Audit
+
+Analytics and Configuration
+
+2. Core Design Rules
+Rule 1
+Every record belongs to an organization.
+
+Rule 2
+Most operational records should also link to a site and often a more specific location node.
+
+Rule 3
+Anything that is produced, moved, treated, harvested, packed, or sold should have a batch / lot / cohort identity.
+
+Rule 4
+Every action should be traceable back to:
+
+who did it
+
+when they did it
+
+where it happened
+
+what it affected
+
+Rule 5
+No workflow record should exist without linking to a real business object:
+
+crop cycle
+
+fish cohort
+
+inventory item
+
+cleaning event
+
+maintenance event
+
+order
+
+dispatch
+
+etc.
+
+Rule 6
+Configuration must be tenant-aware:
+each organization can customize screens, workflows, permissions, KPIs, and naming.
+
+3. Domain 1 — Tenant and Identity
+3.1 Organization
+Represents one customer/company using Terra.
+
+Fields
+
+id
+
+legal_name
+
+display_name
+
+slug
+
+status
+
+timezone
+
+currency
+
+language
+
+country
+
+branding_config
+
+created_at
+
+updated_at
+
+3.2 Organization Settings
+Stores operating preferences.
+
+Fields
+
+id
+
+organization_id
+
+default_units
+
+date_format
+
+feature_flags
+
+dashboard_defaults
+
+workflow_defaults
+
+naming_conventions
+
+traceability_rules
+
+compliance_mode
+
+3.3 User
+A person in the system.
+
+Fields
+
+id
+
+email
+
+phone
+
+first_name
+
+last_name
+
+display_name
+
+status
+
+auth_provider
+
+last_login_at
+
+created_at
+
+updated_at
+
+3.4 Organization Membership
+Links users to organizations.
+
+Fields
+
+id
+
+organization_id
+
+user_id
+
+membership_status
+
+joined_at
+
+default_site_id
+
+worker_profile_id optional
+
+3.5 Role
+System or tenant-defined role.
+
+Fields
+
+id
+
+organization_id nullable for platform roles
+
+name
+
+code
+
+description
+
+role_type
+
+is_system_role
+
+is_active
+
+3.6 Permission
+Action-level capability.
+
+Examples
+
+task.complete
+
+workflow.publish
+
+dashboard.customize
+
+inventory.adjust
+
+user.invite
+
+order.dispatch
+
+Fields
+
+id
+
+code
+
+module
+
+action
+
+description
+
+3.7 Role Permission
+Maps roles to permissions.
+
+Fields
+
+id
+
+role_id
+
+permission_id
+
+scope_type
+
+scope_value optional
+
+3.8 User Role Assignment
+Assigns roles to a membership.
+
+Fields
+
+id
+
+organization_membership_id
+
+role_id
+
+site_id nullable
+
+location_node_id nullable
+
+valid_from
+
+valid_to
+
+3.9 Worker Profile
+Operational identity for a worker.
+
+Fields
+
+id
+
+organization_membership_id
+
+employee_code
+
+team_name
+
+supervisor_membership_id
+
+default_shift
+
+skill_tags
+
+certification_status
+
+4. Domain 2 — Location and Physical Structure
+This is one of the most important parts.
+
+Terra must support:
+
+farms
+
+greenhouses
+
+tunnels
+
+nurseries
+
+fish systems
+
+packhouses
+
+stores
+
+cold rooms
+
+dispatch areas
+
+processing areas
+
+4.1 Site
+Top-level real operating site.
+
+Fields
+
+id
+
+organization_id
+
+name
+
+code
+
+site_type
+
+address
+
+gps_lat
+
+gps_lng
+
+timezone
+
+is_active
+
+4.2 Location Type
+Defines allowed structure nodes.
+
+Examples
+
+farm
+
+block
+
+greenhouse
+
+tunnel
+
+nursery_zone
+
+germination_room
+
+hardening_area
+
+nft_zone
+
+dwc_zone
+
+drip_zone
+
+tower_zone
+
+reservoir_room
+
+pump_room
+
+filtration_room
+
+fish_house
+
+ras_loop
+
+tank_room
+
+packhouse
+
+wash_area
+
+cold_room
+
+dispatch_area
+
+feed_store
+
+chemical_store
+
+Fields
+
+id
+
+code
+
+name
+
+parent_type_code nullable
+
+category
+
+metadata_schema
+
+4.3 Location Node
+Flexible tree structure for real navigation.
+
+Fields
+
+id
+
+organization_id
+
+site_id
+
+parent_location_node_id nullable
+
+location_type_id
+
+name
+
+code
+
+path_text
+
+sort_order
+
+capacity_value nullable
+
+capacity_unit nullable
+
+area_m2 nullable
+
+water_volume_l nullable
+
+status
+
+metadata json
+
+This is the model that lets you say:
+Farm A → Tunnel Block A → Tunnel 4 → DWC Zone B → Row 3
+
+4.4 Location Alias
+Lets each organization rename physical structures.
+
+Fields
+
+id
+
+organization_id
+
+location_node_id
+
+alias_label
+
+alias_type
+
+5. Domain 3 — Production Taxonomy
+This keeps farm types organized without hardcoding the whole system.
+
+5.1 Production System Type
+Examples
+
+hydroponic_nft
+
+hydroponic_dwc
+
+hydroponic_drip
+
+hydroponic_vertical_tower
+
+nursery
+
+aquaculture_ras
+
+aquaponics
+
+mushroom
+
+poultry_layer
+
+goat
+
+cattle
+
+soil_field
+
+packhouse
+
+Fields
+
+id
+
+code
+
+name
+
+category
+
+description
+
+5.2 Production Unit
+An actual operating instance of a system.
+
+Examples
+
+DWC House 1
+
+Trout RAS Loop A
+
+Nursery Germination Room
+
+Packhouse Line 2
+
+Fields
+
+id
+
+organization_id
+
+site_id
+
+location_node_id
+
+production_system_type_id
+
+name
+
+code
+
+status
+
+start_date
+
+metadata
+
+5.3 Season / Production Calendar
+Supports season-based logic.
+
+Fields
+
+id
+
+organization_id
+
+name
+
+start_date
+
+end_date
+
+season_type
+
+notes
+
+6. Domain 4 — Biological Entities
+This domain handles crops, seedlings, fish, prawns, eggs, livestock.
+
+6.1 Species
+Broad biological category.
+
+Examples
+
+lettuce
+
+basil
+
+tomato
+
+trout
+
+tilapia
+
+freshwater_prawn
+
+layer_hen
+
+goat
+
+cattle
+
+Fields
+
+id
+
+kingdom_category
+
+common_name
+
+scientific_name
+
+species_group
+
+default_uom
+
+6.2 Variety / Cultivar / Strain
+Specific production variant.
+
+Examples
+
+Butterhead lettuce
+
+Genovese basil
+
+Rainbow trout strain X
+
+Fields
+
+id
+
+species_id
+
+name
+
+code
+
+variety_type
+
+supplier_reference
+
+metadata
+
+6.3 Life Stage
+Supports crops and animals.
+
+Examples crops
+
+seed
+
+germination
+
+seedling
+
+transplant
+
+vegetative
+
+harvest_ready
+
+Examples fish
+
+fry
+
+fingerling
+
+juvenile
+
+grow_out
+
+harvest_ready
+
+Fields
+
+id
+
+species_group
+
+code
+
+name
+
+sort_order
+
+6.4 Crop Cycle
+An active production cycle.
+
+Fields
+
+id
+
+organization_id
+
+site_id
+
+production_unit_id
+
+location_node_id
+
+species_id
+
+variety_id
+
+lifecycle_status
+
+planned_start_date
+
+actual_start_date
+
+expected_harvest_date
+
+actual_end_date
+
+target_output_qty
+
+target_output_uom
+
+source_batch_id nullable
+
+workflow_definition_version_id nullable
+
+6.5 Animal / Aquatic Cohort
+Group-based tracking for fish, prawns, poultry.
+
+Fields
+
+id
+
+organization_id
+
+site_id
+
+production_unit_id
+
+location_node_id
+
+species_id
+
+variety_id nullable
+
+life_stage_id
+
+cohort_code
+
+source_supplier_id nullable
+
+source_batch_id nullable
+
+stocking_date
+
+initial_count
+
+current_estimated_count
+
+initial_avg_weight_g nullable
+
+current_avg_weight_g nullable
+
+lifecycle_status
+
+6.6 Biological Batch / Lot
+Universal traceability object.
+
+This is critical.
+
+Used for:
+
+seed lots
+
+seedling lots
+
+crop harvest lots
+
+fish cohorts if needed
+
+egg batches
+
+feed lots
+
+processed product lots
+
+Fields
+
+id
+
+organization_id
+
+batch_type
+
+code
+
+source_type
+
+source_reference_id
+
+parent_batch_id nullable
+
+species_id nullable
+
+variety_id nullable
+
+created_date
+
+expiry_date nullable
+
+status
+
+quantity
+
+uom
+
+traceability_metadata
+
+7. Domain 5 — Operational Work
+This is Terra’s engine layer.
+
+7.1 Workflow Definition
+Tenant-defined workflow.
+
+Fields
+
+id
+
+organization_id
+
+name
+
+code
+
+module
+
+applicable_entity_type
+
+status
+
+description
+
+created_by
+
+published_at
+
+7.2 Workflow Version
+Versioned workflow structure.
+
+Fields
+
+id
+
+workflow_definition_id
+
+version_number
+
+schema_json
+
+status
+
+created_at
+
+published_at
+
+7.3 Workflow Stage
+Logical section of workflow.
+
+Fields
+
+id
+
+workflow_version_id
+
+stage_name
+
+stage_code
+
+sort_order
+
+entry_conditions_json
+
+exit_conditions_json
+
+7.4 Task Template
+Reusable task definitions.
+
+Examples
+
+sow seed
+
+transplant tray
+
+feed tank
+
+record mortality
+
+clean filter
+
+harvest board
+
+QC packed goods
+
+Fields
+
+id
+
+organization_id
+
+name
+
+code
+
+module
+
+instructions_template
+
+estimated_duration_min
+
+required_inputs_schema
+
+required_outputs_schema
+
+required_skills
+
+required_sop_id nullable
+
+7.5 Workflow Task Definition
+Task inside a workflow version.
+
+Fields
+
+id
+
+workflow_version_id
+
+stage_id
+
+task_template_id
+
+task_name_override nullable
+
+dependency_rules_json
+
+assignment_rules_json
+
+due_rules_json
+
+completion_rules_json
+
+skip_rules_json
+
+sort_order
+
+7.6 Task Instance
+Real work assigned to people.
+
+Fields
+
+id
+
+organization_id
+
+workflow_task_definition_id nullable
+
+task_template_id
+
+task_source_type
+
+task_source_id
+
+site_id
+
+location_node_id
+
+assigned_to_membership_id nullable
+
+assigned_team nullable
+
+priority
+
+due_at
+
+started_at
+
+completed_at
+
+status
+
+result_status
+
+notes
+
+output_json
+
+7.7 Task Event
+Every meaningful action on a task.
+
+Fields
+
+id
+
+task_instance_id
+
+event_type
+
+performed_by_membership_id
+
+event_time
+
+old_value_json
+
+new_value_json
+
+notes
+
+7.8 Shift
+For labor planning.
+
+Fields
+
+id
+
+organization_id
+
+site_id
+
+name
+
+shift_start_time
+
+shift_end_time
+
+active_days
+
+8. Domain 6 — Assets and Infrastructure
+8.1 Asset Category
+Examples
+
+pump
+
+blower
+
+tank
+
+filter
+
+dosing_pump
+
+sensor
+
+generator
+
+inverter
+
+battery
+
+cold_room
+
+vehicle
+
+packing_machine
+
+Fields
+
+id
+
+code
+
+name
+
+parent_category nullable
+
+8.2 Asset
+Real equipment item.
+
+Fields
+
+id
+
+organization_id
+
+site_id
+
+location_node_id nullable
+
+asset_category_id
+
+asset_tag
+
+serial_number
+
+manufacturer
+
+model
+
+install_date
+
+status
+
+criticality
+
+metadata
+
+8.3 Asset Relationship
+For connected systems.
+
+Examples
+pump feeds reservoir, reservoir supplies zone, sensor attached to tank.
+
+Fields
+
+id
+
+parent_asset_id
+
+child_asset_id
+
+relationship_type
+
+8.4 Maintenance Plan
+Fields
+
+id
+
+organization_id
+
+asset_id
+
+plan_name
+
+recurrence_rule
+
+checklist_schema
+
+active
+
+8.5 Maintenance Event
+Fields
+
+id
+
+asset_id
+
+maintenance_plan_id nullable
+
+event_type
+
+scheduled_at
+
+completed_at
+
+performed_by_membership_id
+
+findings
+
+action_taken
+
+next_due_at
+
+status
+
+9. Domain 7 — Environment and Measurements
+9.1 Sensor Type
+Examples
+
+pH
+
+EC
+
+DO
+
+temperature_air
+
+temperature_water
+
+humidity
+
+flow_rate
+
+pressure
+
+water_level
+
+ammonia
+
+nitrite
+
+nitrate
+
+CO2
+
+light_intensity
+
+Fields
+
+id
+
+code
+
+name
+
+unit
+
+value_type
+
+9.2 Sensor Device
+Fields
+
+id
+
+organization_id
+
+site_id
+
+location_node_id
+
+asset_id nullable
+
+sensor_type_id
+
+device_code
+
+manufacturer
+
+model
+
+calibration_due_at
+
+status
+
+9.3 Measurement Record
+Manual or automated reading.
+
+Fields
+
+id
+
+organization_id
+
+site_id
+
+location_node_id
+
+production_unit_id nullable
+
+sensor_device_id nullable
+
+measurement_type_code
+
+recorded_by_type
+
+recorded_by_id nullable
+
+measured_at
+
+value_numeric
+
+value_text nullable
+
+unit
+
+quality_flag
+
+source_type
+
+9.4 Setpoint / Threshold Rule
+Defines alert conditions.
+
+Fields
+
+id
+
+organization_id
+
+scope_type
+
+scope_id
+
+measurement_type_code
+
+min_value nullable
+
+max_value nullable
+
+target_value nullable
+
+severity
+
+active
+
+10. Domain 8 — Inventory and Materials
+10.1 Item Category
+Examples
+
+seed
+
+fertilizer
+
+chemical
+
+feed
+
+packaging
+
+cleaning_supply
+
+harvested_product
+
+finished_goods
+
+spare_part
+
+10.2 Item Master
+Universal inventory item.
+
+Fields
+
+id
+
+organization_id
+
+item_category_id
+
+sku
+
+item_name
+
+description
+
+base_uom
+
+track_lot
+
+track_expiry
+
+active
+
+metadata
+
+10.3 Inventory Location
+Storage-specific location.
+
+Examples
+
+Cold Room 1 Shelf A
+
+Feed Store Bin 4
+
+Chemical Store Rack B
+
+Fields
+
+id
+
+organization_id
+
+site_id
+
+location_node_id
+
+name
+
+inventory_type
+
+temperature_zone nullable
+
+10.4 Inventory Lot
+Lot-controlled stock.
+
+Fields
+
+id
+
+organization_id
+
+item_master_id
+
+batch_id nullable
+
+supplier_lot_code nullable
+
+internal_lot_code
+
+received_date
+
+expiry_date nullable
+
+status
+
+10.5 Stock Balance
+Current quantity by lot and location.
+
+Fields
+
+id
+
+organization_id
+
+inventory_location_id
+
+item_master_id
+
+inventory_lot_id nullable
+
+quantity_on_hand
+
+quantity_reserved
+
+quantity_available
+
+uom
+
+10.6 Stock Transaction
+Every stock movement.
+
+Fields
+
+id
+
+organization_id
+
+transaction_type
+
+item_master_id
+
+inventory_lot_id nullable
+
+from_inventory_location_id nullable
+
+to_inventory_location_id nullable
+
+quantity
+
+uom
+
+reference_type
+
+reference_id
+
+performed_by_membership_id
+
+transaction_time
+
+notes
+
+10.7 Supplier
+Fields
+
+id
+
+organization_id
+
+supplier_name
+
+supplier_type
+
+contact_name
+
+email
+
+phone
+
+status
+
+lead_time_days
+
+compliance_status
+
+10.8 Purchase Request
+10.9 Purchase Order
+10.10 Goods Receipt
+These three form the procurement chain.
+
+11. Domain 9 — Packhouse and Commerce
+11.1 Intake Receipt
+Product entering packhouse.
+
+Fields
+
+id
+
+organization_id
+
+site_id
+
+source_type
+
+source_reference_id
+
+received_at
+
+received_by_membership_id
+
+condition_notes
+
+status
+
+11.2 Intake Line
+Fields
+
+id
+
+intake_receipt_id
+
+batch_id
+
+item_master_id
+
+quantity
+
+uom
+
+grade nullable
+
+11.3 Processing Run
+One wash/grade/pack session.
+
+Fields
+
+id
+
+organization_id
+
+site_id
+
+processing_type
+
+line_name
+
+started_at
+
+ended_at
+
+status
+
+supervisor_membership_id
+
+11.4 Processing Output
+Connects input batches to output lots.
+
+Fields
+
+id
+
+processing_run_id
+
+source_batch_id
+
+output_batch_id
+
+item_master_id
+
+quantity
+
+uom
+
+waste_qty nullable
+
+11.5 Customer
+Fields
+
+id
+
+organization_id
+
+customer_type
+
+customer_name
+
+contact_name
+
+email
+
+phone
+
+pricing_tier
+
+status
+
+delivery_rules
+
+11.6 Sales Order
+Fields
+
+id
+
+organization_id
+
+customer_id
+
+order_number
+
+order_date
+
+requested_delivery_date
+
+status
+
+source_channel
+
+notes
+
+11.7 Sales Order Line
+Fields
+
+id
+
+sales_order_id
+
+item_master_id
+
+ordered_qty
+
+allocated_qty
+
+fulfilled_qty
+
+unit_price
+
+uom
+
+11.8 Dispatch
+Fields
+
+id
+
+organization_id
+
+site_id
+
+dispatch_number
+
+dispatch_date
+
+vehicle_asset_id nullable
+
+driver_name nullable
+
+status
+
+proof_of_dispatch
+
+11.9 Dispatch Line
+Fields
+
+id
+
+dispatch_id
+
+sales_order_line_id
+
+inventory_lot_id nullable
+
+batch_id nullable
+
+qty
+
+uom
+
+12. Domain 10 — SOP, Training, and Compliance
+12.1 SOP Document
+Fields
+
+id
+
+organization_id
+
+title
+
+code
+
+module
+
+version
+
+status
+
+effective_date
+
+content_reference
+
+approval_record
+
+12.2 SOP Link
+Links SOPs to tasks, assets, areas, or roles.
+
+Fields
+
+id
+
+sop_document_id
+
+linked_entity_type
+
+linked_entity_id
+
+12.3 Training Module
+Fields
+
+id
+
+organization_id
+
+title
+
+code
+
+required_for_role_id nullable
+
+required_for_task_template_id nullable
+
+content_reference
+
+active
+
+12.4 Training Completion
+Fields
+
+id
+
+membership_id
+
+training_module_id
+
+completion_date
+
+expiry_date nullable
+
+status
+
+12.5 Compliance Record
+Examples
+
+cleaning log
+
+cold room temp log
+
+traceability check
+
+corrective action
+
+audit record
+
+Fields
+
+id
+
+organization_id
+
+compliance_type
+
+site_id
+
+location_node_id nullable
+
+linked_entity_type nullable
+
+linked_entity_id nullable
+
+recorded_at
+
+recorded_by_membership_id
+
+status
+
+details_json
+
+13. Domain 11 — Alerts, Incidents, and Audit
+13.1 Alert Rule
+System trigger logic.
+
+Fields
+
+id
+
+organization_id
+
+rule_name
+
+trigger_type
+
+condition_json
+
+severity
+
+routing_json
+
+active
+
+13.2 Alert Event
+Fields
+
+id
+
+organization_id
+
+alert_rule_id
+
+event_time
+
+severity
+
+source_type
+
+source_id
+
+title
+
+message
+
+status
+
+13.3 Incident
+More serious operational issue.
+
+Examples
+
+pump failure
+
+mortality spike
+
+stockout
+
+contamination risk
+
+order miss
+
+temperature breach
+
+Fields
+
+id
+
+organization_id
+
+site_id
+
+location_node_id nullable
+
+incident_type
+
+severity
+
+opened_at
+
+opened_by_membership_id
+
+assigned_to_membership_id nullable
+
+status
+
+root_cause nullable
+
+resolution_notes nullable
+
+closed_at nullable
+
+13.4 Audit Log
+Universal change history.
+
+Fields
+
+id
+
+organization_id
+
+actor_type
+
+actor_id
+
+action
+
+entity_type
+
+entity_id
+
+timestamp
+
+old_values_json
+
+new_values_json
+
+ip_address nullable
+
+request_id nullable
+
+14. Domain 12 — Analytics and Configuration
+14.1 KPI Definition
+Tenant-defined or system KPI.
+
+Examples
+
+harvest_kg_per_m2
+
+survival_percent
+
+fcr
+
+labor_hours_per_kg
+
+order_fill_rate
+
+stock_waste_percent
+
+Fields
+
+id
+
+organization_id nullable
+
+code
+
+name
+
+module
+
+formula_definition
+
+default_visualization
+
+active
+
+14.2 KPI Snapshot
+Stored calculation outputs.
+
+Fields
+
+id
+
+organization_id
+
+site_id nullable
+
+production_unit_id nullable
+
+location_node_id nullable
+
+kpi_definition_id
+
+period_type
+
+period_start
+
+period_end
+
+value
+
+unit
+
+14.3 Dashboard Definition
+A dashboard template.
+
+Fields
+
+id
+
+organization_id
+
+name
+
+audience_type
+
+is_default
+
+layout_json
+
+14.4 Dashboard Widget
+Fields
+
+id
+
+dashboard_definition_id
+
+widget_type
+
+title
+
+data_source_config
+
+placement_config
+
+visibility_rules_json
+
+14.5 Custom Field Definition
+For tenant extension without bad schema hacks.
+
+Fields
+
+id
+
+organization_id
+
+entity_type
+
+field_name
+
+field_label
+
+data_type
+
+validation_rules_json
+
+active
+
+15. Most Important Relationships
+These are the backbone links.
+
+Universal anchors
+Organization → everything
+
+Site → most operations
+
+Location Node → physical execution
+
+Production Unit → system-level operations
+
+Batch / Lot / Cohort → traceability
+
+Task Instance → work execution
+
+User / Membership → responsibility
+
+Asset → infrastructure
+
+Measurement Record → environment truth
+
+Inventory Transaction → stock truth
+
+Audit Log → legal/operational traceability
+
+Operational examples
+Crop Cycle links to Location Node, Production Unit, Species, Variety, Workflow Version
+
+Fish Cohort links to Tank Location Node, Species, Life Stage
+
+Task Instance links to source object like Crop Cycle or Cohort
+
+Measurement Record links to Location Node or Production Unit
+
+Processing Output links input batch to output batch
+
+Dispatch Line links order fulfillment back to batch/lot
+
+Compliance Record links to task, area, or batch where needed
+
+16. Recommended Entity Priority for Database Build
+Agents should not build all tables at once.
+
+Wave 1 — Absolute foundation
+Build first:
+
+Organization
+
+Organization Settings
+
+User
+
+Organization Membership
+
+Role
+
+Permission
+
+User Role Assignment
+
+Site
+
+Location Type
+
+Location Node
+
+Production System Type
+
+Production Unit
+
+Species
+
+Variety
+
+Life Stage
+
+Asset Category
+
+Asset
+
+Workflow Definition
+
+Workflow Version
+
+Task Template
+
+Task Instance
+
+Audit Log
+
+Wave 2 — Operational backbone
+Crop Cycle
+
+Animal/Aquatic Cohort
+
+Biological Batch
+
+Task Event
+
+Sensor Type
+
+Sensor Device
+
+Measurement Record
+
+Alert Rule
+
+Alert Event
+
+Incident
+
+Wave 3 — Inventory and commerce
+Item Category
+
+Item Master
+
+Inventory Location
+
+Inventory Lot
+
+Stock Balance
+
+Stock Transaction
+
+Supplier
+
+Purchase Request
+
+Purchase Order
+
+Goods Receipt
+
+Customer
+
+Sales Order
+
+Dispatch
+
+Wave 4 — Compliance and analytics
+SOP Document
+
+Training Module
+
+Training Completion
+
+Compliance Record
+
+KPI Definition
+
+KPI Snapshot
+
+Dashboard Definition
+
+Dashboard Widget
+
+Custom Field Definition
+
+17. Non-Negotiable Naming Strategy
+To keep Terra clean, agents must follow this naming pattern:
+
+Use clear singular entity names
+organization
+
+site
+
+location_node
+
+crop_cycle
+
+task_instance
+
+inventory_lot
+
+Not vague names like:
+
+data
+
+item
+
+object
+
+record_store
+
+unit_data
+
+IDs
+Use UUIDs.
+
+Codes
+Human-readable unique codes where needed:
+
+site_code
+
+batch_code
+
+task_code
+
+cohort_code
+
+dispatch_number
+
+order_number
+
+18. High-Risk Areas to Control Early
+These are the places where agents usually make a mess.
+
+1. Location model
+Do not hardcode greenhouse-only logic.
+Use a generic location tree.
+
+2. Batch model
+Do not create separate random batch systems for crops, fish, and packhouse.
+Use one universal batch/lot concept with typed behavior.
+
+3. Workflow model
+Do not attach workflow directly to pages.
+Attach workflow to entity types and real operations.
+
+4. Dashboard model
+Do not hardcode one dashboard per role forever.
+Use widget + layout + permission model.
+
+5. Permissions
+Do not use only frontend hiding.
+Permission checks must exist in backend action layer.
+
+6. Customization
+Do not let every customer change schema directly.
+Use custom fields, config, and versioned workflow definitions.
+
+19. What This Means for OpenClaw Next
+The agents now need to convert this blueprint into:
+
+Step 1
+ERD-level schema plan
+
+final entities
+
+core fields
+
+PK/FK links
+
+indexes
+
+enums
+
+junction tables
+
+Step 2
+Migration plan
+
+migration order
+
+dependency order
+
+seed order
+
+Step 3
+Service boundary plan
+Which service/module owns which entities.
+
+Step 4
+API contract plan
+CRUD is not enough.
+Need action-based endpoints.
+
+20. Immediate Next Build Package
+The next thing to create is:
+
+Terra Schema Package v1
+Containing:
+
+entity list
+
+field list
+
+enums
+
+relationships
+
+migration order
+
+ownership by agent
+
+That is the document the agents can follow directly.
+
+After that, they can safely start building without drifting.
+
+I recommend the next move be one of these two:
+
+Option A: I build the Terra Schema Package v1 in a strict implementation format.
+Option B: I build the first 30 actual database tables with fields and relationships so OpenClaw can start coding immediately.
+
+
+whats better for cuality a or b 
+
+A first, then B.
+
+For quality, Option A is better.
+
+Why:
+
+A forces the structure, ownership, enums, relationships, migration order, and boundaries to be correct before code starts.
+
+B gets you moving faster, but if the schema assumptions are even slightly wrong, the agents will build on bad foundations and you will pay for it with rework, messy migrations, duplicated tables, and unstable logic.
+
+In plain terms:
+
+Option A = better quality
+
+Option B = faster start
+
+Best overall path = A immediately followed by B
+
+For Terra, where you said you do not want shortcuts and you want stability first, the right move is:
+
+Build Terra Schema Package v1
+
+Approve it
+
+Then generate the first 30 tables from that package
+
+That is the professional path.
+
+If you skip straight to B, OpenClaw may still produce code, but the risk goes up in these areas:
+
+duplicated entities
+
+weak foreign key structure
+
+bad naming consistency
+
+confused workflow ownership
+
+broken traceability
+
+wrong dependency order
+
+schema drift between modules
+
+My recommendation:
+Choose A now.
+Then the next step after that is B, using A as the source of truth.
+
+
+ok so lets do A and then what do we start after A is done 
+
+After A, you start with a very specific sequence.
+
+Do not jump straight into random coding after the schema package is done.
+
+Correct order after A
+1. Freeze the Schema Package v1
+This becomes the source of truth for:
+
+entities
+
+fields
+
+enums
+
+relationships
+
+ownership
+
+migration order
+
+At this point, no agent is allowed to invent extra tables unless they raise a change request.
+
+2. Generate the ERD and migration map
+Turn the schema package into:
+
+table-by-table database plan
+
+PK/FK map
+
+index plan
+
+enum strategy
+
+migration dependency order
+
+This is the bridge between blueprint and code.
+
+3. Build the first foundation tables only
+Start with the minimum backbone tables, not all 30 at once.
+
+First build group:
+
+organization
+
+organization_settings
+
+user
+
+organization_membership
+
+role
+
+permission
+
+user_role_assignment
+
+site
+
+location_type
+
+location_node
+
+These are the platform anchors.
+
+4. Then build the operational backbone
+Second group:
+
+production_system_type
+
+production_unit
+
+species
+
+variety
+
+life_stage
+
+asset_category
+
+asset
+
+workflow_definition
+
+workflow_version
+
+task_template
+
+task_instance
+
+audit_log
+
+Now the platform has identity, place, biology, workflow, and accountability.
+
+5. Only then start API contracts
+After the first core tables exist, define:
+
+auth actions
+
+membership actions
+
+location actions
+
+workflow actions
+
+task actions
+
+Not just CRUD. Real actions.
+
+6. Then start the first usable backend modules
+Start in this order:
+
+tenant/identity module
+
+location module
+
+permission module
+
+workflow module
+
+task execution module
+
+7. Then start the first UI
+Only after the backend backbone is real:
+
+login
+
+org/site selector
+
+admin user management
+
+role/permission screen
+
+location tree viewer
+
+workflow definition screen
+
+my tasks screen
+
+That is the first controlled UI wave.
+
+What you start immediately after A is done
+The first actual construction package should be:
+
+Build Package 01 — Core Foundation
+Contains:
+
+database tables for tenant, identity, site, and location
+
+migrations
+
+seed data
+
+permission checks
+
+audit logging hooks
+
+tests
+
+Then:
+
+Build Package 02 — Workflow Core
+Contains:
+
+workflow_definition
+
+workflow_version
+
+task_template
+
+task_instance
+
+task_event
+
+execution rules
+
+tests
+
+Then:
+
+Build Package 03 — Worker Operations MVP
+Contains:
+
+my tasks
+
+task assignment
+
+task completion
+
+location-guided work
+
+supervisor reassignment
+
+incident flagging
+
+So the exact sequence is
+A done
+→ freeze schema
+→ generate ERD + migration order
+→ build foundation tables
+→ build workflow core
+→ build task engine
+→ build first admin UI
+→ build first worker UI
+→ then expand into hydroponics, aquaculture, inventory, packhouse
+
+Best next step after A
+The next thing we should create is:
+
+Terra Schema Package v1
+
+And immediately after that:
+
+Build Package 01 — Core Foundation
+
+That is the cleanest path.
+
+I suggest we do this in order:
+
+Schema Package v1
+
+Build Package 01
+
+Build Package 02
+
+Build Package 03
+
+I’ll start now with Terra Schema Package v1 in strict implementation format.
+
+
+yes 
+
+Below is Terra Schema Package v1 in implementation format.
+
+This is the document the agents should treat as the controlled source of truth before generating migrations and services.
+
+Terra Schema Package v1
+Status
+Draft for approval
+
+Purpose
+Defines:
+
+entity ownership
+
+core fields
+
+enums
+
+relationships
+
+migration order
+
+module boundaries
+
+build constraints
+
+Build principle
+The schema must support:
+
+multi-tenant control
+
+configurable workflows
+
+traceability
+
+operational execution
+
+location-based work
+
+future analytics
+
+future automation
+
+1. Module ownership map
+Module A — Tenant & Identity
+Owns:
+
+organization
+
+organization_settings
+
+app_user
+
+organization_membership
+
+role
+
+permission
+
+role_permission
+
+user_role_assignment
+
+worker_profile
+
+Module B — Location & Production Structure
+Owns:
+
+site
+
+location_type
+
+location_node
+
+location_alias
+
+production_system_type
+
+production_unit
+
+season_calendar
+
+Module C — Biology & Traceability
+Owns:
+
+species
+
+variety
+
+life_stage
+
+crop_cycle
+
+animal_cohort
+
+biological_batch
+
+Module D — Workflow & Task Engine
+Owns:
+
+workflow_definition
+
+workflow_version
+
+workflow_stage
+
+task_template
+
+workflow_task_definition
+
+task_instance
+
+task_event
+
+shift
+
+Module E — Assets & Maintenance
+Owns:
+
+asset_category
+
+asset
+
+asset_relationship
+
+maintenance_plan
+
+maintenance_event
+
+Module F — Measurements & Alerts
+Owns:
+
+sensor_type
+
+sensor_device
+
+measurement_record
+
+threshold_rule
+
+alert_rule
+
+alert_event
+
+incident
+
+Module G — Inventory & Procurement
+Owns:
+
+item_category
+
+item_master
+
+inventory_location
+
+inventory_lot
+
+stock_balance
+
+stock_transaction
+
+supplier
+
+purchase_request
+
+purchase_order
+
+goods_receipt
+
+Module H — Packhouse & Commerce
+Owns:
+
+intake_receipt
+
+intake_line
+
+processing_run
+
+processing_output
+
+customer
+
+sales_order
+
+sales_order_line
+
+dispatch
+
+dispatch_line
+
+Module I — SOP, Training & Compliance
+Owns:
+
+sop_document
+
+sop_link
+
+training_module
+
+training_completion
+
+compliance_record
+
+Module J — Analytics & Configuration
+Owns:
+
+kpi_definition
+
+kpi_snapshot
+
+dashboard_definition
+
+dashboard_widget
+
+custom_field_definition
+
+Cross-cutting module
+Owns:
+
+audit_log
+
+2. Global schema rules
+2.1 Common fields
+Most tables should include:
+
+id UUID PK
+
+organization_id UUID where applicable
+
+created_at timestamptz
+
+updated_at timestamptz
+
+2.2 ID strategy
+Use UUID primary keys on all business tables.
+
+2.3 Soft delete strategy
+Do not soft delete everything.
+
+Use:
+
+status for business deactivation
+
+hard delete only for safe non-transactional setup records where allowed
+
+never hard delete traceability or audit records
+
+2.4 Organization boundary
+All tenant-owned records must include organization_id.
+
+2.5 Site boundary
+Operational records should include site_id unless globally tenant-scoped.
+
+2.6 Location boundary
+Work, measurements, assets, and production records should include location_node_id where physically meaningful.
+
+2.7 Code fields
+Human-readable codes must be unique within a practical scope:
+
+organization.slug globally unique
+
+site.code unique per organization
+
+location_node.code unique per site/parent scope
+
+workflow_definition.code unique per organization
+
+task_template.code unique per organization
+
+biological_batch.code unique per organization
+
+animal_cohort.cohort_code unique per organization
+
+sales_order.order_number unique per organization
+
+dispatch.dispatch_number unique per organization
+
+2.8 Audit rule
+Any write to critical entities must create an audit log event.
+
+Critical entities:
+
+roles and permissions
+
+workflow definitions and versions
+
+task instances
+
+crop_cycle
+
+animal_cohort
+
+biological_batch
+
+stock_transaction
+
+sales_order
+
+dispatch
+
+compliance_record
+
+2.9 Enum rule
+Use database enums only for highly stable values.
+Use reference tables when values may expand by tenant or over time.
+
+3. Stable enums for v1
+3.1 organization_status
+active
+
+suspended
+
+archived
+
+3.2 membership_status
+invited
+
+active
+
+suspended
+
+removed
+
+3.3 role_type
+system
+
+tenant
+
+temporary
+
+3.4 production_unit_status
+planned
+
+active
+
+paused
+
+retired
+
+3.5 lifecycle_status
+planned
+
+active
+
+on_hold
+
+harvest_ready
+
+completed
+
+failed
+
+archived
+
+3.6 task_status
+pending
+
+ready
+
+assigned
+
+in_progress
+
+paused
+
+completed
+
+failed
+
+skipped
+
+cancelled
+
+3.7 result_status
+success
+
+partial
+
+failed
+
+blocked
+
+not_applicable
+
+3.8 asset_status
+active
+
+offline
+
+maintenance
+
+failed
+
+retired
+
+3.9 criticality_level
+low
+
+medium
+
+high
+
+critical
+
+3.10 measurement_quality_flag
+valid
+
+suspect
+
+invalid
+
+estimated
+
+3.11 alert_severity
+info
+
+warning
+
+high
+
+critical
+
+3.12 incident_status
+open
+
+investigating
+
+mitigated
+
+resolved
+
+closed
+
+3.13 stock_transaction_type
+receipt
+
+issue
+
+transfer
+
+adjustment_in
+
+adjustment_out
+
+consumption
+
+production
+
+reservation
+
+release
+
+dispatch
+
+3.14 purchase_request_status
+draft
+
+submitted
+
+approved
+
+rejected
+
+converted
+
+closed
+
+3.15 purchase_order_status
+draft
+
+issued
+
+partially_received
+
+received
+
+cancelled
+
+closed
+
+3.16 sales_order_status
+draft
+
+confirmed
+
+allocated
+
+picking
+
+dispatched
+
+completed
+
+cancelled
+
+3.17 dispatch_status
+draft
+
+ready
+
+in_transit
+
+delivered
+
+failed
+
+cancelled
+
+3.18 document_status
+draft
+
+active
+
+superseded
+
+archived
+
+4. Reference tables, not enums
+These must be tables, not fixed enums:
+
+location_type
+
+production_system_type
+
+species
+
+variety
+
+life_stage
+
+asset_category
+
+sensor_type
+
+item_category
+
+permission
+
+Reason: they will expand and differ over time.
+
+5. Core entity definitions
+5.1 organization
+Owner: Tenant & Identity
+
+Fields:
+
+id UUID PK
+
+legal_name varchar(200) not null
+
+display_name varchar(200) not null
+
+slug varchar(100) not null unique
+
+status organization_status not null default 'active'
+
+timezone varchar(64) not null
+
+currency varchar(3) not null
+
+language varchar(16) not null
+
+country varchar(100) null
+
+branding_config jsonb not null default '{}'
+
+created_at timestamptz not null
+
+updated_at timestamptz not null
+
+Indexes:
+
+unique(slug)
+
+index(status)
+
+5.2 organization_settings
+Fields:
+
+id UUID PK
+
+organization_id UUID not null unique FK
+
+default_units jsonb not null default '{}'
+
+date_format varchar(32) null
+
+feature_flags jsonb not null default '{}'
+
+dashboard_defaults jsonb not null default '{}'
+
+workflow_defaults jsonb not null default '{}'
+
+naming_conventions jsonb not null default '{}'
+
+traceability_rules jsonb not null default '{}'
+
+compliance_mode varchar(64) null
+
+created_at
+
+updated_at
+
+5.3 app_user
+Use app_user instead of user.
+
+Fields:
+
+id UUID PK
+
+email varchar(255) not null unique
+
+phone varchar(50) null
+
+first_name varchar(120) not null
+
+last_name varchar(120) null
+
+display_name varchar(200) null
+
+status varchar(32) not null
+
+auth_provider varchar(64) not null
+
+last_login_at timestamptz null
+
+created_at
+
+updated_at
+
+Indexes:
+
+unique(email)
+
+5.4 organization_membership
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+user_id UUID not null FK
+
+membership_status membership_status not null
+
+joined_at timestamptz null
+
+default_site_id UUID null FK site
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, user_id)
+
+5.5 role
+Fields:
+
+id UUID PK
+
+organization_id UUID null FK
+
+name varchar(120) not null
+
+code varchar(100) not null
+
+description text null
+
+role_type role_type not null
+
+is_system_role boolean not null default false
+
+is_active boolean not null default true
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, code)
+
+5.6 permission
+Fields:
+
+id UUID PK
+
+code varchar(150) not null unique
+
+module varchar(64) not null
+
+action varchar(64) not null
+
+description text null
+
+created_at
+
+updated_at
+
+5.7 role_permission
+Fields:
+
+id UUID PK
+
+role_id UUID not null FK
+
+permission_id UUID not null FK
+
+scope_type varchar(64) null
+
+scope_value varchar(128) null
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(role_id, permission_id, scope_type, scope_value)
+
+5.8 user_role_assignment
+Fields:
+
+id UUID PK
+
+organization_membership_id UUID not null FK
+
+role_id UUID not null FK
+
+site_id UUID null FK
+
+location_node_id UUID null FK
+
+valid_from timestamptz null
+
+valid_to timestamptz null
+
+created_at
+
+updated_at
+
+5.9 worker_profile
+Fields:
+
+id UUID PK
+
+organization_membership_id UUID not null unique FK
+
+employee_code varchar(100) null
+
+team_name varchar(120) null
+
+supervisor_membership_id UUID null FK organization_membership
+
+default_shift_id UUID null FK shift
+
+skill_tags jsonb not null default '[]'
+
+certification_status varchar(64) null
+
+created_at
+
+updated_at
+
+5.10 site
+Owner: Location & Production Structure
+
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+name varchar(200) not null
+
+code varchar(100) not null
+
+site_type varchar(64) not null
+
+address text null
+
+gps_lat numeric(10,7) null
+
+gps_lng numeric(10,7) null
+
+timezone varchar(64) null
+
+is_active boolean not null default true
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, code)
+
+5.11 location_type
+Fields:
+
+id UUID PK
+
+code varchar(100) not null unique
+
+name varchar(120) not null
+
+parent_type_code varchar(100) null
+
+category varchar(64) not null
+
+metadata_schema jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+5.12 location_node
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+site_id UUID not null FK
+
+parent_location_node_id UUID null FK self
+
+location_type_id UUID not null FK
+
+name varchar(200) not null
+
+code varchar(100) null
+
+path_text text null
+
+sort_order integer not null default 0
+
+capacity_value numeric(14,3) null
+
+capacity_unit varchar(32) null
+
+area_m2 numeric(14,2) null
+
+water_volume_l numeric(14,2) null
+
+status varchar(32) not null
+
+metadata jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+Indexes:
+
+index(site_id)
+
+index(parent_location_node_id)
+
+index(location_type_id)
+
+index(path_text)
+
+Constraints:
+
+unique(site_id, parent_location_node_id, code) where code is not null
+
+5.13 location_alias
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+location_node_id UUID not null FK
+
+alias_label varchar(200) not null
+
+alias_type varchar(64) not null
+
+created_at
+
+updated_at
+
+5.14 production_system_type
+Fields:
+
+id UUID PK
+
+code varchar(100) not null unique
+
+name varchar(120) not null
+
+category varchar(64) not null
+
+description text null
+
+created_at
+
+updated_at
+
+5.15 production_unit
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+site_id UUID not null FK
+
+location_node_id UUID not null FK
+
+production_system_type_id UUID not null FK
+
+name varchar(200) not null
+
+code varchar(100) not null
+
+status production_unit_status not null default 'planned'
+
+start_date date null
+
+metadata jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, code)
+
+5.16 season_calendar
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+name varchar(120) not null
+
+start_date date not null
+
+end_date date not null
+
+season_type varchar(64) not null
+
+notes text null
+
+created_at
+
+updated_at
+
+5.17 species
+Owner: Biology & Traceability
+
+Fields:
+
+id UUID PK
+
+kingdom_category varchar(64) not null
+
+common_name varchar(120) not null
+
+scientific_name varchar(200) null
+
+species_group varchar(64) not null
+
+default_uom varchar(32) null
+
+created_at
+
+updated_at
+
+Indexes:
+
+index(species_group)
+
+unique(common_name, species_group)
+
+5.18 variety
+Fields:
+
+id UUID PK
+
+species_id UUID not null FK
+
+name varchar(120) not null
+
+code varchar(100) null
+
+variety_type varchar(64) null
+
+supplier_reference varchar(120) null
+
+metadata jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(species_id, name)
+
+5.19 life_stage
+Fields:
+
+id UUID PK
+
+species_group varchar(64) not null
+
+code varchar(100) not null
+
+name varchar(120) not null
+
+sort_order integer not null default 0
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(species_group, code)
+
+5.20 crop_cycle
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+site_id UUID not null FK
+
+production_unit_id UUID not null FK
+
+location_node_id UUID not null FK
+
+species_id UUID not null FK
+
+variety_id UUID null FK
+
+lifecycle_status lifecycle_status not null
+
+planned_start_date date null
+
+actual_start_date date null
+
+expected_harvest_date date null
+
+actual_end_date date null
+
+target_output_qty numeric(14,3) null
+
+target_output_uom varchar(32) null
+
+source_batch_id UUID null FK biological_batch
+
+workflow_version_id UUID null FK
+
+created_at
+
+updated_at
+
+Indexes:
+
+index(production_unit_id)
+
+index(location_node_id)
+
+index(lifecycle_status)
+
+5.21 animal_cohort
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+site_id UUID not null FK
+
+production_unit_id UUID not null FK
+
+location_node_id UUID not null FK
+
+species_id UUID not null FK
+
+variety_id UUID null FK
+
+life_stage_id UUID not null FK
+
+cohort_code varchar(100) not null
+
+source_supplier_id UUID null FK supplier
+
+source_batch_id UUID null FK biological_batch
+
+stocking_date date not null
+
+initial_count integer not null
+
+current_estimated_count integer null
+
+initial_avg_weight_g numeric(12,3) null
+
+current_avg_weight_g numeric(12,3) null
+
+lifecycle_status lifecycle_status not null
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, cohort_code)
+
+5.22 biological_batch
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+batch_type varchar(64) not null
+
+code varchar(100) not null
+
+source_type varchar(64) null
+
+source_reference_id UUID null
+
+parent_batch_id UUID null FK self
+
+species_id UUID null FK
+
+variety_id UUID null FK
+
+created_date date not null
+
+expiry_date date null
+
+status varchar(32) not null
+
+quantity numeric(14,3) null
+
+uom varchar(32) null
+
+traceability_metadata jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, code)
+
+5.23 workflow_definition
+Owner: Workflow & Task Engine
+
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+name varchar(150) not null
+
+code varchar(100) not null
+
+module varchar(64) not null
+
+applicable_entity_type varchar(64) not null
+
+status document_status not null default 'draft'
+
+description text null
+
+created_by_membership_id UUID not null FK
+
+published_at timestamptz null
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, code)
+
+5.24 workflow_version
+Fields:
+
+id UUID PK
+
+workflow_definition_id UUID not null FK
+
+version_number integer not null
+
+schema_json jsonb not null
+
+status document_status not null default 'draft'
+
+created_at timestamptz not null
+
+published_at timestamptz null
+
+updated_at timestamptz not null
+
+Constraints:
+
+unique(workflow_definition_id, version_number)
+
+5.25 workflow_stage
+Fields:
+
+id UUID PK
+
+workflow_version_id UUID not null FK
+
+stage_name varchar(120) not null
+
+stage_code varchar(100) not null
+
+sort_order integer not null default 0
+
+entry_conditions_json jsonb not null default '{}'
+
+exit_conditions_json jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(workflow_version_id, stage_code)
+
+5.26 task_template
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+name varchar(150) not null
+
+code varchar(100) not null
+
+module varchar(64) not null
+
+instructions_template text null
+
+estimated_duration_min integer null
+
+required_inputs_schema jsonb not null default '{}'
+
+required_outputs_schema jsonb not null default '{}'
+
+required_skills jsonb not null default '[]'
+
+required_sop_id UUID null FK sop_document
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, code)
+
+5.27 workflow_task_definition
+Fields:
+
+id UUID PK
+
+workflow_version_id UUID not null FK
+
+workflow_stage_id UUID not null FK
+
+task_template_id UUID not null FK
+
+task_name_override varchar(150) null
+
+dependency_rules_json jsonb not null default '{}'
+
+assignment_rules_json jsonb not null default '{}'
+
+due_rules_json jsonb not null default '{}'
+
+completion_rules_json jsonb not null default '{}'
+
+skip_rules_json jsonb not null default '{}'
+
+sort_order integer not null default 0
+
+created_at
+
+updated_at
+
+5.28 task_instance
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+workflow_task_definition_id UUID null FK
+
+task_template_id UUID not null FK
+
+task_source_type varchar(64) not null
+
+task_source_id UUID not null
+
+site_id UUID not null FK
+
+location_node_id UUID null FK
+
+assigned_to_membership_id UUID null FK
+
+assigned_team varchar(120) null
+
+priority integer not null default 3
+
+due_at timestamptz null
+
+started_at timestamptz null
+
+completed_at timestamptz null
+
+status task_status not null default 'pending'
+
+result_status result_status null
+
+notes text null
+
+output_json jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+Indexes:
+
+index(organization_id, status)
+
+index(assigned_to_membership_id, status)
+
+index(task_source_type, task_source_id)
+
+index(site_id, due_at)
+
+5.29 task_event
+Fields:
+
+id UUID PK
+
+task_instance_id UUID not null FK
+
+event_type varchar(64) not null
+
+performed_by_membership_id UUID null FK
+
+event_time timestamptz not null
+
+old_value_json jsonb not null default '{}'
+
+new_value_json jsonb not null default '{}'
+
+notes text null
+
+created_at
+
+updated_at
+
+Indexes:
+
+index(task_instance_id, event_time)
+
+5.30 shift
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+site_id UUID null FK
+
+name varchar(120) not null
+
+shift_start_time time not null
+
+shift_end_time time not null
+
+active_days jsonb not null default '[]'
+
+created_at
+
+updated_at
+
+5.31 asset_category
+Owner: Assets & Maintenance
+
+Fields:
+
+id UUID PK
+
+code varchar(100) not null unique
+
+name varchar(120) not null
+
+parent_category_id UUID null FK self
+
+created_at
+
+updated_at
+
+5.32 asset
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+site_id UUID not null FK
+
+location_node_id UUID null FK
+
+asset_category_id UUID not null FK
+
+asset_tag varchar(120) not null
+
+serial_number varchar(120) null
+
+manufacturer varchar(120) null
+
+model varchar(120) null
+
+install_date date null
+
+status asset_status not null default 'active'
+
+criticality criticality_level not null default 'medium'
+
+metadata jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, asset_tag)
+
+5.33 asset_relationship
+Fields:
+
+id UUID PK
+
+parent_asset_id UUID not null FK asset
+
+child_asset_id UUID not null FK asset
+
+relationship_type varchar(64) not null
+
+created_at
+
+updated_at
+
+5.34 maintenance_plan
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+asset_id UUID not null FK
+
+plan_name varchar(150) not null
+
+recurrence_rule varchar(255) not null
+
+checklist_schema jsonb not null default '{}'
+
+active boolean not null default true
+
+created_at
+
+updated_at
+
+5.35 maintenance_event
+Fields:
+
+id UUID PK
+
+asset_id UUID not null FK
+
+maintenance_plan_id UUID null FK
+
+event_type varchar(64) not null
+
+scheduled_at timestamptz null
+
+completed_at timestamptz null
+
+performed_by_membership_id UUID null FK
+
+findings text null
+
+action_taken text null
+
+next_due_at timestamptz null
+
+status varchar(32) not null
+
+created_at
+
+updated_at
+
+5.36 sensor_type
+Owner: Measurements & Alerts
+
+Fields:
+
+id UUID PK
+
+code varchar(100) not null unique
+
+name varchar(120) not null
+
+unit varchar(32) not null
+
+value_type varchar(32) not null
+
+created_at
+
+updated_at
+
+5.37 sensor_device
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+site_id UUID not null FK
+
+location_node_id UUID null FK
+
+asset_id UUID null FK
+
+sensor_type_id UUID not null FK
+
+device_code varchar(120) not null
+
+manufacturer varchar(120) null
+
+model varchar(120) null
+
+calibration_due_at timestamptz null
+
+status varchar(32) not null
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, device_code)
+
+5.38 measurement_record
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+site_id UUID not null FK
+
+location_node_id UUID null FK
+
+production_unit_id UUID null FK
+
+sensor_device_id UUID null FK
+
+measurement_type_code varchar(100) not null
+
+recorded_by_type varchar(32) not null
+
+recorded_by_id UUID null
+
+measured_at timestamptz not null
+
+value_numeric numeric(18,6) null
+
+value_text varchar(255) null
+
+unit varchar(32) not null
+
+quality_flag measurement_quality_flag not null default 'valid'
+
+source_type varchar(32) not null
+
+created_at
+
+updated_at
+
+Indexes:
+
+index(site_id, measured_at)
+
+index(location_node_id, measured_at)
+
+index(measurement_type_code, measured_at)
+
+5.39 threshold_rule
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+scope_type varchar(64) not null
+
+scope_id UUID not null
+
+measurement_type_code varchar(100) not null
+
+min_value numeric(18,6) null
+
+max_value numeric(18,6) null
+
+target_value numeric(18,6) null
+
+severity alert_severity not null
+
+active boolean not null default true
+
+created_at
+
+updated_at
+
+5.40 alert_rule
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+rule_name varchar(150) not null
+
+trigger_type varchar(64) not null
+
+condition_json jsonb not null default '{}'
+
+severity alert_severity not null
+
+routing_json jsonb not null default '{}'
+
+active boolean not null default true
+
+created_at
+
+updated_at
+
+5.41 alert_event
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+alert_rule_id UUID null FK
+
+event_time timestamptz not null
+
+severity alert_severity not null
+
+source_type varchar(64) not null
+
+source_id UUID null
+
+title varchar(200) not null
+
+message text not null
+
+status varchar(32) not null
+
+created_at
+
+updated_at
+
+Indexes:
+
+index(organization_id, event_time)
+
+index(severity, status)
+
+5.42 incident
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+site_id UUID not null FK
+
+location_node_id UUID null FK
+
+incident_type varchar(64) not null
+
+severity alert_severity not null
+
+opened_at timestamptz not null
+
+opened_by_membership_id UUID not null FK
+
+assigned_to_membership_id UUID null FK
+
+status incident_status not null default 'open'
+
+root_cause text null
+
+resolution_notes text null
+
+closed_at timestamptz null
+
+created_at
+
+updated_at
+
+5.43 item_category
+Owner: Inventory & Procurement
+
+Fields:
+
+id UUID PK
+
+code varchar(100) not null unique
+
+name varchar(120) not null
+
+created_at
+
+updated_at
+
+5.44 item_master
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+item_category_id UUID not null FK
+
+sku varchar(120) not null
+
+item_name varchar(200) not null
+
+description text null
+
+base_uom varchar(32) not null
+
+track_lot boolean not null default false
+
+track_expiry boolean not null default false
+
+active boolean not null default true
+
+metadata jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, sku)
+
+5.45 inventory_location
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+site_id UUID not null FK
+
+location_node_id UUID null FK
+
+name varchar(150) not null
+
+inventory_type varchar(64) not null
+
+temperature_zone varchar(64) null
+
+created_at
+
+updated_at
+
+5.46 inventory_lot
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+item_master_id UUID not null FK
+
+batch_id UUID null FK biological_batch
+
+supplier_lot_code varchar(120) null
+
+internal_lot_code varchar(120) not null
+
+received_date date null
+
+expiry_date date null
+
+status varchar(32) not null
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, internal_lot_code)
+
+5.47 stock_balance
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+inventory_location_id UUID not null FK
+
+item_master_id UUID not null FK
+
+inventory_lot_id UUID null FK
+
+quantity_on_hand numeric(18,3) not null default 0
+
+quantity_reserved numeric(18,3) not null default 0
+
+quantity_available numeric(18,3) not null default 0
+
+uom varchar(32) not null
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(inventory_location_id, item_master_id, inventory_lot_id)
+
+5.48 stock_transaction
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+transaction_type stock_transaction_type not null
+
+item_master_id UUID not null FK
+
+inventory_lot_id UUID null FK
+
+from_inventory_location_id UUID null FK inventory_location
+
+to_inventory_location_id UUID null FK inventory_location
+
+quantity numeric(18,3) not null
+
+uom varchar(32) not null
+
+reference_type varchar(64) null
+
+reference_id UUID null
+
+performed_by_membership_id UUID null FK
+
+transaction_time timestamptz not null
+
+notes text null
+
+created_at
+
+updated_at
+
+Indexes:
+
+index(item_master_id, transaction_time)
+
+index(reference_type, reference_id)
+
+5.49 supplier
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+supplier_name varchar(200) not null
+
+supplier_type varchar(64) not null
+
+contact_name varchar(150) null
+
+email varchar(255) null
+
+phone varchar(50) null
+
+status varchar(32) not null
+
+lead_time_days integer null
+
+compliance_status varchar(64) null
+
+created_at
+
+updated_at
+
+5.50 purchase_request
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+request_number varchar(120) not null
+
+site_id UUID null FK
+
+requested_by_membership_id UUID not null FK
+
+status purchase_request_status not null default 'draft'
+
+needed_by_date date null
+
+notes text null
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, request_number)
+
+5.51 purchase_order
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+supplier_id UUID not null FK
+
+po_number varchar(120) not null
+
+purchase_request_id UUID null FK
+
+order_date date not null
+
+expected_date date null
+
+status purchase_order_status not null default 'draft'
+
+notes text null
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, po_number)
+
+5.52 goods_receipt
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+purchase_order_id UUID not null FK
+
+receipt_number varchar(120) not null
+
+received_at timestamptz not null
+
+received_by_membership_id UUID not null FK
+
+notes text null
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, receipt_number)
+
+5.53 intake_receipt
+Owner: Packhouse & Commerce
+
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+site_id UUID not null FK
+
+source_type varchar(64) not null
+
+source_reference_id UUID null
+
+received_at timestamptz not null
+
+received_by_membership_id UUID not null FK
+
+condition_notes text null
+
+status varchar(32) not null
+
+created_at
+
+updated_at
+
+5.54 intake_line
+Fields:
+
+id UUID PK
+
+intake_receipt_id UUID not null FK
+
+batch_id UUID null FK biological_batch
+
+item_master_id UUID null FK
+
+quantity numeric(18,3) not null
+
+uom varchar(32) not null
+
+grade varchar(64) null
+
+created_at
+
+updated_at
+
+5.55 processing_run
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+site_id UUID not null FK
+
+processing_type varchar(64) not null
+
+line_name varchar(120) not null
+
+started_at timestamptz null
+
+ended_at timestamptz null
+
+status varchar(32) not null
+
+supervisor_membership_id UUID null FK
+
+created_at
+
+updated_at
+
+5.56 processing_output
+Fields:
+
+id UUID PK
+
+processing_run_id UUID not null FK
+
+source_batch_id UUID null FK biological_batch
+
+output_batch_id UUID null FK biological_batch
+
+item_master_id UUID not null FK
+
+quantity numeric(18,3) not null
+
+uom varchar(32) not null
+
+waste_qty numeric(18,3) null
+
+created_at
+
+updated_at
+
+5.57 customer
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+customer_type varchar(64) not null
+
+customer_name varchar(200) not null
+
+contact_name varchar(150) null
+
+email varchar(255) null
+
+phone varchar(50) null
+
+pricing_tier varchar(64) null
+
+status varchar(32) not null
+
+delivery_rules jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+5.58 sales_order
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+customer_id UUID not null FK
+
+order_number varchar(120) not null
+
+order_date date not null
+
+requested_delivery_date date null
+
+status sales_order_status not null default 'draft'
+
+source_channel varchar(64) null
+
+notes text null
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, order_number)
+
+5.59 sales_order_line
+Fields:
+
+id UUID PK
+
+sales_order_id UUID not null FK
+
+item_master_id UUID not null FK
+
+ordered_qty numeric(18,3) not null
+
+allocated_qty numeric(18,3) not null default 0
+
+fulfilled_qty numeric(18,3) not null default 0
+
+unit_price numeric(18,2) null
+
+uom varchar(32) not null
+
+created_at
+
+updated_at
+
+5.60 dispatch
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+site_id UUID not null FK
+
+dispatch_number varchar(120) not null
+
+dispatch_date date not null
+
+vehicle_asset_id UUID null FK asset
+
+driver_name varchar(150) null
+
+status dispatch_status not null default 'draft'
+
+proof_of_dispatch jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, dispatch_number)
+
+5.61 dispatch_line
+Fields:
+
+id UUID PK
+
+dispatch_id UUID not null FK
+
+sales_order_line_id UUID not null FK
+
+inventory_lot_id UUID null FK
+
+batch_id UUID null FK biological_batch
+
+qty numeric(18,3) not null
+
+uom varchar(32) not null
+
+created_at
+
+updated_at
+
+5.62 sop_document
+Owner: SOP, Training & Compliance
+
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+title varchar(200) not null
+
+code varchar(120) not null
+
+module varchar(64) not null
+
+version varchar(40) not null
+
+status document_status not null default 'draft'
+
+effective_date date null
+
+content_reference text not null
+
+approval_record jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, code, version)
+
+5.63 sop_link
+Fields:
+
+id UUID PK
+
+sop_document_id UUID not null FK
+
+linked_entity_type varchar(64) not null
+
+linked_entity_id UUID not null
+
+created_at
+
+updated_at
+
+5.64 training_module
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+title varchar(200) not null
+
+code varchar(120) not null
+
+required_for_role_id UUID null FK role
+
+required_for_task_template_id UUID null FK task_template
+
+content_reference text not null
+
+active boolean not null default true
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, code)
+
+5.65 training_completion
+Fields:
+
+id UUID PK
+
+membership_id UUID not null FK organization_membership
+
+training_module_id UUID not null FK
+
+completion_date date not null
+
+expiry_date date null
+
+status varchar(32) not null
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(membership_id, training_module_id, completion_date)
+
+5.66 compliance_record
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+compliance_type varchar(64) not null
+
+site_id UUID not null FK
+
+location_node_id UUID null FK
+
+linked_entity_type varchar(64) null
+
+linked_entity_id UUID null
+
+recorded_at timestamptz not null
+
+recorded_by_membership_id UUID not null FK
+
+status varchar(32) not null
+
+details_json jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+5.67 kpi_definition
+Owner: Analytics & Configuration
+
+Fields:
+
+id UUID PK
+
+organization_id UUID null FK
+
+code varchar(120) not null
+
+name varchar(200) not null
+
+module varchar(64) not null
+
+formula_definition jsonb not null default '{}'
+
+default_visualization varchar(64) null
+
+active boolean not null default true
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, code)
+
+5.68 kpi_snapshot
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+site_id UUID null FK
+
+production_unit_id UUID null FK
+
+location_node_id UUID null FK
+
+kpi_definition_id UUID not null FK
+
+period_type varchar(32) not null
+
+period_start date not null
+
+period_end date not null
+
+value numeric(18,6) not null
+
+unit varchar(32) null
+
+created_at
+
+updated_at
+
+Indexes:
+
+index(kpi_definition_id, period_start, period_end)
+
+5.69 dashboard_definition
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+name varchar(150) not null
+
+audience_type varchar(64) not null
+
+is_default boolean not null default false
+
+layout_json jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+5.70 dashboard_widget
+Fields:
+
+id UUID PK
+
+dashboard_definition_id UUID not null FK
+
+widget_type varchar(64) not null
+
+title varchar(200) not null
+
+data_source_config jsonb not null default '{}'
+
+placement_config jsonb not null default '{}'
+
+visibility_rules_json jsonb not null default '{}'
+
+created_at
+
+updated_at
+
+5.71 custom_field_definition
+Fields:
+
+id UUID PK
+
+organization_id UUID not null FK
+
+entity_type varchar(64) not null
+
+field_name varchar(100) not null
+
+field_label varchar(150) not null
+
+data_type varchar(32) not null
+
+validation_rules_json jsonb not null default '{}'
+
+active boolean not null default true
+
+created_at
+
+updated_at
+
+Constraints:
+
+unique(organization_id, entity_type, field_name)
+
+5.72 audit_log
+Owner: Cross-cutting
+
+Fields:
+
+id UUID PK
+
+organization_id UUID null FK
+
+actor_type varchar(32) not null
+
+actor_id UUID null
+
+action varchar(100) not null
+
+entity_type varchar(64) not null
+
+entity_id UUID not null
+
+timestamp timestamptz not null
+
+old_values_json jsonb not null default '{}'
+
+new_values_json jsonb not null default '{}'
+
+ip_address inet null
+
+request_id varchar(120) null
+
+created_at timestamptz not null
+
+updated_at timestamptz not null
+
+Indexes:
+
+index(entity_type, entity_id, timestamp)
+
+index(organization_id, timestamp)
+
+index(action, timestamp)
+
+6. Relationship rules
+6.1 Required roots
+These tables must exist before most others:
+
+organization
+
+app_user
+
+organization_membership
+
+site
+
+location_node
+
+6.2 Universal FK pattern
+Operational tables should link to:
+
+organization_id
+
+site_id when physical
+
+location_node_id when local
+
+responsible membership where human execution matters
+
+6.3 Polymorphic references
+Allowed in v1 only where necessary:
+
+source_type + source_reference_id
+
+linked_entity_type + linked_entity_id
+
+reference_type + reference_id
+
+task_source_type + task_source_id
+
+These must be controlled in service logic, not left loose everywhere.
+
+6.4 Self-referencing tables
+Allowed:
+
+location_node.parent_location_node_id
+
+biological_batch.parent_batch_id
+
+asset_category.parent_category_id
+
+7. Index strategy
+High priority indexes
+Must exist early:
+
+all FK columns
+
+task_instance(status, assigned_to_membership_id)
+
+measurement_record(measurement_type_code, measured_at)
+
+stock_transaction(reference_type, reference_id)
+
+audit_log(entity_type, entity_id, timestamp)
+
+location_node(site_id, parent_location_node_id)
+
+Likely search indexes
+app_user(email)
+
+site(code)
+
+asset(asset_tag)
+
+item_master(sku)
+
+sales_order(order_number)
+
+biological_batch(code)
+
+animal_cohort(cohort_code)
+
+8. Migration order
+Wave 1 — Foundation
+organization
+
+organization_settings
+
+app_user
+
+site
+
+role
+
+permission
+
+organization_membership
+
+role_permission
+
+user_role_assignment
+
+location_type
+
+location_node
+
+location_alias
+
+shift
+
+worker_profile
+
+Wave 2 — Structure and master references
+production_system_type
+
+production_unit
+
+season_calendar
+
+species
+
+variety
+
+life_stage
+
+asset_category
+
+asset
+
+Wave 3 — Workflow core
+workflow_definition
+
+workflow_version
+
+workflow_stage
+
+task_template
+
+workflow_task_definition
+
+task_instance
+
+task_event
+
+Wave 4 — Biology and operations
+biological_batch
+
+crop_cycle
+
+supplier
+
+animal_cohort
+
+Wave 5 — Assets and field events
+asset_relationship
+
+maintenance_plan
+
+maintenance_event
+
+sensor_type
+
+sensor_device
+
+measurement_record
+
+threshold_rule
+
+alert_rule
+
+alert_event
+
+incident
+
+Wave 6 — Inventory and procurement
+item_category
+
+item_master
+
+inventory_location
+
+inventory_lot
+
+stock_balance
+
+stock_transaction
+
+purchase_request
+
+purchase_order
+
+goods_receipt
+
+Wave 7 — Packhouse and commerce
+intake_receipt
+
+intake_line
+
+processing_run
+
+processing_output
+
+customer
+
+sales_order
+
+sales_order_line
+
+dispatch
+
+dispatch_line
+
+Wave 8 — SOP and compliance
+sop_document
+
+sop_link
+
+training_module
+
+training_completion
+
+compliance_record
+
+Wave 9 — Analytics and configuration
+kpi_definition
+
+kpi_snapshot
+
+dashboard_definition
+
+dashboard_widget
+
+custom_field_definition
+
+audit_log
+
+Note:
+
+sop_document and task_template.required_sop_id create a dependency issue.
+
+For clean migration order, either:
+
+create task_template.required_sop_id nullable in a later migration, or
+
+move sop_document before task_template.
+
+Best quality path: add required_sop_id in a later alter migration.
+
+9. Seed data order
+Seed 1
+permission
+
+system roles
+
+location_type
+
+production_system_type
+
+species
+
+life_stage
+
+asset_category
+
+sensor_type
+
+item_category
+
+Seed 2
+one demo organization
+
+organization settings
+
+admin user
+
+admin membership
+
+role assignments
+
+one demo site
+
+Seed 3
+demo location tree
+
+demo production units
+
+demo workflows
+
+demo task templates
+
+demo shifts
+
+Seed 4
+demo item masters
+
+demo suppliers
+
+demo customers
+
+demo dashboard definitions
+
+demo KPI definitions
+
+10. Backend action ownership
+This matters because agents should not expose raw CRUD and call it done.
+
+Tenant & Identity actions
+invite_member
+
+activate_member
+
+suspend_member
+
+assign_role
+
+revoke_role
+
+Location actions
+create_site
+
+add_location_node
+
+move_location_node
+
+deactivate_location_node
+
+Workflow actions
+create_workflow
+
+version_workflow
+
+publish_workflow
+
+simulate_workflow
+
+Task actions
+assign_task
+
+start_task
+
+pause_task
+
+complete_task
+
+fail_task
+
+skip_task
+
+reassign_task
+
+Inventory actions
+receive_stock
+
+move_stock
+
+reserve_stock
+
+consume_stock
+
+adjust_stock
+
+dispatch_stock
+
+Biology actions
+create_crop_cycle
+
+stock_cohort
+
+transfer_cohort
+
+record_mortality
+
+record_growth_sample
+
+harvest_batch
+
+11. Constraints for agents
+Forbidden
+creating duplicate batch concepts
+
+hardcoding greenhouse-only structures
+
+creating page-led schema
+
+bypassing organization boundaries
+
+frontend-only permissions
+
+writing directly to audit tables from UI
+
+inventing ad hoc JSON blobs for core relational data
+
+Allowed
+JSONB for:
+
+layout configs
+
+workflow schemas
+
+validation rules
+
+metadata extensions
+
+tenant custom config
+
+Change control
+Any new core table after approval of v1 must include:
+
+purpose
+
+owning module
+
+why existing tables are insufficient
+
+FKs
+
+migration placement
+
+effect on audit and permissions
+
+12. What starts immediately after approval of A
+After this schema package is approved, the correct next move is:
+
+Build Package 01 — Core Foundation
+Includes:
+
+wave 1 migrations
+
+seed 1 and seed 2
+
+tenant isolation tests
+
+role/permission guard middleware
+
+audit logging hooks
+
+base admin APIs
+
+Then:
+
+Build Package 02 — Structure + Workflow Core
+Includes:
+
+wave 2 and wave 3 migrations
+
+site/location tree APIs
+
+production unit APIs
+
+workflow definition/version APIs
+
+task instance APIs
+
+workflow publish logic
+
+Then:
+
+Build Package 03 — Worker Operations MVP
+Includes:
+
+task assignment
+
+my tasks
+
+task completion
+
+exception reporting
+
+supervisor workboard
+
+13. My recommendation after this document
+The next thing to do is not more theory.
+
+The next deliverable should be:
+
+Build Package 01 spec
+with:
+
+exact tables to create
+
+exact indexes
+
+seed content
+
+API endpoints
+
+tests
+
+acceptance criteria
+
+owner agent assignments
+
+That is what turns this from design into controlled construction.
+
+I recommend we do that next.
+
+
+give me a pdf of all the information needed as resourses in my future chats 
+
+
+Stopped thinking
+
+
+
