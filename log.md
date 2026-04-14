@@ -13,6 +13,20 @@ Chronological record of all wiki operations. Newest first.
 
 ---
 
+## [2026-04-14] update | Agriculture SOP — Section 3: Protected Cropping (Deep)
+
+- Expanded Section 3 from stub to production-ready (9 subsections)
+- Structure types: tunnels, multi-span, shade net, climate-controlled (with SA pricing in ZAR)
+- Climate management: heating/cooling systems, humidity (VPD), light (DLI/PPFD), CO2 enrichment
+- Growing systems: NFT, DWC, drip, substrate media comparison (7 substrates)
+- Crop specs: lettuce, 6 herbs, tomato, pepper, cucumber, strawberry, microgreens (all with temps, EC, pH, yield targets)
+- Fertigation: EC/pH targets, drain fraction rules, key nutrient considerations
+- Pest & disease: 5 major pests with biocontrol agents, 4 major diseases, IPM hierarchy
+- Environmental monitoring: sensor specs, alarm thresholds, 3-tier monitoring systems
+- Checklists: daily (morning + afternoon), weekly, monthly — all detailed
+- Production planning: succession planting, crop cycling, yield targets, energy management
+- Pages touched: agriculture-sop, log
+
 ## [2026-04-14] create | Bulk Concept Expansion (5 → 20 concepts)
 
 - Created 15 new concept pages: 200-percent-engineering-doctrine, agent-orchestration, aquaponics-integration, branded-house-model, compounding-knowledge-system, docker-containerization, franchise-operations-model, hub-and-spoke-architecture, ip-tiering-strategy, recirculating-aquaculture-systems, saas-automation-platform, seed-to-fork-pipeline, staggered-cohort-production, vps-infrastructure-stack, water-quality-management

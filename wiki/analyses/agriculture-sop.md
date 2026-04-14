@@ -23,7 +23,7 @@ This is the master Standard Operating Procedure for agricultural operations. It 
 |---|---|---|---|
 | 1 | [Recirculating Aquaculture Systems (RAS)](#1-recirculating-aquaculture-systems-ras) | **Deep** | Production-ready |
 | 2 | [Aquaponics](#2-aquaponics) | **Deep** | Production-ready |
-| 3 | [Protected Cropping (Greenhouse/Tunnel)](#3-protected-cropping) | Stub | Framework only |
+| 3 | [Protected Cropping (Greenhouse/Tunnel)](#3-protected-cropping-greenhouse--tunnel) | **Deep** | Production-ready |
 | 4 | [Open-Field Crop Production](#4-open-field-crop-production) | Stub | Framework only |
 | 5 | [Crop Rotation & Soil Health](#5-crop-rotation--soil-health) | Stub | Framework only |
 | 6 | [Irrigation & Water Management](#6-irrigation--water-management) | Stub | Framework only |
@@ -528,30 +528,493 @@ All RAS monthly checks apply, PLUS:
 
 ---
 
-# 3. PROTECTED CROPPING
+# 3. PROTECTED CROPPING (GREENHOUSE / TUNNEL)
 
-*Section to be expanded. Covers greenhouse/tunnel production systems.*
+## 3.1 Structure Types
 
-## 3.1 Greenhouse Types
-- [ ] Single-span tunnels
-- [ ] Multi-span greenhouses
-- [ ] Shade net structures
-- [ ] Climate-controlled greenhouses
+### Single-Span Tunnels (Hoop Houses)
+- Galvanised steel frame, polyethylene cover
+- Width: 8-9.6m typical (SA standard). Ridge height: 3.5-4.5m. Sidewall: 1.2-2.0m
+- **Cost:** ZAR 150-400/m² installed
+- **Lifespan:** Frame 15-20 years. Polyethylene cover 3-5 years (200µm UV-stabilised)
+- Ventilation: roll-up sides + end doors only. No ridge venting
+- **Best for:** Entry-level commercial. Tomatoes, peppers, cucumbers, lettuce, herbs
+- **Limitation:** Structures wider than 12m need mechanical ventilation. Wind rated 80-120 km/h
+
+### Multi-Span Greenhouses
+- Connected spans sharing gutters. Saw-tooth, venlo, or gothic arch profiles
+- **Saw-tooth:** ZAR 500-800/m². Excellent natural ventilation. Best for warm climates
+- **Venlo:** ZAR 1,000-3,000/m² fully equipped. Glass or polycarbonate. Global standard for high-tech
+- **Gothic arch multi-span:** ZAR 400-700/m². Polyethylene clad
+- Advantages: efficient land use, rainwater harvesting, uniform climate, automation-ready
+
+### Shade Net Houses
+- HDPE shade cloth (20-80%) on steel frame
+- **Cost:** ZAR 80-250/m². Lifespan: 8-12 years
+- Excellent ventilation, no overheating. Reduces wind, hail, bird, insect damage
+- **Insect netting variant:** 50-mesh white netting excludes whitefly + thrips (+15-30% cost)
+- **Best for:** Leafy greens, herbs, peppers, cut flowers, nursery production
+- **Limitation:** No heating, no rain exclusion, no precise climate control
+
+### Climate-Controlled Greenhouses
+- Full HVAC, climate computer, supplemental lighting, CO2 enrichment, automated fertigation
+- **Cost:** ZAR 2,000-5,000/m² fully equipped
+- Year-round production. Highest yields (10-20x open field)
+- Requires skilled technical staff. Energy costs 20-40% of total operating cost
+- **Key components:** Hot water boiler + pipe rail, thermal screens, pad-and-fan cooling, climate computer (Priva/Hoogendoorn/Ridder), HPS or LED lighting, CO2 dosing, automated fertigation
+
+### Cladding Materials
+
+| Material | Lifespan | Light Transmission | R-value | Cost (ZAR/m²) |
+|---|---|---|---|---|
+| Polyethylene 200µm UV-stab | 3-5 yr | 85-90% | 0.83 | 15-30 |
+| Polyethylene diffused | 3-5 yr | 82-88% | 0.83 | 20-40 |
+| Polycarbonate twin-wall 6mm | 10-15 yr | 78-82% | 1.54 | 150-250 |
+| Polycarbonate twin-wall 8mm | 10-15 yr | 75-80% | 1.72 | 180-300 |
+| Glass 4mm float | 25+ yr | 88-91% | 0.95 | 200-350 |
+| ETFE film (F-Clean) | 15-20 yr | 93-95% | Low | 300-500 |
+
+**SA recommendation:** Diffused polyethylene (200µm, UV-stabilised, thermic/anti-drip) for most operations. Polycarbonate 8mm for endwalls in hail-prone areas. Glass for premium venlo only.
+
+---
 
 ## 3.2 Climate Management
-- [ ] Temperature control (heating, cooling, ventilation)
-- [ ] Humidity management
-- [ ] Light management (supplemental, shade cloth)
-- [ ] CO2 enrichment
+
+### 3.2.1 Temperature Control
+
+#### Heating Systems
+
+| System | Capacity | Cost | Best For |
+|---|---|---|---|
+| Hot water pipe rail | 100-200 W/m² | High install, efficient | Commercial heated greenhouses |
+| Unit heaters (gas/diesel) | 30-100 kW | Lower install, less uniform | Smaller operations, frost protection |
+| Infrared/radiant | Localised | Moderate | Propagation, germination |
+| Biomass boiler | Variable | High install, cheap fuel | Operations near macadamia/wood supply |
+
+**Fuel costs (SA 2026):** Biomass (macadamia shells) ~ZAR 800-1,200/ton. Diesel ~ZAR 22/L. LPG variable.
+
+#### Heating Setpoints by Crop
+
+| Crop | Day (°C) | Night (°C) | Frost Protection Min |
+|---|---|---|---|
+| Tomato | 21-26 | 15-18 | 10°C |
+| Pepper | 22-28 | 16-18 | 12°C |
+| Cucumber | 24-28 | 18-20 | 15°C |
+| Lettuce | 18-22 | 10-14 | 4°C |
+| Herbs (basil) | 22-28 | 16-18 | 12°C |
+| Strawberry | 18-24 | 10-14 | 2°C |
+| Roses | 22-27 | 15-17 | 8°C |
+
+#### Cooling Systems
+- **Natural ventilation:** Vent opening = 15-25% of floor area. Roll-up sides + ridge vents
+- **Forced ventilation:** Fans at 0.04-0.06 m³/s per m² floor. Effective up to 60m tunnel length
+- **Pad-and-fan (evaporative):** 5-12°C cooling. Best in dry climates (Highveld, Free State). Water use: 2-5 L/m²/day
+- **Fog/mist:** High-pressure (40-70 bar), droplets <10µm. More uniform than pad-and-fan. Water must be filtered to 5µm
+- **Shade cloth:** 40% shade reduces internal temp 3-6°C. External shade 30-40% more effective than internal
+
+### 3.2.2 Humidity Management
+
+#### Targets by Crop
+
+| Crop | Day RH | Night RH | Critical High | Critical Low |
+|---|---|---|---|---|
+| Tomato | 60-75% | 75-85% | >90% (botrytis) | <40% (blossom drop) |
+| Pepper | 60-70% | 70-80% | >85% | <45% |
+| Cucumber | 70-80% | 80-90% | >95% | <60% |
+| Lettuce | 60-70% | 70-80% | >85% (tip burn) | <50% |
+| Strawberry | 60-75% | 70-80% | >85% (botrytis) | <40% |
+
+#### Use VPD, Not RH Alone
+
+| VPD (kPa) | Plant Response |
+|---|---|
+| <0.4 | Too humid — stomata close, disease risk, calcium deficiency |
+| **0.8-1.2** | **Optimal** — active transpiration, good nutrient uptake |
+| 0.4-1.6 | Acceptable range (varies by crop) |
+| >1.6 | Too dry — excessive transpiration, wilting, stomatal closure |
+
+#### Dehumidification Strategies
+1. **Heat + vent:** Heat air to increase moisture capacity, then vent. Standard overnight method
+2. **Minimum pipe temperature:** Keep pipes at 40-45°C to prevent surface condensation
+3. **HAF fans:** 30-40cm fans every 10-15m, running 24/7. Prevents stratification
+4. **Anti-drip cladding:** Condensation sheets rather than drips (disease prevention)
+
+### 3.2.3 Light Management
+
+#### Light Requirements by Crop
+
+| Crop | Min DLI (mol/m²/day) | Optimal DLI | Light Saturation PPFD (µmol/m²/s) |
+|---|---|---|---|
+| Lettuce/greens | 12 | 17-22 | 400-600 |
+| Herbs (basil) | 15 | 20-25 | 500-700 |
+| Tomato | 20 | 25-35 | 800-1,200 |
+| Pepper | 18 | 22-30 | 600-900 |
+| Cucumber | 18 | 22-30 | 700-900 |
+| Strawberry | 12 | 17-25 | 400-800 |
+| Microgreens | 8 | 12-18 | 200-400 |
+
+**SA natural light:** Johannesburg DLI 25-45 (summer), 15-25 (winter) open field. Inside tunnel at 75% transmission: winter DLI may drop to 10-18 — marginal for tomatoes.
+
+#### Supplemental Lighting (SA Economics)
+At ZAR 1.50-2.50/kWh, only justified for:
+- High-value crops (cannabis where legal, premium herbs, speciality propagation)
+- Photoperiod extension (low wattage, 2-4 hours)
+- LED interlighting on premium tomato/pepper in winter
+- Operations with solar PV offsetting grid costs
+
+### 3.2.4 CO2 Enrichment
+- Ambient: ~420 ppm. Sealed greenhouse can drop to 200-250 ppm by midday (-20-30% photosynthesis)
+- **Target:** 600-800 ppm = 15-25% yield increase. 800-1,200 ppm = 25-40% (diminishing returns)
+- **Methods:** Boiler flue gas (natural gas only), liquid CO2 (ZAR 3-5/kg), propane burners
+- Only viable in sealed heated greenhouses. Enriching an open greenhouse wastes CO2
+
+---
 
 ## 3.3 Growing Systems
-- [ ] Soil-based raised beds
-- [ ] Hydroponics (NFT, DWC, drip)
-- [ ] Substrate growing (coco coir, perlite, rockwool)
 
-## 3.4 Protected Cropping Checklists
-- [ ] Daily, weekly, monthly operational checklists
-- [ ] Seasonal maintenance schedules
+### 3.3.1 Hydroponics — NFT (Nutrient Film Technique)
+- Thin film (2-3mm) in shallow sloped channels. No growing medium
+- Channel: 75-150mm width, 1:30-1:50 slope, max 12-15m length, 1-2 L/min flow
+- **Best crops:** Lettuce, herbs, Asian greens, strawberries
+- **Critical risk:** Zero buffer — pump failure = crop death within hours. Disease spreads instantly through recirculating solution
+
+### 3.3.2 Hydroponics — DWC (Deep Water Culture)
+- Floating polystyrene rafts on 15-30cm deep aerated nutrient pool
+- Target DO >6 mg/L. Solution temp ideally 18-22°C (Pythium risk above 25°C)
+- **Best crops:** Lettuce (dominant commercial system globally), herbs, Asian greens
+- Planting density: up to 22-25 heads/m² for lettuce
+- Large water volume provides thermal and chemical buffer
+
+### 3.3.3 Hydroponics — Drip (Most Versatile)
+- Individual emitters deliver nutrient solution to containers/bags of substrate
+- Emitter: 2-4 L/hr. Irrigation: 2-12 times/day. Drain fraction: 20-30%
+- **Best crops:** All crops including fruiting types (tomatoes, peppers, cucumbers, strawberries)
+- Filtration: 120 mesh minimum, 200 mesh preferred. Acid flush regularly
+
+### 3.3.4 Substrate Media Comparison
+
+| Substrate | Water Holding | Air Porosity | pH | Cost (ZAR/m³) | Lifespan |
+|---|---|---|---|---|---|
+| Coco coir | 70-80% | 15-25% | 5.5-6.8 | 500-1,500 | 2-3 cycles |
+| Perlite | 25-35% | 35-50% | 7.0-7.5 | 1,500-3,000 | 3-5 cycles |
+| Rockwool slabs | 80-85% | 12-18% | 7.0-8.0 | 2,000-4,000 | 1-2 cycles |
+| Pine bark (composted) | 60-70% | 20-30% | 4.5-5.5 | 200-500 | 1-2 cycles |
+| Clay pebbles (LECA) | 10-15% | 45-60% | 7.0 | 3,000-6,000 | Indefinite |
+
+**SA recommendations:**
+- Tomatoes/peppers/cucumbers: Rockwool slabs (premium) or coco coir bags (15-20L/plant)
+- Lettuce/herbs: Coco/perlite 70:30
+- Seedling propagation: Peat/vermiculite 50:50 or coco/perlite 70:30
+
+---
+
+## 3.4 Crop Specifications
+
+### Lettuce
+
+| Parameter | Value |
+|---|---|
+| Temperature | 18-22°C day / 10-14°C night |
+| pH (hydroponic) | 5.5-6.0 |
+| EC | 1.0-1.6 mS/cm |
+| Spacing | 20×20cm (butterhead), 25×25cm (cos), 15×15cm (baby leaf) |
+| Days to harvest | 28-45 from transplant |
+| Yield | 30-60 kg/m²/year with succession planting |
+| Critical nutrient | Calcium >150 ppm (tip burn prevention) |
+| Key problems | Tip burn (Ca/VPD), bolting (heat >25°C), aphids, downy mildew |
+
+### Herbs Quick Reference
+
+| Herb | Temp (°C) | pH | EC (mS/cm) | Days to Harvest | Yield (kg/m²/yr) |
+|---|---|---|---|---|---|
+| Basil | 22-28 | 5.5-6.5 | 1.0-1.6 | 25-35 | 20-40 |
+| Coriander | 15-22 | 5.5-6.5 | 1.0-1.8 | 21-30 | 15-30 |
+| Parsley | 15-22 | 5.5-6.5 | 1.2-1.8 | 40-60 | 15-25 |
+| Mint | 18-25 | 5.5-6.5 | 1.2-2.0 | 30-40 | 20-35 |
+| Rosemary | 18-26 | 5.5-6.5 | 1.0-1.4 | Perennial | 5-10 |
+
+### Tomato (High-Wire System)
+
+| Parameter | Value |
+|---|---|
+| Temperature | 21-26°C day / 15-18°C night. Fruit set fails <13°C and >32°C |
+| VPD | 0.7-1.2 kPa |
+| DLI | 25-35 mol/m²/day |
+| pH | 5.5-6.0 (rockwool), 5.8-6.2 (coco) |
+| EC | Seedling: 2.0-2.5. Vegetative: 2.5-3.5. Generative: 3.5-5.0 |
+| Spacing | 2.5-3.5 plants/m². Row spacing 1.6m, in-row 40-50cm |
+| Crop cycle | 9-11 months |
+| Yield | 30-50 kg/m²/year (unheated SA tunnel). 50-80 kg/m²/year (heated + CO2) |
+| Training | Single stem on twine to overhead wire (2.5-3.5m). Lower and lean weekly |
+| Pollination | Bumblebees or electric pollinators (wind unreliable indoors) |
+
+**Generative vs Vegetative Balance** (central management skill):
+- Too vegetative (thick stem, poor fruit): Increase EC, increase DIF, reduce watering
+- Too generative (thin plant, heavy fruit load): Decrease EC, reduce DIF, increase watering
+
+### Pepper (V-System)
+
+| Parameter | Value |
+|---|---|
+| Temperature | 22-28°C day / 16-18°C night. Flower drop <12°C |
+| EC | 2.0-3.0 (more salt-sensitive than tomato) |
+| Spacing | 3-5 plants/m². V-system: 2 stems per plant |
+| Yield | 20-30 kg/m²/yr (unheated SA) to 35-45 (heated) |
+
+### Cucumber (English/Long Type)
+
+| Parameter | Value |
+|---|---|
+| Temperature | 24-28°C day / 18-20°C night (most heat-demanding crop) |
+| EC | 1.8-2.5 (sensitive to high EC) |
+| Spacing | 1.2-1.8 plants/m² |
+| Yield | 40-60 kg/m²/yr (SA tunnels). 80-130 (heated/lit — Netherlands benchmark) |
+| Key note | All-female (parthenocarpic) varieties essential for greenhouse |
+
+### Strawberry
+
+| Parameter | Value |
+|---|---|
+| Temperature | 18-24°C day / 10-14°C night |
+| EC | 1.0-1.6 (veg), 1.2-2.0 (fruiting) |
+| Yield | 3-6 kg/m²/yr (tunnel). 8-15 (elevated substrate + heating) |
+| System | Elevated tabletop (1.0-1.2m) strongly recommended |
+| Critical | Botrytis prevention. Bee pollination essential for quality |
+
+### Microgreens
+
+| Parameter | Value |
+|---|---|
+| Temperature | 18-24°C. Germination: 20-25°C |
+| Light | 200-400 µmol/m²/s PPFD, 12-16 hours |
+| Days to harvest | 7-14 (most varieties) |
+| Yield | 3-12 kg/m²/month |
+| Pricing | ZAR 200-600/kg retail (high-value) |
+| Critical | Sanitation is everything. H2O2 seed soak. Clean trays every use |
+
+---
+
+## 3.5 Water & Nutrition (Fertigation)
+
+### EC and pH Targets by Crop
+
+| Crop | Feed EC (mS/cm) | Feed pH | Drain EC Target | Drain pH Target |
+|---|---|---|---|---|
+| Lettuce | 1.0-1.6 | 5.5-6.0 | <2.0 | 5.5-6.5 |
+| Herbs | 1.0-1.8 | 5.5-6.5 | <2.5 | 5.5-6.5 |
+| Tomato (veg) | 2.5-3.5 | 5.5-6.0 | <5.0 | 5.5-6.5 |
+| Tomato (gen) | 3.5-5.0 | 5.5-6.0 | <6.5 | 5.5-6.5 |
+| Pepper | 2.0-3.0 | 5.5-6.0 | <4.0 | 5.5-6.5 |
+| Cucumber | 1.8-2.5 | 5.5-6.0 | <3.5 | 5.5-6.5 |
+| Strawberry | 1.0-2.0 | 5.5-6.2 | <3.0 | 5.5-6.5 |
+
+### Drain Fraction Rule
+- **Target:** 20-30% of applied volume should drain through
+- **If drain EC >1.5x feed EC:** Increase irrigation frequency to flush salts
+- **If drain EC >2x feed EC:** Critical — flush immediately, check for emitter blockages
+
+### Key Nutrient Considerations
+- **Calcium:** 150-200 ppm in feed. Blossom end rot = calcium *transport* issue (driven by VPD), not just deficiency
+- **Iron:** Most common deficiency in hydroponics. Supplement with chelated Fe (DTPA or EDDHA)
+- **Potassium:** Increase K:N ratio during fruiting (1.2:1 veg → 1.5:1+ generative)
+- **Magnesium:** 50-80 ppm. Deficiency = interveinal yellowing on lower leaves
+- **Boron:** 0.3-0.5 ppm. Critical for fruit set
+
+---
+
+## 3.6 Pest & Disease in Protected Environments
+
+### Major Pests
+
+| Pest | Size | Damage | Monitoring | Best Biocontrol |
+|---|---|---|---|---|
+| **Whitefly** | 1-2mm | Sap sucking, honeydew, virus vector (TYLCV) | Yellow sticky traps | *Encarsia formosa*, *Eretmocerus eremicus* (3-5/m²/wk) |
+| **Thrips** | 1-2mm | Sap, flower damage, virus (TSWV) | Blue sticky traps | *Amblyseius cucumeris* sachets (1/2m²), *Orius* (1-2/m²) |
+| **Aphids** | 1-3mm | Sap, honeydew, virus vector | Yellow sticky traps | *Aphidius colemani/ervi* (0.5-1/m²/wk) |
+| **Spider mites** | 0.5mm | Sap, webbing, rapid reproduction | Hand lens weekly | *Phytoseiulus persimilis* (5-10/m²), needs >60% RH |
+| **Fungus gnats** | 3-4mm | Root damage (larvae), spread Pythium | Yellow traps at soil level | *Steinernema feltiae* nematodes (250k/m²), BTI drench |
+
+### Major Diseases
+
+| Disease | Conditions | Prevention | Biocontrol |
+|---|---|---|---|
+| **Botrytis (grey mould)** | >85% RH, 15-25°C, poor airflow | Keep RH <85% night, good airflow, remove dead tissue | *Trichoderma harzianum*, *Bacillus subtilis* |
+| **Powdery mildew** | 20-27°C, 50-70% RH, poor airflow | Airflow, resistant varieties, sulphur vaporisers | *Ampelomyces quisqualis*, potassium bicarbonate |
+| **Damping off** | Wet substrate, poor drainage | Avoid overwatering, good drainage, sterile media | *Trichoderma*, hydrogen peroxide drench |
+| **Root rot (Pythium)** | Warm water (>25°C), low oxygen | Cool solution temp, aeration, sterile system | *Trichoderma*, *Bacillus* |
+
+### IPM Hierarchy
+1. **Prevention** — insect netting, sanitation, resistant varieties, clean inputs
+2. **Monitoring** — sticky traps (1/100m²), weekly scouting, threshold-based decisions
+3. **Biological control** — preventative releases from transplant, not reactive
+4. **Cultural control** — deleafing, weed removal, humidity management
+5. **Chemical control** — last resort, targeted, rotate MoA groups (IRAC/FRAC classification)
+
+> **Critical rule:** Never spray broad-spectrum pesticides (pyrethroids, neonicotinoids) in a biocontrol programme — they destroy beneficial insects for weeks.
+
+---
+
+## 3.7 Environmental Monitoring
+
+### Sensor Requirements
+
+| Parameter | Sensor | Frequency | Accuracy |
+|---|---|---|---|
+| Air temperature | Shielded RTD (PT100) at canopy height | Every 60s, log 5-min avg | ±0.5°C |
+| Relative humidity | Capacitive sensor (combined T/RH) | Every 60s | ±3% RH |
+| Substrate moisture | Capacitance/TDR probe at root level | Every 5 min | ±3% VWC |
+| EC (feed + drain) | Inline conductivity sensor | Continuous or 2x daily | ±0.1 mS/cm |
+| pH (feed + drain) | Glass electrode | Continuous or 2x daily | ±0.1 |
+| PAR light (PPFD) | Quantum sensor above canopy | Every 60s, integrate to DLI | ±5% |
+| CO2 | NDIR sensor at canopy height | Every 60s | ±50 ppm |
+
+### Monitoring System Tiers
+
+| Tier | Cost (ZAR) | Features | For |
+|---|---|---|---|
+| Basic | 5k-20k | USB loggers, handheld meters, paper records | <2,000 m² |
+| Intermediate | 20k-100k | Wireless sensors, cloud logging, smartphone alerts, basic automation | 2,000-10,000 m² |
+| Advanced | 100k-1M+ | Climate computer, full sensor array, automated control, analytics | >10,000 m² |
+
+### Alarm Thresholds
+
+| Parameter | Low Alarm | High Alarm | Critical |
+|---|---|---|---|
+| Air temperature | 8°C | 32°C | <2°C or >38°C |
+| Feed EC | -0.3 from setpoint | +0.3 from setpoint | ±0.5 |
+| Feed pH | -0.3 from setpoint | +0.3 from setpoint | ±0.5 |
+| Drain EC | — | >1.5x feed EC | >2x feed EC |
+| Wind speed | — | 60 km/h | 80 km/h (close all vents) |
+| Power failure | — | — | Immediate (generator auto-start) |
+
+---
+
+## 3.8 Protected Cropping Checklists
+
+### Daily Checklist (Morning — Before 09:00)
+
+**Environmental:**
+1. Read/record min-max temperatures (overnight, early morning)
+2. Check current temp and humidity vs setpoints
+3. Inspect ventilation — vents/sidewalls opening correctly?
+4. Check heating (winter) or cooling (summer) function
+5. Inspect cladding for tears, loose panels, leaks
+
+**Irrigation/Fertigation:**
+6. Verify irrigation ran as scheduled — check for dry spots
+7. Read EC and pH of feed solution
+8. Read EC and pH of drain/runoff (3+ points)
+9. Check drain percentage (target 20-30%)
+10. Inspect filters (clean if delta P >0.5 bar)
+11. Check stock solution tank levels
+12. Spot-check 10+ emitters per zone for blockage
+
+**Crop:**
+13. Walk every row — wilting, discolouration, pest damage, disease
+14. Check growing tips (healthy thickness = good plant balance)
+15. Scout pests: flip 10+ leaves per zone, check sticky traps
+16. Remove dead/diseased leaves in sealed bags
+17. Harvest ripe produce (early morning = best shelf life)
+
+**Records:**
+18. Log all readings
+19. Note anomalies, pest sightings, equipment issues
+20. Photograph anything unusual
+
+### Daily Checklist (Afternoon — 14:00-16:00)
+1. Check maximum temperature reached vs target
+2. Verify cooling coping (on hot days)
+3. Adjust ventilation for overnight
+4. Adjust irrigation frequency if substrate drying too fast/slow
+5. Crop maintenance: pruning, trellising, training, pollination
+6. Apply pest/disease treatments (late afternoon to avoid phytotoxicity)
+
+### Weekly Checklist
+
+**Environment:**
+- Calibrate handheld EC/pH meters against standard solutions
+- Clean sensor probes
+- Count yellow + blue sticky traps — record pest numbers
+- Check all fans, motors, actuators
+- Clean evaporative cooling pads
+- Test backup generator (15 min under load)
+- Review 7-day climate data trends
+
+**Crop & Nutrition:**
+- Measure stem diameter (fruiting crops — trend indicates balance)
+- Weigh and record harvest by zone vs targets
+- Full drain sample analysis (EC, pH)
+- Adjust nutrient recipe if drain EC deviating >20%
+- Release biocontrol agents per IPM schedule
+- Check and remove weed growth
+
+**Infrastructure:**
+- Inspect gutter drainage
+- Check cladding tension and attachment
+- Inspect door seals and insect netting for tears
+
+### Monthly Checklist
+
+**Infrastructure:**
+- Full structural inspection (rust, loose bolts, foundation)
+- Lubricate all moving parts
+- Clean cladding (dust reduces light 10-20%)
+- Inspect rainwater harvesting system
+- Test water quality (EC, pH, alkalinity, Na, Cl, Fe)
+- Check fire extinguishers and safety equipment
+
+**Crop & Nutrition:**
+- Full nutrient analysis (lab): N, P, K, Ca, Mg, S, Fe, Mn, Zn, Cu, B, Mo, Na, Cl
+- Substrate analysis (long-term crops): EC, pH, available nutrients
+- Review yield per m², fruit quality grades, reject %
+- Calculate labour efficiency (kg harvested per labour hour)
+- Succession planting review — seedlings on track?
+
+**Pest & Disease:**
+- Monthly pest trend analysis (graph sticky trap counts)
+- Evaluate biocontrol effectiveness
+- Root health inspection (pull 2-3 plants, check root colour)
+- Sanitise tools, trolleys, harvest bins
+- Review spray records for MRL and PHI compliance
+
+**Business:**
+- Financial review: input costs, revenue, gross margin per crop per m²
+- Energy consumption review (kWh, fuel litres, cost/m²)
+- Water consumption (litres per kg produce)
+- Plan next month: planting, inputs, labour
+
+---
+
+## 3.9 Production Planning
+
+### Succession Planting (Leafy Greens/Herbs)
+- Plant new seedlings every 1-2 weeks for continuous harvest
+- Calculate: beds needed = crop cycle (weeks) × beds harvested per week
+- Example: 5-week lettuce cycle, harvest 2 beds/week = 10 beds minimum
+- Add 20% buffer for slow growth periods (winter)
+
+### Crop Cycling (Fruiting Crops)
+- Tomato: 9-11 month crop. Plant Feb-Mar or Aug-Sep in SA
+- Pepper: 9-12 month crop. Similar timing
+- Cucumber: 12-16 week crop. 2-3 plantings/year
+- Between crops: 2-4 week turnaround for cleanup, substrate replacement, sterilisation
+
+### Yield Targets (SA Tunnel Production)
+
+| Crop | Unheated Tunnel | Heated Greenhouse | World Class |
+|---|---|---|---|
+| Tomato | 30-50 kg/m²/yr | 50-80 kg/m²/yr | 80+ kg/m²/yr |
+| Pepper (colour) | 20-30 kg/m²/yr | 35-45 kg/m²/yr | 45+ kg/m²/yr |
+| Cucumber | 40-60 kg/m²/yr | 80-130 kg/m²/yr | 130+ kg/m²/yr |
+| Lettuce | 30-60 kg/m²/yr | 60-80 kg/m²/yr | 80+ kg/m²/yr |
+| Strawberry | 3-6 kg/m²/yr | 8-15 kg/m²/yr | 15+ kg/m²/yr |
+
+### Energy Management
+- Heating is the #1 cost in protected cropping (20-40% of total)
+- **Thermal screens** save 40-70% heating energy (aluminium strip + polyester)
+- **Minimum pipe temperature** (40-45°C) prevents condensation while managing humidity
+- **Biomass heating** increasingly viable in SA (macadamia shells, woodchip)
+- Solar PV for fan/pump electricity (not heating — wrong energy density)
 
 ---
 
