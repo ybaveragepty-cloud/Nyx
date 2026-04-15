@@ -14,7 +14,7 @@ Domain registrar for [[yba-systems]] domains.
 ## Domains Managed
 
 - `ybasystems.com`
-- `ybaflow.com`
+- `ybaflow.com` ([[ybaflow]])
 
 ## Key Gotcha
 

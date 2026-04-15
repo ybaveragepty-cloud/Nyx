@@ -83,6 +83,6 @@ Currently everything in one (Pty) Ltd — restructuring planned (R30-80K investm
 ## Wiki Stats
 
 - **38 raw source files** ingested
-- **32 source pages**, **19 entity pages**, **20 concept pages**, **7 meta pages**, **1 analysis page** = **79 total wiki pages**
-- Timeline: 2026-02-25 (earliest) to 2026-04-13 (today)
-- Zero orphan wikilinks
+- **32 source pages**, **19 entity pages**, **20 concept pages**, **7 meta pages**, **2 analysis pages** = **80 total wiki pages**
+- Timeline: 2026-02-25 (earliest) to 2026-04-15 (today)
+- Tiered skill architecture: 33 active skills, 25 departments, 314 archived skills

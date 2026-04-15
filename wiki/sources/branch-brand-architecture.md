@@ -12,6 +12,7 @@ sources: [YBAFlow - Branch · Brand Architecture Strategy.md]
 **Source:** ChatGPT conversation (~1,100 lines)
 **Date:** ~2026-04-13
 **Origin:** https://chatgpt.com/g/g-p-69b271c633e08191bcbd104077ab77d7-ybaflow/
+**Platform:** [[ybaflow]]
 
 ## Summary
 

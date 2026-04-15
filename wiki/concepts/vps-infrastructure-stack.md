@@ -23,7 +23,7 @@ The self-hosted infrastructure powering the YBA ecosystem: a [[hostinger]] KVM2 
 | Database | PostgreSQL (Coolify-managed) | Relational data store |
 | Cache | Redis (Coolify-managed) | Cache and queue |
 | Automation | [[n8n]] | Workflow engine at automations.ybasystems.com |
-| DNS | [[godaddy]] | Domain management for ybasystems.com, ybaflow.com |
+| DNS | [[godaddy]] | Domain management for ybasystems.com, [[ybaflow|ybaflow.com]] |
 | AI | [[openclaw]] | AI build system (claw.ybasystems.com, WIP) |
 
 ## Security

@@ -12,6 +12,7 @@ sources: [YBAFlow - Connecting OpenClaw to ChatGPT.md]
 **Source:** ChatGPT conversation (~1,481 lines, includes voice messages)
 **Date:** ~2026-03-27
 **Origin:** https://chatgpt.com/g/g-p-69b271c633e08191bcbd104077ab77d7-ybaflow/
+**Platform:** [[ybaflow]]
 
 ## Summary
 

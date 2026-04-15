@@ -96,12 +96,13 @@ A catalog of everything in the wiki. Claude updates this on every operation. For
 ## Analyses
 
 - [[agriculture-sop]] — Master Agriculture SOP (seed to fork). RAS + Aquaponics deep, 14 other sections stubbed. Terra AI knowledge base.
+- [[agent-workflow-comparison]] — Three-way comparison of agent routing architectures (current vs Richard's plan vs department model)
 
 ## Meta
 
 - [[nyx]] — Nyx executive assistant profile: personality, communication style, decision authority, operating model
 - [[project-template]] — Standard spoke project template: folder structure, CLAUDE.md, .gitignore, decision log
-- [[agent-skill-map]] — Maps skills, commands, and hooks for all 151 agents across 13 tiers
+- [[agent-skill-map]] — Department-based agent routing: 25 departments, skill loadouts, handoff triggers, Nyx routing rules
 - [[mcp-plugin-registry]] — Central registry of MCP servers, plugins, and integration infrastructure
 - [[status-report-template]] — Standard format for sub-agent status reports
 - [[overview]] — Who is Richard, the three businesses, infrastructure, legal structure, key decisions, wiki stats

@@ -12,6 +12,7 @@ sources: [YBAFlow - Terra Operating Model.md]
 **Source:** ChatGPT conversation (~4,443 lines)
 **Date:** ~2026-03-08
 **Origin:** https://chatgpt.com/g/g-p-69b271c633e08191bcbd104077ab77d7-ybaflow/
+**Platform:** [[ybaflow]]
 
 ## Summary
 

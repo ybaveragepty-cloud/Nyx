@@ -13,6 +13,18 @@ Chronological record of all wiki operations. Newest first.
 
 ---
 
+## [2026-04-15] evolve | Tiered Skill Architecture — Department-Based Agent Routing
+
+- Implemented tiered skill system to reduce token overhead from ~16k to ~3k per session
+- Archived 314 skills from `.claude/skills/` to `.claude/skills-archive/`
+- Kept 33 Nyx core skills active (wiki, research, writing, ingest, planning, visualization, skill-meta)
+- Consolidated 151 agents into 25 departments in `wiki/meta/agent-skill-map.md`
+- Created routing flow: Nyx → department agent → report → Nyx audits → Captain
+- Created comparison analysis: `wiki/analyses/agent-workflow-comparison.md`
+- Created skills manifest: `.claude/skills-manifest.md`
+- Updated memory with architecture documentation
+- Pages touched: agent-skill-map.md, agent-workflow-comparison.md, log.md, index.md
+
 ## [2026-04-15] update | Agriculture SOP — Section 6: Irrigation & Water Management (Deep)
 
 - Expanded Section 6 from stub to production-ready (10 subsections)

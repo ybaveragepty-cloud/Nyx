@@ -15,7 +15,7 @@ An open-source workflow automation tool running on Richard's [[hostinger]] VPS.
 
 - Running on `automations.ybasystems.com` with SSL
 - Managed via [[coolify]]
-- Part of the existing infrastructure stack
+- Part of the existing infrastructure stack alongside [[openclaw]]
 
 ## Role in YBA Ecosystem
 

@@ -19,7 +19,7 @@ The origin of the YBA brand naming system. Explores and finalizes the brand hier
 
 ## Finalized Decisions
 
-- **Domain strategy:** `ybasystems.com` (holding/infra), `ybaflow.com` (SaaS platform), `ybaflow.com/terra` (product page, no separate domain needed)
+- **Domain strategy:** `ybasystems.com` (holding/infra), `ybaflow.com` ([[ybaflow|SaaS platform]]), `ybaflow.com/terra` (product page, no separate domain needed)
 - **Naming rule:** YBA + single word for all products (Terra, Flow, Systems, Agency, Realty, Med)
 - **Logo system:** Tech-forward modernized design with orbit ring as platform identifier
 - **Product colors:** Flow = blue, Terra = earth green/bronze, with distinct colors per vertical

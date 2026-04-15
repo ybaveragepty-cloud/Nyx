@@ -14,7 +14,7 @@ sources: [Project money  - Local Claw Clarification.md]
 
 ## Summary
 
-Short conversation clarifying ChatGPT memory limitations and "Project Money" scope. Richard realizes ChatGPT doesn't retain VPS details cross-project. Project Money is at idea exploration stage — not yet structured.
+Short conversation clarifying ChatGPT memory limitations and "Project Money" scope. References [[openclaw]] context. Richard realizes ChatGPT doesn't retain VPS details cross-project. Project Money is at idea exploration stage — not yet structured.
 
 ## Project Money Definition (early)
 

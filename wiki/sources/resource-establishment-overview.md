@@ -105,7 +105,7 @@ The conversation starts with a general framework for resource planning:
 Richard is building three resource systems simultaneously:
 1. Aquaponic farm infrastructure
 2. Consulting / franchise development
-3. AI automation systems (YBAFlow/YBATerra)
+3. AI automation systems ([[ybaflow|YBAFlow]]/YBATerra)
 
 ## Architecture Decisions for Future Reference
 

@@ -15,7 +15,7 @@ sources: [YBAFlow - YBAflow Overview.md]
 
 ## Summary
 
-Confirms YBAFlow's positioning as a SaaS company (not just an internal tool) targeting external customers. Produces a structured landing page prompt with product hierarchy and messaging.
+Confirms [[ybaflow|YBAFlow's]] positioning as a SaaS company (not just an internal tool) targeting external customers. Produces a structured landing page prompt with product hierarchy and messaging.
 
 ## SaaS Positioning
 

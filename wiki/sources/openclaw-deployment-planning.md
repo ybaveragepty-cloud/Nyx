@@ -12,10 +12,11 @@ sources: [YBAFlow - OpenClaw depoyment.md]
 **Source:** ChatGPT conversation (~6,398 lines)
 **Date:** ~2026-04-13
 **Origin:** https://chatgpt.com/g/g-p-69b271c633e08191bcbd104077ab77d7-ybaflow/
+**Platform:** [[ybaflow]]
 
 ## Summary
 
-Pure pre-construction planning — no code written, no infrastructure touched. Produces two major deliverables: a **100-task OpenClaw Agent Task Plan** and the **Terra Master Data Model + Schema Package v1** with 72+ entities, field-level definitions, migration order, and agent constraints.
+Pure pre-construction planning — no code written, no infrastructure touched. Produces two major deliverables: a **100-task [[openclaw|OpenClaw]] Agent Task Plan** and the **Terra Master Data Model + Schema Package v1** with 72+ entities, field-level definitions, migration order, and agent constraints.
 
 ## Deliverable 1: 100-Task Agent Build Plan
 

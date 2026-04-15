@@ -91,6 +91,7 @@ Richard (Captain)
 - [[mcp-plugin-registry]] — MCP servers and plugins available to the agent framework
 - [[project-template]] — Standard spoke project folder structure
 - [[status-report-template]] — Format sub-agents use for reporting back to Nyx
+- [[agent-workflow-comparison]] — Comparison of agent workflow approaches
 
 ## Frameworks Available
 

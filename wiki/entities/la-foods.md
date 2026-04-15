@@ -30,6 +30,7 @@ The single WhatsApp inbox mixes personal, order, and supplier messages — requi
 
 ## Related
 
+- [[openclaw]] — AI build system used in development
 - [[packhouse-admin-copilot]] — AI-assisted admin tool being built for this business
 - [[ybaterra]] — Future farm management platform
 - [[la-buschagne-aquaponic-empire]] — Early strategic thinking on farm AI agents and operations

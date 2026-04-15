@@ -15,14 +15,14 @@ sources: [YBAFlow - Structure Confirmation.md]
 
 ## Summary
 
-The most **operationally concrete** source so far. Confirms the full company/platform/product hierarchy, defines the OpenClaw agent workspace structure, establishes workspace control files (AGENTS.md, SOUL.md, TOOLS.md), and provides the 12-step YBAFlow core build sequence.
+The most **operationally concrete** source so far. Confirms the full company/platform/product hierarchy, defines the [[openclaw|OpenClaw]] agent workspace structure, establishes workspace control files (AGENTS.md, SOUL.md, TOOLS.md), and provides the 12-step YBAFlow core build sequence.
 
 ## Confirmed Structure
 
 ### Company → Platform → Product
 
 1. **YBA Systems** = holding/parent
-2. **YBAFlow** = SaaS core platform
+2. **[[ybaflow|YBAFlow]]** = SaaS core platform
 3. **YBATerra** = first vertical product
 
 ### Permission Hierarchy

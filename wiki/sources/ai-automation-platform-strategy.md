@@ -12,6 +12,7 @@ sources: [YBAFlow - AI Automation Platform Strategy.md]
 **Source:** ChatGPT conversation (clipped)
 **Date:** ~2026-03-06 (early planning, predates deployment sessions)
 **Origin:** https://chatgpt.com/g/g-p-69b271c633e08191bcbd104077ab77d7-ybaflow/
+**Platform:** [[ybaflow]]
 
 ## Summary
 
