@@ -49,3 +49,4 @@ The franchise system itself is being built on a structured timeline: months 1-3 
 - [[seed-to-fork-pipeline]] — The full value chain the franchise controls
 - [[la-buschagne-academy]] — The training arm that certifies franchise operators
 - [[aquaponics-integration]] — The core production technology being franchised
+- [[agriculture-sop]] — Master SOP that codifies franchise operational standards

@@ -82,7 +82,7 @@ Currently everything in one (Pty) Ltd — restructuring planned (R30-80K investm
 
 ## Wiki Stats
 
-- **30 raw source files** ingested from 5 ChatGPT projects
-- **22 source pages**, **18 entity pages**, **4 concept pages**, **2 meta pages**
+- **38 raw source files** ingested
+- **32 source pages**, **19 entity pages**, **20 concept pages**, **7 meta pages**, **1 analysis page** = **79 total wiki pages**
 - Timeline: 2026-02-25 (earliest) to 2026-04-13 (today)
 - Zero orphan wikilinks

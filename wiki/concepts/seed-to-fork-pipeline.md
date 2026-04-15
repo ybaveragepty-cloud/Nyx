@@ -54,3 +54,4 @@ Each stage of the seed-to-fork pipeline maps to entities in the [[ybaterra]] dat
 - [[aquaponics-integration]] — The production technology for the combined fish/plant pipeline
 - [[saas-automation-platform]] — YBATerra digitizes the pipeline
 - [[ip-tiering-strategy]] — Pipeline knowledge structured across three IP tiers
+- [[agriculture-sop]] — Master SOP covering every stage of the pipeline operationally

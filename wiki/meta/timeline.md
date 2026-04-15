@@ -47,16 +47,16 @@ All events ordered by actual date, not ingest order.
 - 12-month institutionalization roadmap
 
 ## 2026-03-05 — VPS Provisioned
-- Hostinger KVM2 (31.187.72.210) set up
-- Coolify, Docker, PostgreSQL, Redis installed
+- [[hostinger]] KVM2 (31.187.72.210) set up
+- [[coolify]], Docker, PostgreSQL, Redis installed
 - SSH hardened, UFW + Fail2ban configured
 
 ## 2026-03-06 — First Websites Live
-- n8n deployed at automations.ybasystems.com
-- WSL2 + Cursor local dev environment set up
+- [[n8n]] deployed at automations.ybasystems.com
+- WSL2 + [[cursor]] local dev environment set up
 - GitHub repo created (ybaveragepty-cloud/ybasystems-site)
 - ybasystems.com landing page deployed via Coolify
-- AI Automation Platform Strategy: YBATerra domain model defined (recursive location hierarchy)
+- AI Automation Platform Strategy: [[ybaterra]] domain model defined (recursive location hierarchy)
 
 ## 2026-03-07 — DNS Confirmed
 - GoDaddy parking IPs removed
@@ -77,7 +77,7 @@ All events ordered by actual date, not ingest order.
 
 ## ~2026-03-12 — OpenClaw Deployment Begins
 - Multi-model AI strategy decided: Claude Sonnet primary, GPT-4.1 fallback
-- OpenClaw Master Prompt created
+- [[openclaw]] Master Prompt created
 - Deployment attempted on VPS via Coolify (Docker Compose)
 - Hit: SSH issues, GitHub PAT, Docker volume permissions, port conflicts
 - Structure Confirmation: 4 named agents, workspace control files, 12-step build sequence
@@ -85,7 +85,7 @@ All events ordered by actual date, not ingest order.
 
 ## ~2026-03-13 — Packhouse Pivot
 - OpenClaw confirmed working (Anthropic API configured, 200 OK)
-- **Strategic pivot:** Build Packhouse Admin Copilot first, not full YBAFlow
+- **Strategic pivot:** Build Packhouse Admin Copilot first, not full [[ybaflow]]
 - LA Foods identified as first real user
 - 7 agents defined for packhouse operations
 
