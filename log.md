@@ -13,6 +13,23 @@ Chronological record of all wiki operations. Newest first.
 
 ---
 
+## [2026-04-15] update | Agriculture SOP — Section 6: Irrigation & Water Management (Deep)
+
+- Expanded Section 6 from stub to production-ready (10 subsections)
+- Water sources: municipal (costs), borehole (drilling costs by SA region, pump selection, yield testing), dam (evaporation by region, lining costs), rainwater harvesting
+- Water quality: interpretation table, treatment options
+- 6 irrigation systems: drip (emitters, filtration, costs R25-150k/ha), centre pivot (nozzle packages, R30-70k/ha), sprinkler, flood/furrow (surge), SDI, micro-sprinkler — each with full technical specs
+- Fertigation: A/B/C tank setup, compatibility rules, injection methods, EC/pH targets, protocol
+- Water budgeting: ET0 by SA region, crop coefficients (Kc), seasonal requirements, system capacity formula
+- Deficit irrigation: RDI and PRD strategies with water savings quantified
+- Scheduling: tensiometers, capacitance probes, FAO-56 checkbook, 5 automation levels with costs
+- SA water law: NWA, Schedule 1, GA, WULA process (1-3 year reality), groundwater regulations, penalties
+- Loadshedding backup: diesel, solar PV, hybrid — costs and payback
+- Maintenance: daily/weekly/monthly/seasonal for drip, pivot, pumps
+- Water recycling: greenhouse drain, treated wastewater regs, grey water reuse
+- Emerging tech: satellite ET, drone thermal, VRI, AI scheduling
+- Pages touched: agriculture-sop, log
+
 ## [2026-04-15] update | Agriculture SOP — Section 5: Crop Rotation & Soil Health (Deep)
 
 - Expanded Section 5 from stub to production-ready (10 subsections)

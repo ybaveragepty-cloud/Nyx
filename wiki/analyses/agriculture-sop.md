@@ -26,7 +26,7 @@ This is the master Standard Operating Procedure for agricultural operations. It 
 | 3 | [Protected Cropping (Greenhouse/Tunnel)](#3-protected-cropping-greenhouse--tunnel) | **Deep** | Production-ready |
 | 4 | [Open-Field Crop Production](#4-open-field-crop-production) | **Deep** | Production-ready |
 | 5 | [Crop Rotation & Soil Health](#5-crop-rotation--soil-health) | **Deep** | Production-ready |
-| 6 | [Irrigation & Water Management](#6-irrigation--water-management) | Stub | Framework only |
+| 6 | [Irrigation & Water Management](#6-irrigation--water-management) | **Deep** | Production-ready |
 | 7 | [Pest & Disease Management (IPM)](#7-pest--disease-management-ipm) | Stub | Framework only |
 | 8 | [Livestock & Poultry](#8-livestock--poultry) | Stub | Framework only |
 | 9 | [Post-Harvest Handling](#9-post-harvest-handling) | Stub | Framework only |
@@ -1975,30 +1975,425 @@ FS and NW semi-arid (400-550mm): traditional crop-fallow persists. Fallow stores
 
 # 6. IRRIGATION & WATER MANAGEMENT
 
-*Section to be expanded.*
+> SA is the 30th driest country. Average rainfall 450mm/yr (global avg 860mm). Irrigation uses ~60% of freshwater allocation. Water is more limiting than land.
 
 ## 6.1 Water Source Assessment
-- [ ] Municipal supply
-- [ ] Borehole/well
-- [ ] Dam/reservoir
-- [ ] Rainwater harvesting
-- [ ] Water quality testing and treatment
+
+### Municipal Supply
+- Typical pressure: 200-400 kPa (2-4 bar). Reliability varies hugely by municipality
+- Cost: R15-55/kL retail (agricultural tariffs negotiated). Increases running 8-12%/yr
+- **Uneconomical for broadacre** — at R30/kL, 5mm on 1 ha costs R1,500
+- Use for: backup, nurseries, small high-value plots <0.5 ha
+
+### Borehole (Groundwater)
+
+**Drilling costs (SA 2025-2026):**
+
+| Region | Cost/metre (ZAR) | Typical Depth |
+|---|---|---|
+| Northern Cape | 300-500 | 60-120m |
+| Highveld dolomite | 800-1,200 | 40-80m |
+| KZN coastal | 600-900 | 30-60m |
+| Western Cape (sandstone) | 700-1,000 | 50-100m |
+
+**Full borehole cost:** Drilling + casing (R400-700/m) + test pumping (R8k-15k) + equipping (R25k-80k) + water quality (R1.5k-3k) = **R70k-200k total for a 70m borehole**
+
+**Operational cost:** R2-8/kL (energy only) — 5-15x cheaper than municipal
+
+**Pump Selection:**
+
+| Yield (L/s) | Application | Motor (kW) |
+|---|---|---|
+| 0.5-1.0 | Small tunnel/garden | 0.75-1.5 |
+| 1.0-3.0 | Small farm/orchard | 2.2-5.5 |
+| 3.0-8.0 | Medium farm/pivot | 7.5-22 |
+| 8.0-20.0 | Large farm/multiple pivots | 30-55 |
+
+**Yield testing protocol:**
+1. Step-drawdown: 3-5 increasing rates, 60 min per step
+2. Constant-rate: 24-72 hours at recommended sustainable rate
+3. Recovery: monitor to 95% recovery within 24hr
+4. Sustainable yield = **60-70% of maximum yield** for long-term use
+
+### Dam/Reservoir Storage
+
+**Evaporation losses by SA region:**
+
+| Region | Annual (mm) | Summer Peak (mm/day) |
+|---|---|---|
+| Limpopo Lowveld | 1,800-2,200 | 7-9 |
+| Highveld (Gauteng) | 1,400-1,800 | 6-8 |
+| Western Cape (coastal) | 1,200-1,500 | 5-7 |
+| Northern Cape (arid) | 2,200-2,800 | 8-12 |
+
+**Seepage:** Unlined on clay 2-5 mm/day. Sandy soil 10-25 mm/day. Lined <0.5 mm/day.
+
+**Lining options:**
+
+| Material | Cost (ZAR/m²) | Lifespan |
+|---|---|---|
+| HDPE 1.0mm | 35-60 | 20-30 yr |
+| HDPE 1.5mm | 50-80 | 25-35 yr |
+| Clay lining 300mm | 80-150 | 30+ yr |
+| Concrete 100mm reinforced | 250-400 | 40+ yr |
+
+**Storage rule:** 1 ha irrigated summer crops = 5,000-8,000 m³/season. Plan storage at 120% of demand.
+
+### Rainwater Harvesting
+- **Formula:** Harvestable (L) = Roof Area (m²) × Rainfall (mm) × Runoff Coefficient
+- Coefficients: metal roof = 0.9, tiles = 0.8, concrete = 0.7, thatch = 0.3
+- Example: 500m² metal roof × 50mm rain = 22,500 L
+- First-flush diverter: discard first 0.5-1.0 mm of rainfall
+- JoJo tanks: 2,500L (R4.5-6k), 5,000L (R7-10k), 10,000L (R12-18k)
+
+### Water Quality for Irrigation
+
+| Parameter | No Problem | Increasing Problem | Severe |
+|---|---|---|---|
+| EC (dS/m) | <0.7 | 0.7-3.0 | >3.0 |
+| SAR | <6 | 6-9 | >9 |
+| Chloride (mg/L) | <140 | 140-350 | >350 |
+| Boron (mg/L) | <0.7 | 0.7-3.0 | >3.0 |
+| Iron (mg/L) | <0.1 | 0.1-1.5 | >1.5 |
+| Bicarbonate (mg/L) | <90 | 90-500 | >500 |
+| pH | 6.5-8.4 | Outside range | <5.0 or >9.0 |
+
+**Treatment:** High EC → blending/leaching. High SAR → gypsum 2-5 t/ha. High Fe/Mn → aeration + sand filtration. High HCO3 → acid injection to pH 6.0-6.5.
+
+---
 
 ## 6.2 Irrigation Systems
-- [ ] Drip irrigation design and management
-- [ ] Overhead/sprinkler systems
-- [ ] Flood/furrow irrigation
-- [ ] Sub-surface irrigation
-- [ ] Fertigation systems
 
-## 6.3 Water Budgeting
-- [ ] Crop water requirements by season
-- [ ] Evapotranspiration calculations
-- [ ] Deficit irrigation strategies
-- [ ] Water recycling and reuse
+### 6.2.1 Drip Irrigation
 
-## 6.4 Irrigation Checklists
-- [ ] Daily, weekly, monthly operational checklists
+**Emitter types:**
+- **Pressure-compensating (PC):** Consistent output across 70-380 kPa. CV <5%. +15-25% cost. Best for undulating terrain
+- **Non-PC:** Flow varies with pressure. CV 10-15%. Budget option for flat terrain
+- Standard flow rates: 1.0, 1.6, 2.0, 2.3, 4.0, 8.0 L/hr
+
+**Design specs:**
+- Lateral: 16mm LDPE, max run 150-200m (PC) or 80-120m (non-PC)
+- Sub-main: 32-75mm HDPE/PVC
+- Mainline: 63-160mm, sized for velocity <1.5 m/s
+- Emitter spacing: 20-30cm (vegetables), 50-100cm (orchards)
+
+**Filtration:**
+
+| Filter Type | Application | Cost (ZAR) |
+|---|---|---|
+| Screen filter | Clean water, municipal | 2,000-8,000 |
+| Disc filter | Moderate contamination | 3,000-12,000 |
+| Sand media | Dam water with algae | 30,000-80,000 |
+| Hydrocyclone | High sand/silt (pre-filter) | 5,000-20,000 |
+
+**Cost per hectare (installed):**
+- Basic thin-wall (annual crops): R25,000-40,000/ha
+- PC with filtration (vegetables): R45,000-70,000/ha
+- Heavy-wall PC (orchards, permanent): R60,000-100,000/ha
+- Turnkey with automation: R80,000-150,000/ha
+
+**Application efficiency: 85-95%**
+
+### 6.2.2 Centre Pivot
+
+- Typical: 4-8 spans, 30-60 ha coverage. 7-span (~400m radius) covers ~50 ha
+- Tower height: 2.7-4.0m standard, up to 5.5m high-clearance
+
+**Nozzle packages:**
+
+| Package | Height | Pressure (kPa) | Efficiency |
+|---|---|---|---|
+| LEPA | 20-45cm | 40-140 | 95-98% |
+| LESA | 30-60cm | 70-200 | 90-95% |
+| Spray (rotator) | 1.5-2.5m | 100-250 | 80-90% |
+| Impact (old) | 3-4m | 300-450 | 70-80% |
+
+**Cost:** R30,000-50,000/ha standard. R45,000-70,000/ha with corner system + VRI. Full 7-span system: R1.0-1.8M.
+**SA suppliers:** Agrico, Valley (Valmont), Lindsay (Zimmatic), Reinke, T-L Irrigation.
+
+### 6.2.3 Overhead/Sprinkler
+
+- Impact sprinklers: 500-5,000 L/hr, 250-450 kPa, 10-25m radius
+- Spacing: 12×12m to 18×18m. Application rate: 5-15 mm/hr
+- **Application rate must NOT exceed soil infiltration rate:**
+  - Sand: 25-50 mm/hr. Loam: 10-15 mm/hr. Clay: 1-5 mm/hr
+- CU target: >84%. Wind drift significant above 15 km/h
+- Cost: R15,000-35,000/ha (portable); R40,000-80,000/ha (permanent)
+- **Application efficiency: 65-80%**
+
+### 6.2.4 Flood/Furrow
+
+- Furrow length: 100-400m. Spacing: 0.75-1.5m. Field slope: 0.1-0.3%
+- Gated pipe: 150-200mm with slide gates. Max 30 gates/line
+- **Surge irrigation:** On/off pulses improve uniformity 15-25%
+- Cost: R5,000-15,000/ha. **Efficiency: 40-75%** (surge improved)
+
+### 6.2.5 Sub-Surface Drip (SDI)
+
+- Depth: 20-30cm (row crops), 30-50cm (permanent crops)
+- **Efficiency: 92-97%**. Lifespan: 15-25 years with maintenance
+- Critical: anti-siphon emitters, continuous chlorination (1-2 mg/L), periodic acid flush, 200-mesh filtration
+- Cost: R80,000-150,000/ha (higher install cost)
+
+### 6.2.6 Micro-Sprinkler (Orchards)
+
+- Flow: 30-300 L/hr. Pressure: 100-250 kPa. Wetted diameter: 1.3-9.0m
+- 1-2 per tree. Wetting 30-60% of canopy dripline at maturity
+- Cost: R35,000-60,000/ha. **Efficiency: 80-90%**
+
+---
+
+## 6.3 Fertigation
+
+### Stock Solution Setup (A/B/C Tanks)
+
+**Tank A (Calcium):** Calcium nitrate, potassium nitrate, ammonium nitrate, iron chelate
+**Tank B (Phosphate/Sulfate):** MKP, magnesium sulfate, potassium sulfate, trace elements
+**Tank C (Acid):** Nitric or phosphoric acid for pH correction
+
+**Never mix:** Calcium + phosphate/sulfate in same tank (precipitates)
+
+**Concentration:** Stock at 100x. Keep EC <100 dS/m. Never exceed 75% of max solubility.
+
+### EC/pH Targets by Crop
+
+| Crop | Target EC (dS/m) | Target pH |
+|---|---|---|
+| Tomato | 2.5-4.5 | 5.5-6.5 |
+| Cucumber | 1.8-2.5 | 5.5-6.0 |
+| Pepper | 2.0-3.0 | 5.8-6.3 |
+| Lettuce | 1.2-1.8 | 5.5-6.5 |
+| Strawberry | 1.0-1.5 | 5.5-6.5 |
+| Maize (field) | 1.0-2.0 | 6.0-7.0 |
+| Citrus | 1.2-2.0 | 6.0-6.5 |
+
+### Injection Methods
+
+| Method | Cost (ZAR) | Power Needed | Accuracy |
+|---|---|---|---|
+| Venturi injector | 500-3,000 | None | Variable with pressure |
+| Dosatron (proportional) | 8,000-25,000 | None (water-powered) | ±3% |
+| Electric dosing pump | 5,000-30,000 | Yes | Programmable, precise |
+
+### Fertigation Protocol
+1. Start with 10-15 min clean water (flush lines, wet soil)
+2. Inject fertiliser for calculated duration
+3. End with 10-15 min clean water (flush, push nutrients to root zone)
+4. Multiple short pulses/day preferred over one long application
+
+---
+
+## 6.4 Water Budgeting
+
+### Reference ET (ET0) by SA Region
+
+| Region | Winter (mm/day) | Summer (mm/day) | Annual (mm) |
+|---|---|---|---|
+| Limpopo Lowveld | 2.5-3.5 | 6.0-8.0 | 1,600-1,900 |
+| Free State | 2.0-3.0 | 6.0-8.0 | 1,500-1,800 |
+| Gauteng | 2.0-3.0 | 5.0-7.0 | 1,400-1,600 |
+| Western Cape | 1.5-2.5 | 5.0-7.0 | 1,200-1,500 |
+| Northern Cape | 2.5-4.0 | 8.0-11.0 | 2,000-2,600 |
+
+### Crop Coefficients (Kc) by Stage
+
+| Crop | Kc Initial | Kc Mid | Kc Late | Season (days) |
+|---|---|---|---|---|
+| Maize | 0.30 | 1.20 | 0.50 | 125-140 |
+| Wheat | 0.30 | 1.15 | 0.25 | 150-180 |
+| Tomato | 0.60 | 1.15 | 0.80 | 130-160 |
+| Potato | 0.50 | 1.15 | 0.75 | 105-145 |
+| Citrus | 0.65 | 0.65 | 0.65 | Perennial |
+| Sugarcane | 0.40 | 1.25 | 0.75 | 300-540 |
+| Lucerne | 0.40 | 0.95 | 0.90 | Perennial |
+
+**ETc = ET0 × Kc.** Example: Maize mid-season, Free State summer, ET0 = 7mm/day, Kc = 1.2 → ETc = 8.4 mm/day = 84 m³/ha/day.
+
+### Seasonal Water Requirements
+
+| Crop | mm/season | m³/ha/season |
+|---|---|---|
+| Maize | 500-800 | 5,000-8,000 |
+| Wheat | 450-650 | 4,500-6,500 |
+| Potato | 500-700 | 5,000-7,000 |
+| Tomato | 600-800 | 6,000-8,000 |
+| Citrus | 900-1,200 | 9,000-12,000 |
+| Sugarcane | 1,200-1,800 | 12,000-18,000 |
+
+### System Capacity Formula
+**Q (L/s) = (Area(ha) × Peak ETc(mm/day) × 10,000) / (Efficiency × Operating Hours × 3,600)**
+
+Example: 50 ha maize, 8mm/day peak, 90% efficiency, 20hr/day → Q = 61.7 L/s
+
+### Deficit Irrigation Strategies
+
+**Regulated Deficit Irrigation (RDI):**
+- Full water during critical stages (flowering, fruit set)
+- 50-70% of ETc during less sensitive stages (vegetative, late maturation)
+- Water savings: 20-30%. Yield reduction typically <10%
+- Best for: wine grapes, stone fruit, citrus, olive
+
+**Partial Root Zone Drying (PRD):**
+- Alternate irrigation between two sides of root zone every 10-15 days
+- Triggers ABA production → reduced stomatal conductance
+- Water savings: 20-30%. WUE improvement: 26-56%
+- Improved fruit quality (higher Brix, better colour) in grapes and tomato
+
+### Water-Use Efficiency Benchmarks
+
+| Crop | WUE (kg produce/m³) |
+|---|---|
+| Tomato (fresh) | 15-30 |
+| Potato | 6-12 |
+| Lettuce | 15-25 |
+| Onion | 8-15 |
+| Citrus | 4-8 |
+| Maize (grain) | 1.0-2.0 |
+| Wheat (grain) | 0.8-1.5 |
+
+---
+
+## 6.5 Irrigation Scheduling
+
+### Soil-Based Methods
+
+**Tensiometers:**
+- Range: 0 to -80 kPa. Install at 30% and 70% of root depth
+- Trigger: -20 to -30 kPa (vegetables), -40 to -60 kPa (field crops)
+- Cost: R300-800 (manual), R2,000-5,000 (electronic with logger)
+
+**Capacitance probes (Sentek, Decagon):**
+- Volumetric water content at multiple depths. Continuous logging, cellular telemetry
+- Cost: R15,000-35,000 per probe installed
+- Advantages: real-time, full profile, no consumables
+
+### Weather-Based (FAO-56 Checkbook)
+1. Start at field capacity
+2. Daily: subtract ETc, add effective rainfall
+3. Irrigate when depletion reaches 50% of Readily Available Water
+4. RAW = TAW × 0.5. TAW = (FC - WP) × Root Depth × 1000
+
+### Automation Levels
+
+| Level | Description | Cost (ZAR) |
+|---|---|---|
+| Manual | Hand valves, clock schedule | Minimal |
+| Timer-based | Electric valves + timer | 2,000-10,000 |
+| Sensor-triggered | Soil moisture triggers valve | 5,000-25,000 |
+| ET-based controller | Weather station auto-adjusts | 20,000-50,000 |
+| Full automation | Central controller, VRI, sensor fusion, remote | 50,000-300,000+ |
+
+---
+
+## 6.6 SA Water Law
+
+### National Water Act (Act 36 of 1998)
+All water is a national resource held in public trust. No ownership — only rights to use.
+
+### Schedule 1 (Exempt — No Licence)
+- Reasonable domestic use, small garden, livestock watering, emergency firefighting
+- **Does NOT cover commercial agricultural irrigation**
+
+### General Authorization (GA)
+- For abstraction below threshold volumes per catchment (typically 10,000-25,000 m³/yr groundwater)
+- Must **register** with DWS (simpler than WULA)
+- Conditions: max volume, monitoring, reporting
+
+### Water Use Licence Application (WULA)
+- Required when exceeding GA limits or new irrigation on previously un-irrigated land
+- Process: pre-application → submit via e-WULAAS → EIA → public participation → DWS assessment
+- Timeline: officially 300 days; **in practice 1-3 years**
+- Cost: consultant fees R50,000-300,000+
+- Valid up to 40 years (typically 20)
+
+### Groundwater Regulations
+- All boreholes must be registered with DWS (National Groundwater Archive)
+- Drilling: SANS 10299 compliance. Driller must provide geological log, construction diagram, pump test report
+- Abandoned boreholes must be sealed (grouted) to prevent aquifer contamination
+- **Penalties:** Fines up to R1 million and/or 10 years imprisonment for illegal water use
+
+---
+
+## 6.7 Loadshedding & Backup Power
+
+| Solution | Cost (ZAR) for 15kW pump | Running Cost | Notes |
+|---|---|---|---|
+| Diesel generator 30kVA | 80,000-150,000 | R30-50/hr | Reliable, expensive to run |
+| Solar PV + battery (hybrid) | 300,000-600,000 | Near-zero | Best long-term, high CAPEX |
+| Solar PV direct (no battery) | 150,000-350,000 | Zero | Pump only in daylight |
+| VSD on solar | 20,000-40,000 (VSD) | Zero | Variable pump speed matches solar input |
+
+**Solar borehole pumps** (Lorentz, Grundfos SQFlex): R40,000-120,000 for 1-5 kW. Payback: 3-5 years vs diesel.
+
+---
+
+## 6.8 Maintenance Checklists
+
+### Drip Irrigation
+
+**Daily:**
+- Check pressure at head and tail of each block (compare to design)
+- Filter pressure differential (clean when delta-P >50 kPa)
+- Walk one row: leaks, emitter flow, wet patterns
+
+**Weekly:**
+- Clean screen/disc filters (even if pressure OK)
+- Check 5-10 emitter discharge rates per block
+- Inspect injection equipment
+
+**Monthly:**
+- Flush all laterals (open ends, run clear at >0.3 m/s for 2-3 min)
+- Flush sub-mains and mainlines
+- Test water quality (EC, pH, Fe, Mn)
+
+**Seasonal:**
+- Acid flush: pH 2-4 in lines, circulate 30-60 min, flush
+- Chlorination: 10-20 mg/L, hold 12-24 hr, flush (kills biofilm)
+- Replace worn filter elements
+- Calibrate all sensors/meters
+- Check pump performance vs curve
+- Winterize: drain above-ground lines in frost areas
+
+### Centre Pivot
+- **Daily:** Visual check all sprinklers functioning, tyre pressure, end pressure
+- **Weekly:** Grease gearboxes, inspect nozzles, check alignment, test safety systems
+- **Monthly:** Clean filters, inspect tyres, check electrical, test backup power
+- **Seasonal:** Replace worn nozzles, structural inspection, drain for winter, service drive motors
+
+### Pump Maintenance
+- **Monthly:** Check seals, electrical connections, motor temp, record pressure/flow, check vibration
+- **Annually:** Full service (wear rings, seals, bearings), efficiency test, electrical test (insulation, phase balance)
+
+---
+
+## 6.9 Water Recycling & Reuse
+
+### Greenhouse Drain Recycling
+- Collect 20-30% drainage. Disinfect: UV (40-250 mJ/cm²), ozone, heat (95°C/30s), or H₂O₂
+- Adjust EC/pH, replenish nutrients. Monitor Na/Cl accumulation
+- Water savings: 30-50% vs drain-to-waste
+
+### Treated Wastewater (SA Regulations)
+- Must meet DWS microbiological and chemical standards
+- No raw/partially treated wastewater for irrigation
+- Restricted crops: no raw-eaten crops unless tertiary treatment
+- E. coli: <1,000 CFU/100mL (restricted), <100 (unrestricted)
+
+### Grey Water Reuse
+- Considered Schedule 1 use for single-household garden irrigation
+- Do not store >24 hours. Apply sub-surface or drip (not sprinkler)
+- Avoid kitchen greywater unless filtered. Use low-sodium detergents
+- Household generates 60-100 L/day suitable for reuse
+
+---
+
+## 6.10 Emerging Technologies
+
+- **Satellite ET:** SEBAL, SSEBop, IrriWatch. 10-30m resolution. R500-5,000/ha/season
+- **Drone thermal imaging:** CWSI mapping, blocked emitter detection. SA: Aerobotics, DroneClouds
+- **Soil moisture networks:** Multiple probes, wireless, cloud dashboard. Agri-Technovation, CropX
+- **Variable Rate Irrigation (VRI):** Zone-specific on pivots. 10-20% water saving. Requires prescription maps
+- **AI scheduling:** Integrates weather forecasts, soil moisture, crop models. Netafim NetBeat, Motorola Irrinet
 
 ---
 
